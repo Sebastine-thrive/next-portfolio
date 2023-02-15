@@ -1,20 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import logo from '../../public/assets/logo/logo.png';
+import logo from '../../public/assets/logo/logo1.gif';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 export const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
     const [navBg, setNavBg] = useState('#ecf0f3');
-    const [linkColor, setLinkColor] = useState('#1f2937');
-
-    const router = useRouter();
-    const currentRoute = router.pathname;
-
 
     const handleNav = () => {
         setNav(!nav)
@@ -35,15 +30,15 @@ export const Navbar = () => {
         <div style={{ backgroundColor: `${navBg}` }}
             className={
                 shadow
-                    ? 'fixed w-full h-[50] shadow-xl z-[100] opacity-100'
-                    : 'fixed w-full h-[50] z-[100] opacity-100'}>
+                    ? 'fixed w-full h-[20] shadow-xl z-[100] '
+                    : 'fixed w-full h-[20] z-[100] '}>
 
             <div className='flex justify-between items-center w-full h-full px-8 2xl:px-16'>
                 <Link href='/' >
                     <Image
                         src={logo} alt='logo'
-                        width={120}
-                        height={50}
+                        width={100}
+                        height={40}
                         className='cursor-pointer'
                     />
                 </Link>
@@ -81,15 +76,15 @@ export const Navbar = () => {
 
                 <div className={nav
                     ? 'fixed left-0 top-0 w-[75%] sm:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-1000 '
-                    : 'fixed left-[-100%] top-0 p-10 ease-in duration-1000'}>
+                    : 'fixed left-[-150%] top-0 p-10 ease-in duration-1000'}>
 
                     <div>
                         <div className='flex w-full items-center justify-between'>
 
                             <Link href='/' scroll={false}>
                                 <Image src={logo}
-                                    width={120}
-                                    height={50}
+                                    width={100}
+                                    height={40}
                                     className='cursor-pointer'
                                     alt='logo'
                                 />

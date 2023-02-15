@@ -10,7 +10,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 export const Contact = () => {
     return (
-        <div id='contact' className='w-full lg:h-screen h-2' >
+        <div id='contact' className='w-full lg:h-screen h-2 mt-16' >
             <div className='max-w-[1240px] w-full m-auto px-2 py-16 text-center'>
                 <h3 className='text-xl tracking-widest uppercase text-[#00a78e]'>
                     Contact
@@ -33,8 +33,8 @@ export const Contact = () => {
                             </div>
                             <div>
                                 <h2 className='py-2'> Sebastine</h2>
-                                <p>Front-End Developer</p>
-                                <p className='py-4'> I am open to criticisms, suggestions, contract or full time job openings. Do get in touch! </p>
+                                <p> Your Front-End Developer</p>
+                                <p className='py-4'>  I am available for freelance, contract or full-time positions. Do get in touch! </p>
                             </div>
 
                             <div>
@@ -43,6 +43,8 @@ export const Contact = () => {
 
                                     <Link
                                         href='https://github.com/Sebastine-thrive'
+                                        target='_blank'
+
                                     >
                                         <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                                             <FaGithub />
@@ -51,6 +53,8 @@ export const Contact = () => {
 
                                     <Link
                                         href='https://www.linkedin.com/in/sebastine-ogu-b36324144'
+                                        target='_blank'
+
                                     >
                                         <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-105 ease-in duration-400'>
                                             <FaLinkedinIn />
@@ -59,6 +63,8 @@ export const Contact = () => {
 
                                     <Link
                                         href='mailto:sebastinoptimum@gmail.com'
+                                        target='_blank'
+
                                     >
                                         <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-105 ease-in duration-400'>
                                             <AiOutlineMail />
@@ -67,6 +73,8 @@ export const Contact = () => {
 
                                     <Link
                                         href='https://twitter.com/sebasious1'
+                                        target='_blank'
+
                                     >
                                         <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-105 ease-in duration-400'>
                                             <FaTwitter />
@@ -125,11 +133,11 @@ export const Contact = () => {
                                         className='border-2 rounded-lg p-3 border-gray-300'
                                         type='text'
                                         name='message'
-                                        >
+                                    >
                                     </textarea>
                                 </div>
 
-                                <button  className='w-full p-4 text-white mt-4'> Send Message </button>
+                                <button className='w-full p-4 text-white mt-4'> Send Message </button>
                             </form>
                         </div>
                     </div>

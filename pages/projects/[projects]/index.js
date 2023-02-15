@@ -1,10 +1,13 @@
-import { Projects } from '@/components/project/Projects';
-import React from 'react';
 
-const ProjectsPage = ( {data, pageName} ) => {
+// import { Projects } from '@/components/project/Projects';
+
+import React from 'react';
+import  ProjectDetail  from '@/components/project/ProjectDetail';
+
+const ProjectsPage = ( { data, pageName } ) => {
     return (
         <div>
-            <Projects 
+            <ProjectDetail
             data={data}
             pageName={pageName}
             />
@@ -15,12 +18,11 @@ const ProjectsPage = ( {data, pageName} ) => {
 export default ProjectsPage;
 
 export async function getStaticPaths() {
-    const { events_categories } = await import('../../../data/data.json');
-    const allPaths = events_categories.map((ev) => {
-        // console.log(ev)
+    const { projects } = await import('/data/data.json');
+    const allPaths = projects.map((project) => {
         return {
             params: {
-                projects: ev.id.toString(),
+                projects: project.id.toString(),
             }
         }
     }
@@ -33,10 +35,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
     const id = context?.params.projects;
-    console.log(id)
+    // console.log(id)
 
-    const { allEvents } = await import('/data/data.json');
-    const data = allEvents.filter((ev) => ev?.city === id)
+    const { projects } = await import('/data/data.json');
+    const data = projects.filter((project) => project?.id === id)
     return {
         props: {
             data,
