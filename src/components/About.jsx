@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import myImage from '../../public/assets/myPic/sebastine.jpg';
+import myImage from '../../public/sebastine.jpg';
 import Link from 'next/link';
 
 export const About = () => {
@@ -32,7 +32,7 @@ export const About = () => {
                     </Link>
                 </div>
                 <div className='md:flex md:align-center  lg:w-[120%] h-[100%] px-auto col-span-1 justify-center items-center shadow-xl shadow-gray rounded-xl p-4 hover:scale-101 ease-in duration-500'>
-                    <Image className='rounded-xl' width='auto' height='auto' src={myImage} alt='my picture' />
+                    <Image className='rounded-xl' width='auto' height='auto' src={myImage} alt="Sebastine's picture" />
                 </div>
 
             </div>
