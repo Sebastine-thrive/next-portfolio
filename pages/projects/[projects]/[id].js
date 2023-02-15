@@ -22,7 +22,7 @@ export async function getStaticPaths() {
     const allPaths = allProjects.map((path) => {
         return {
             params: {
-                projects: project,
+                projects: path.title,
                 id: path.id,
             }
         };
@@ -37,11 +37,11 @@ export async function getStaticPaths() {
 export async function getStaticProps(context) {
     const id = context.params.id;
     const { allProjects } = await import('/data/data.json');
-    const eventData = allProjects.find((project) => id === project.id);
+    const projectData = allProjects.find((project) => id === project.id);
 
     return {
         props: {
-            data: eventData
+            data: projectData
         }
     }
 }
