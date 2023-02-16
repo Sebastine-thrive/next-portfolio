@@ -1,18 +1,18 @@
-// import ProjectDetail from '@/components/project/ProjectDetail';
+import ProjectDetail from '@/components/project/ProjectDetail';
 
 
-// const SingleProjectPage = ({ data }) => {
-//     return (
-//         <div>
-//             <ProjectDetail
-//             data={data}
-//             // pageName={pageName}
-//             />
-//         </div>
-//     )
-// }
+const SingleProjectPage = () => {
+    return (
+        <div>
+            <ProjectDetail
+            // data={data}
+            // pageName={pageName}
+            />
+        </div>
+    )
+}
 
-// export default SingleProjectPage;
+export default SingleProjectPage;
 
 
 // export async function getStaticPaths() {
