@@ -3,9 +3,9 @@ import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const ProjectDetail = ({ data, pageName }) => {
-    console.log(data)
-    console.log(pageName)
+const ProjectDetail = ({ data }) => {
+    // console.log(data)
+    // console.log(pageName)
     return (
         <div className='w-full overflow-x-hidden '>
             <div className='w-screen h-[50vh] lg:h-[60vh] relative'>

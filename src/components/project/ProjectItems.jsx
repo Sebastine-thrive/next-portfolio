@@ -3,10 +3,10 @@ import Link from 'next/link';
 import React from 'react';
 // import { AiTwotoneFileMarkdown } from 'react-icons/ai';
 
-import { ProjectItem } from './ProjectItem';
+// import { ProjectItem } from './ProjectItem';
 
-export const Projects = ({ data }) => {
-
+export const ProjectItems = ({ data }) => {
+    // console.log(data)
     return (
         <div id='projects' className='w-full min-h-screen px-4 my-16'>
             <div className='max-w-[1240px] px-4 py-16 mx-auto'>
@@ -33,7 +33,7 @@ export const Projects = ({ data }) => {
                                         <p className='pb-4 pt-2 text-white text-center'>{project.tech}</p>
 
                                         <div className='text-center w-[6rem] h-[2rem]'>
-                                            <Link href={`/projects/${project.id}`}>
+                                            <Link href={`/projects/projects/${project.title}`}>
                                                 <p className='text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'> Details </p>
                                             </Link>
                                         </div>
