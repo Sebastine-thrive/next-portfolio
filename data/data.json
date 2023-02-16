@@ -3,6 +3,7 @@
         {
             "id": "EasyShop",
             "title": "EasyShop Itemstore",
+            "class": "project",
             "description": "This project was created using  ReactJs and the Redux toolkit with data sourced from a graphQl backend endpoint via Apolloclient.  Users can view products and their details, toogle  currency options and proceed to checkout. The checkout page will be available soon.",
             "tech": [
                 "ReactJs, ",
@@ -17,6 +18,7 @@
         {
             "id": "Thrive Ecommerce Admin Dashboard",
             "title": "Thrive Dashboard",
+            "class": "project",
             "description": "Created and designed using ReactJS, TailwindCSS and Context API for state data management, this project utilises available dummy data to illustrate a typical e-commerce admin dashboard. Features include dynamically rendering a side navigation, rendering components such as an order page,  charts, calendar, color picker, text editor; color mode selection etc.",
             "tech": [
                 "ReactJs, ",
@@ -30,6 +32,7 @@
         {
             "id": "Scrumlife",
             "title": "Scrumlife Scrumboard App",
+            "class": "project",
             "description": "Built with React and React BeautifulDND, Context API  for state data management, this project provides a means of applying scrum locally in managing tasks. It currently uses the user's local storage for storing data. With a sign-in and sign-up form managed by React Hook Form to validate a user. Common operations include create, read and delete.",
             "tech": [
                 "ReactJs, ",
@@ -43,6 +46,7 @@
         {
             "id": "PartyTyme",
             "title": "PartyTyme Cocktails",
+            "class": "project",
             "description": "This project utilises ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a beautiful, informative cocktail recipe site. Users can search for cocktails recipe by typing the cocktail name or (if they have forgotten it,) search by letter.",
             "tech": [
                 "ReactJs, ",
@@ -51,7 +55,7 @@
             ],
             "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676350295/Portfolio%20project%20Images/c_nfspyd.png",
             "url": "https://partytymecocktails.netlify.app/",
-            "github":"https://github.com/Sebastine-thrive/cocktail-hub"
+            "github": "https://github.com/Sebastine-thrive/cocktail-hub"
         }
     ]
 }

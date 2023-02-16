@@ -1,8 +1,6 @@
-
-// import { Projects } from '@/components/project/Projects';
-
 import React from 'react';
-import  ProjectDetail  from '@/components/project/ProjectDetail';
+// import  ProjectDetail  from '@/components/project/ProjectDetail';
+import ProjectDetail from "../../../src/components/project/ProjectDetail"
 
 const ProjectsPage = ( { data, pageName } ) => {
     return (
@@ -38,7 +36,7 @@ export async function getStaticProps(context) {
     // console.log(id)
 
     const { projects } = await import('/data/data.json');
-    const data = projects.filter((project) => project?.id === id)
+    const data = projects.find((project) => project?.id === id)
     return {
         props: {
             data,

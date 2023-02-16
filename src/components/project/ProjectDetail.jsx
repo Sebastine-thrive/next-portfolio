@@ -3,20 +3,22 @@ import React from 'react';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const ProjectDetail = ({ data }) => {
+const ProjectDetail = ({ data, pageName }) => {
+    console.log(data)
+    console.log(pageName)
     return (
         <div className='w-full overflow-x-hidden '>
             <div className='w-screen h-[50vh] lg:h-[60vh] relative'>
                 <div className='absolute top-0 left-0 w-full h-[50vh] lg:h-[60vh] bg-black/80 z-10' />
                 <Image
                     className='absolute z-1'
-                    src={data[0]?.image}
+                    src={data?.image}
                     alt='ecommerce project image'
                     layout='fill'
                     objectFit='cover'
                 />
                 <div className='absolute top-[70%] max-w-[1240px] w-full p-4 text-white z-10  '>
-                    <h2 className='text-center'> {data[0]?.title} </h2>
+                    <h2 className='text-center'> {data?.title} </h2>
                 </div>
             </div>
 
@@ -24,11 +26,11 @@ const ProjectDetail = ({ data }) => {
                 <div className='col-span-4'>
                     <h2>Overview</h2>
                     <p>
-                        {data[0].description}
+                        {data?.description}
                     </p>
 
                     <Link
-                        href={data[0].url}
+                        href={data?.url}
                         target='_blank'
                     >
                         <button className='px-8 py-2 mt-4 mr-8 hover:text-[white]'>
@@ -37,7 +39,7 @@ const ProjectDetail = ({ data }) => {
                     </Link>
 
                     <Link
-                        href={data[0].github}
+                        href={data?.github}
                         target='_blank'
                     >
                         <button className='px-8 py-2 mt-4 hover:text-[white]'> Code
@@ -50,7 +52,7 @@ const ProjectDetail = ({ data }) => {
                         <p className='text-center font-bold p-2'> Technologies</p>
                         <div className='lg:grid grid-cols-3 md:grid-cols-1'>
 
-                            {data[0].tech?.map((t) => (
+                            {data?.tech?.map((t) => (
                                 <p className='text-gray-600 py-2 flex items-center' key={t}>
                                     <RiRadioButtonFill className='pr-1' /> {t}
                                 </p>
