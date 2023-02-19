@@ -1,3 +1,6 @@
+import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+
 import html from '../../../public/assets/skills/html.svg';
 import css from '../../../public/assets/skills/css3.svg';
 import bootstrap from '../../../public/assets/skills/bootstrap.svg';
@@ -9,13 +12,31 @@ import saas from '../../../public/assets/skills/sass.png';
 import tailwind from '../../../public/assets/skills/tailwindcss.png';
 // import tailwind from '../../../public/assets/skills/tailwind.png';
 
-
+const  MyLinks = [
+    {
+        "href": 'https://github.com/Sebastine-thrive',
+        "icon": <FaGithub />
+    },
+    {
+        "href": 'https://www.linkedin.com/in/sebastine-ogu-b36324144',
+        "icon": <FaLinkedinIn />
+    },
+    {
+        "href": 'mailto:sebastinoptimum@gmail.com',
+        "icon": <AiOutlineMail />
+    },
+    {
+        "href": 'https://twitter.com/sebasious1',
+        "icon": <FaTwitter />
+    },
+]
 
 const Skillset = [
     {
         "id": "html",
         "name": "HTML",
-        "image": html
+        "image": html,
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
     },
     {
         "id": "css",
@@ -56,4 +77,4 @@ const Skillset = [
   
 ]
 
-export default Skillset;
+export {Skillset, MyLinks};

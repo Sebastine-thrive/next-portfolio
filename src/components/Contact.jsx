@@ -2,9 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import contact from '../../public/assets/contact/contact_image.png';
-import { AiOutlineMail } from 'react-icons/ai';
-import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { MyLinks } from './skillsData/Data';
 
 
 
@@ -32,54 +31,25 @@ export const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <h2 className='py-2'> Sebastine</h2>
-                                <p> Your Front-End Developer</p>
                                 <p className='py-4'>  I am available for freelance, contract or full-time positions. Do get in touch! </p>
                             </div>
 
                             <div>
                                 <p className='uppercase pt-8'>Connect With Me </p>
                                 <div className='flex items-center justify-between py-4'>
+                                    {
+                                        MyLinks.map((link) => (
+                                            <Link
+                                                href={link.href}
+                                                target='_blank'
 
-                                    <Link
-                                        href='https://github.com/Sebastine-thrive'
-                                        target='_blank'
-
-                                    >
-                                        <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                            <FaGithub />
-                                        </div>
-                                    </Link>
-
-                                    <Link
-                                        href='https://www.linkedin.com/in/sebastine-ogu-b36324144'
-                                        target='_blank'
-
-                                    >
-                                        <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-105 ease-in duration-400'>
-                                            <FaLinkedinIn />
-                                        </div>
-                                    </Link>
-
-                                    <Link
-                                        href='mailto:sebastinoptimum@gmail.com'
-                                        target='_blank'
-
-                                    >
-                                        <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-105 ease-in duration-400'>
-                                            <AiOutlineMail />
-                                        </div>
-                                    </Link>
-
-                                    <Link
-                                        href='https://twitter.com/sebasious1'
-                                        target='_blank'
-
-                                    >
-                                        <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-105 ease-in duration-400'>
-                                            <FaTwitter />
-                                        </div>
-                                    </Link>
+                                            >
+                                                <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400'>
+                                                    {link.icon}
+                                                </div>
+                                            </Link>
+                                        ))
+                                    }
                                 </div>
                             </div>
                         </div>

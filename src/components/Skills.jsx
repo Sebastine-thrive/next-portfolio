@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import Skillset from './skillsData/Data';
+import { Skillset } from './skillsData/Data';
 // import html_image from '../../public/assets/skills/html.svg';
 
 export const Skills = () => {
@@ -21,7 +21,10 @@ export const Skills = () => {
 
                                         <Image src={skill.image} alt='html5 logo' className=' w-[11.875rem] h-[11.25rem] p-[1.25rem]' />
                                     </div>
-                                    <span className='mt-2 capitalize'> {skill.name} </span>
+                                    <span className='mt-2 capitalize text-[#00a78e] cursor-pointer'>
+                                        <a href={skill?.url}>
+                                            {skill.name}
+                                        </a></span>
                                 </div>
                             )
                         })

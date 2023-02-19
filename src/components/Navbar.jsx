@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import { MyLinks } from './skillsData/Data';
 import logo from '../../public/assets/logo/logo1.gif';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
-// import { useRouter } from 'next/router';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+
 
 export const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -97,7 +97,7 @@ export const Navbar = () => {
                         </div>
 
                         <div className='mt-30 border-b border-gray-300 my-4'>
-                            <p className='text-orange-400 tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
+                            <p className=' let-us text-orange-400 tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
                         </div>
 
                         <div className='flex flex-col py-4 uppercase'>
@@ -125,35 +125,22 @@ export const Navbar = () => {
 
                                 <div className='flex items-center justify-between my-4 w-full sm:w[80%]'>
 
-                                    <div className='rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:shadow-green-300'>                                 <FaGithub
-                                        href='https://github.com/Sebastine-thrive'
-                                    />
-                                    </div>
-
-                                    <div className='rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:shadow-green-300'>                                 <FaLinkedinIn
-                                        href='https://www.linkedin.com/in/sebastine-ogu-b36324144'
-                                    />
-                                    </div>
-
-                                    <div className='rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:shadow-green-300'>                                 <AiOutlineMail
-                                        href='mailto:sebastinoptimum@gmail.com'
-                                    />
-                                    </div>
-
-                                    <div className='rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:shadow-green-300'>                                  <FaTwitter
-                                        href='https://twitter.com/sebasious1'
-                                    />
-                                    </div>
+                                    {MyLinks.map((links) => (
+                                        <Link
+                                            href={links.href}
+                                            target='_blank'
+                                        >
+                                            <div className='rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:shadow-green-300 hover:text-orange-400'>
+                                                {links.icon}
+                                            </div>
+                                        </Link>
+                                    ))}
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
         </div >
     )
 }

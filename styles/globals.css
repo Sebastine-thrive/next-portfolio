@@ -47,4 +47,20 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase text-white bg-[#00a78e] hover:bg-[#FB923C] 
   }
 
+.let-us {
+ background: linear-gradient(to right, #f32170,
+                    #ff6b08, #00a78e, #eedd44);
+                    background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+  }
 }
+
+/* Media Queries  */
+
+  @media(max-width: 321px) {
+    .myname{
+font-size: 18px;
+    }
+  }
+
