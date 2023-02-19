@@ -37,6 +37,7 @@ export const Main = () => {
                             <Link
                                 href={links.href}
                                 target='_blank'
+                                key={links.href}
                             >
                                 <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400'>
                                     {links.icon}

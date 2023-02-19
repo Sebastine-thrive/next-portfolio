@@ -127,6 +127,7 @@ export const Navbar = () => {
 
                                     {MyLinks.map((links) => (
                                         <Link
+                                            key={links.href}
                                             href={links.href}
                                             target='_blank'
                                         >

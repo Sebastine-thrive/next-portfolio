@@ -42,6 +42,7 @@ export const Contact = () => {
                                             <Link
                                                 href={link.href}
                                                 target='_blank'
+                                                key={link.href}
 
                                             >
                                                 <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400'>
