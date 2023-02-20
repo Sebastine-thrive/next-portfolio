@@ -3,18 +3,31 @@ import React from 'react';
 import Link from 'next/link';
 import contact from '../../public/assets/contact/contact_image.png';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import { MyLinks } from './skillsData/Data';
-
+import { MyLinks } from './data/Data';
+import { motion } from "framer-motion";
 
 
 export const Contact = () => {
     return (
         <div id='contact' className='w-full lg:h-screen h-2 mt-16' >
             <div className='max-w-[1240px] w-full m-auto px-2 py-16 text-center'>
-                <h3 className='text-xl tracking-widest uppercase text-[#00a78e]'>
+                <motion.h3
+                    className='text-xl tracking-widest uppercase text-[#00a78e]'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                >
                     Contact
-                </h3>
-                <h2 className='py-2'> Get in Touch </h2>
+                </motion.h3>
+
+                <motion.h2
+                    className='py-2'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 1, duration: 2 }}
+                >
+                    Get in Touch
+                </motion.h2>
+
                 <div className='grid lg:grid-cols-5 gap-8'>
 
                     {/* left part of the contact */}
@@ -107,7 +120,6 @@ export const Contact = () => {
                                     >
                                     </textarea>
                                 </div>
-
                                 <button className='w-full p-4 text-white mt-4'> Send Message </button>
                             </form>
                         </div>

@@ -1,17 +1,28 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-// import { AiTwotoneFileMarkdown } from 'react-icons/ai';
+import { motion } from "framer-motion";
 
-// import { ProjectItem } from './ProjectItem';
 
 export const ProjectItems = ({ data }) => {
-    // console.log(data)
     return (
-        <div id='projects' className='w-full min-h-screen px-4 my-16'>
+        <div id='projects' className='w-full min-h-screen px-4 my-16 overflow-x-hidden'>
             <div className='max-w-[1240px] px-4 py-16 mx-auto'>
-                <h3 className='text-[#00a78e] uppercase tracking-widest  text-xl text-center py-2'>Portfolio</h3>
-                <h2 className='text-center'>Some of my projects </h2>
+                <motion.h3
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 1, duration: 2 }}
+                    className='text-[#00a78e] uppercase tracking-widest  text-xl text-center py-2'
+                >Portfolio
+                </motion.h3>
+
+                <motion.h2
+                    initial={{ x: -500, opacity: 0.7 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 2 }}
+                    className='text-center'
+                >Some of my projects
+                </motion.h2>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 
                     {data.map((project) => {

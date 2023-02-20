@@ -1,23 +1,28 @@
 import React from 'react';
 import Image from 'next/image';
 import myImage from '../../public/sebastine.jpg';
-import Link from 'next/link';
+import { motion } from "framer-motion";
 
 export const About = () => {
     return (
         <div id='about' className='w-full text-gray-700 min-h-screen md:h-screen mx-auto px-6 flex items-center my-16'>
             <div className='max-w-[1240px] pt-12 mx-[2rem] md:flex  lg:grid lg:grid-cols-4 gap-8'>
                 <div className='col-span-3'>
-                    <h3 className='text-[#00a78e] py-2 text-xl uppercase tracking-widest text-center '>About Me</h3>
+                    <motion.h3
+                        className='text-[#00a78e] py-2 text-xl uppercase tracking-widest text-center'
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 2.5 }}
+                    >
+                        About Me
+                    </motion.h3>
                     {/* <h2 className='text-center'>Your Web Developer</h2> */}
 
 
                     <p className="p-4 text-lg  bg-white rounded-lg font-serif ">
-                        As an experienced former Mathematics instructor, I am able to bring my ability to break down complex concepts and explain them in a clear and concise manner to my work as a web developer.
+                        As an experienced former Mathematics instructor, I am able to bring my ability to break down complex concepts to my work as a web developer.
                         <br />
                         <br />
-
-
 
                         As a web developer, I am highly-skilled in creating and maintaining websites and web applications. I have experience in front-end  technologies: a strong understanding of HTML, CSS, JavaScript; CSS frameworks/libraries such as Bootstrap, SASS, TailwindCSS; Javascript libraries (REACT) and frameworks(NEXTJS) and various programming technologies. I am always looking for ways to improve the user experience and make websites more visually appealing, responsive and accessible.
                         <br />

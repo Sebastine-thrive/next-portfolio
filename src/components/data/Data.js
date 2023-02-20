@@ -12,7 +12,23 @@ import saas from '../../../public/assets/skills/sass.png';
 import tailwind from '../../../public/assets/skills/tailwindcss.png';
 // import tailwind from '../../../public/assets/skills/tailwind.png';
 
+const MyNavbarLinks = [
+    {
+        "title": "about"
+    },
+    {
+        "title": "skills"
+    },
+    {
+        "title": "projects"
+    },
+    {
+        "title": "contact",
+    }
+]
+
 const  MyLinks = [
+
     {
         "href": 'https://github.com/Sebastine-thrive',
         "icon": <FaGithub />
@@ -77,4 +93,4 @@ const Skillset = [
   
 ]
 
-export {Skillset, MyLinks};
+export { Skillset, MyLinks, MyNavbarLinks};

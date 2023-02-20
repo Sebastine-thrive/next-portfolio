@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { motion } from "framer-motion";
-import { MyLinks } from './skillsData/Data';
+import { MyLinks } from './data/Data';
 
 export const Main = () => {
     return (
@@ -9,24 +9,24 @@ export const Main = () => {
             <div className='max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center'>
                 <div>
 
-                    <p className='px-2  justify-center font-normal '> 
-                        <span className='sm:text-[2rem]  md:text-[2.5rem]'> Hi, I'm </span> 
+                    <h1 className='px-2 justify-center font-normal  '>
+                        <span className=' '>
+                            Hi! I'm
+                        </span>
                         <motion.span
-                            className=' pl-2 sm:text-[2.5rem]  md:text-[3rem] font-bold text-[#00a78e]'
+                            className='font-bold text-[#00a78e] sm:text-6xl md:text-7xl '
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1.5 }}
-                            viewport={{ once: true }}
+                            transition={{ type: "spring", bounce: 1, duration: 2, delay: 1 }}
                         > Sebastine
                         </motion.span>
-                    </p>
-                    <p className='text-orange-400 sm:text-[1.5rem] sm:py-1 lg:text-[1.5rem] lg:py-2 tracking-wide text-lg'> A Front-end Web Developer</p>
+                    </h1>
+                    <p className='text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg'> A Front-end Web Developer</p>
                     <motion.p
                         animate={{
                             scale: [1, 1.5, 1.5, 1]
                         }}
-                        transition={{ delay: 3 }}
-
+                        transition={{ delay: 2 }}
                         className=' let-us text-gray-900 text-sm sm:py-1 tracking-widest lg:py-2'>Let's build something innovative together </motion.p>
 
                     <p className='py-8 text-gray-600 max-w-[70%] m-auto text-base'> I'm focused on building and designing exceptional digital experiences that are responsive, interactive and scalable.</p>
@@ -46,7 +46,6 @@ export const Main = () => {
                         ))}
                     </div>
                 </div>
-
             </div>
         </div>
     )

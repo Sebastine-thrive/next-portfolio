@@ -19,6 +19,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* overflow-y: hidden; */
 } 
 
 
@@ -56,11 +57,4 @@ html {
   }
 }
 
-/* Media Queries  */
-
-  @media(max-width: 321px) {
-    .myname{
-font-size: 18px;
-    }
-  }
 

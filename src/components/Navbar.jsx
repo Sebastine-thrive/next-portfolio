@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import { MyLinks } from './skillsData/Data';
+import { MyLinks, MyNavbarLinks } from './data/Data';
 import logo from '../../public/assets/logo/logo1.gif';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
@@ -48,18 +48,14 @@ export const Navbar = () => {
                         <Link href="/" >
                             <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>Home</li>
                         </Link>
-                        <Link href="/#about" scroll={false}>
-                            <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>About</li>
-                        </Link>
-                        <Link href="/#skills" scroll={false}>
-                            <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>Skills</li>
-                        </Link>
-                        <Link href="/#projects" scroll={false}>
-                            <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>Projects</li>
-                        </Link>
-                        <Link href="/#contact" scroll={false}>
-                            <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>Contact</li>
-                        </Link>
+
+                        {MyNavbarLinks.map((navlink) => (
+                            <Link href={`/${"#" + navlink.title}`} scroll={false} >
+                                <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>{navlink.title}</li>
+                            </Link>
+                        ))
+                        }
+
                     </ul>
                     <div onClick={handleNav} className='md:hidden'>
                         <AiOutlineMenu size={25} />
@@ -97,26 +93,28 @@ export const Navbar = () => {
                         </div>
 
                         <div className='mt-30 border-b border-gray-300 my-4'>
-                            <p className=' let-us text-orange-400 tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
+                            <p
+                                animate={{
+                                    scale: [1, 1.5, 1.5, 1]
+                                }}
+                                transition={{ delay: 2 }}
+                                className=' let-us text-orange-400 tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
                         </div>
 
                         <div className='flex flex-col py-4 uppercase'>
                             <ul className=''>
-                                <Link href="/" >
-                                    <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400'>Home</li>
+                                <Link href="/">
+                                    <li onClick={() => setNav(false)} className='py-4 text-sm  hover:border-b hover:text-orange-400'>Home</li>
                                 </Link>
-                                <Link href="/#about" scroll={false}>
-                                    <li onClick={() => setNav(false)} className='py-4 text-sm  hover:border-b hover:text-orange-400'>About</li>
-                                </Link>
-                                <Link href="/#skills" scroll={false}>
-                                    <li onClick={() => setNav(false)} className='py-4 text-sm  hover:border-b hover:text-orange-400'>Skills</li>
-                                </Link>
-                                <Link href="/#projects" scroll={false}>
-                                    <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400'>Projects</li>
-                                </Link>
-                                <Link href="/#contact" scroll={false}>
-                                    <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400'>Contact</li>
-                                </Link>
+
+                                {MyNavbarLinks.map((navlink) => (
+                                    <Link href={`/${"#" + navlink.title}`} scroll={false} >
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400'>{navlink.title}</li>
+                                    </Link>
+                                ))
+                                }
+
+
                             </ul>
                             <div className='pt-10'>
                                 <p className='uppercase tracking-widest text-[#00a78e]'>
