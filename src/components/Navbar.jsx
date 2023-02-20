@@ -50,7 +50,7 @@ export const Navbar = () => {
                         </Link>
 
                         {MyNavbarLinks.map((navlink) => (
-                            <Link href={`/${"#" + navlink.title}`} scroll={false} >
+                            <Link href={`/${"#" + navlink.title}`} scroll={false} key={navlink.title} >
                                 <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>{navlink.title}</li>
                             </Link>
                         ))
@@ -108,7 +108,7 @@ export const Navbar = () => {
                                 </Link>
 
                                 {MyNavbarLinks.map((navlink) => (
-                                    <Link href={`/${"#" + navlink.title}`} scroll={false} >
+                                    <Link href={`/${"#" + navlink.title}`} scroll={false} key={navlink.title} >
                                         <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400'>{navlink.title}</li>
                                     </Link>
                                 ))
