@@ -3,23 +3,21 @@ import React from 'react';
 import { Skillset } from './data/Data';
 import { motion } from "framer-motion";
 
-// import html_image from '../../public/assets/skills/html.svg';
-
 export const Skills = () => {
     return (
-        <div id='skills' className='w-full min-h-screen md:h-screen  px-2 my-16 py-8 overflow-hidden'>
-            <div className='max-w-[1240px] mx-auto py-8 text-center justify-center'>
+        <div id='skills' className='w-full min-h-screen md:h-screen px-2 my-16  py-8 '>
+            <div className='max-w-[1240px] mx-auto py-16 text-center justify-center'>
                 <motion.h3
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ delay: 1, duration:2 }}
+                    transition={{ delay: 1, duration: 2 }}
                     className='py-2 text-[#00a78e] text-center text-xl tracking-widest uppercase'
                 >My Skills
                 </motion.h3>
                 <motion.h2
-                    initial={{ x: 500, opacity:0.7 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2 }}
+                    initial={{ y: -100, opacity: 0.4 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 1, duration: 2 }}
                 >Technologies I use
                 </motion.h2>
 
@@ -28,16 +26,18 @@ export const Skills = () => {
                     {
                         Skillset.map((skill) => {
                             return (
-                                <div className='text-center flex flex-col w-[12rem]' key={skill.id}>
+                                <div className='flex flex-wrap text-center' key={skill.id}>
 
-                                    <div className='bg-white inline-flex flex-col hover:scale-105 ease-in duration-500 rounded-xl shadow-[0_3px_10px_rgba(0,158,96,1)] '>
+                                    <div className='inline-flex flex-col hover:scale-105 ease-in duration-500'>
 
-                                        <Image src={skill.image} alt='html5 logo' className=' w-[11.875rem] h-[11.25rem] p-[1.25rem]' />
+                                        <Image src={skill.image} alt='html5 logo' className=' bg-white rounded-xl shadow-[0_3px_10px_rgba(0,158,96,1)] w-[5.5rem] h-[5.5rem] m-0 p-[5px] md:w-[7.5rem] md:h-[7.5rem]  md:p-[20px] md:m-[5px] lg:w-[11.875rem] lg:h-[11.25rem]' />
+                                        <span className='mt-2 capitalize text-[#00a78e] cursor-pointer'>
+                                            <a href={skill?.url}>
+                                                {skill.name}
+                                            </a>
+                                        </span>
                                     </div>
-                                    <span className='mt-2 capitalize text-[#00a78e] cursor-pointer'>
-                                        <a href={skill?.url}>
-                                            {skill.name}
-                                        </a></span>
+
                                 </div>
                             )
                         })

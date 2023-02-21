@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 export const About = () => {
     return (
-        <div id='about' className='w-full text-gray-700 min-h-screen md:h-screen mx-auto px-6 flex items-center my-16'>
-            <div className='max-w-[1240px] pt-12 mx-[2rem] md:flex  lg:grid lg:grid-cols-4 gap-8'>
-                <div className='col-span-3'>
+        <div id='about' className='w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center my-16'>
+            <div className='max-w-[1240px] pt-24 mx-[1rem] sm:flex sm:w-screen  lg:grid lg:grid-cols-4 gap-8'>
+                <div className='sm:flex sm:flex-col sm:m-0  lg:col-span-3 '>
                     <motion.h3
                         className='text-[#00a78e] py-2 text-xl uppercase tracking-widest text-center'
                         initial={{ opacity: 0 }}
@@ -16,10 +16,9 @@ export const About = () => {
                     >
                         About Me
                     </motion.h3>
-                    {/* <h2 className='text-center'>Your Web Developer</h2> */}
 
 
-                    <p className="p-4 text-lg  bg-white rounded-lg font-serif ">
+                    <p className="p-4 sm:w-full sm:text-sm md:text-lg  bg-white rounded-lg font-serif ">
                         As an experienced former Mathematics instructor, I am able to bring my ability to break down complex concepts to my work as a web developer.
                         <br />
                         <br />
@@ -40,7 +39,7 @@ export const About = () => {
                         I am a team player who is able to work well with others and take on leadership roles when necessary, to deliver high-quality websites and web applications.
                     </p>
                 </div>
-                <div className='md:flex md:align-center  lg:w-[120%] h-[100%] px-auto col-span-1 justify-center items-center shadow-xl shadow-gray rounded-xl p-4 hover:scale-101 ease-in duration-500'>
+                <div className='md:flex md:align-center md:mt-[2rem]  lg:w-[120%] h-[100%] lg:mt-0 px-auto col-span-1 justify-center items-center shadow-xl shadow-gray rounded-xl py-4 hover:scale-101 ease-in duration-500'>
                     <Image className='rounded-xl' width='auto' height='auto' src={myImage} alt="Sebastine's picture" />
                 </div>
 

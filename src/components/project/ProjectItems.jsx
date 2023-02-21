@@ -6,21 +6,21 @@ import { motion } from "framer-motion";
 
 export const ProjectItems = ({ data }) => {
     return (
-        <div id='projects' className='w-full min-h-screen px-4 my-16 overflow-x-hidden'>
-            <div className='max-w-[1240px] px-4 py-16 mx-auto'>
+        <div id='projects' className='w-full min-h-screen px-4 my-16'>
+            <div className='max-w-[1240px] px-4 pt-24 pb-16 mx-auto'>
                 <motion.h3
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ delay: 1, duration: 2 }}
+                    transition={{ delay: 0.5 }}
                     className='text-[#00a78e] uppercase tracking-widest  text-xl text-center py-2'
                 >Portfolio
                 </motion.h3>
 
                 <motion.h2
-                    initial={{ x: -500, opacity: 0.7 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 2 }}
-                    className='text-center'
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay:1, duration: 2 }}
+                    className='text-center '
                 >Some of my projects
                 </motion.h2>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>

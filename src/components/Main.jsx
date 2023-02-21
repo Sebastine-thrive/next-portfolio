@@ -5,7 +5,7 @@ import { MyLinks } from './data/Data';
 
 export const Main = () => {
     return (
-        <div id='home' className='w-full h-screen text-center m-0'>
+        <div id='home' className='w-full h-screen text-center mx-auto'>
             <div className='max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center'>
                 <div>
 
@@ -29,7 +29,7 @@ export const Main = () => {
                         transition={{ delay: 2 }}
                         className=' let-us text-gray-900 text-sm sm:py-1 tracking-widest lg:py-2'>Let's build something innovative together </motion.p>
 
-                    <p className='py-8 text-gray-600 max-w-[70%] m-auto text-base'> I'm focused on building and designing exceptional digital experiences that are responsive, interactive and scalable.</p>
+                    <p className='py-8 text-gray-600 max-w-[80%] m-auto text-base'> I'm focused on building and designing exceptional digital experiences that are responsive, interactive and scalable.</p>
 
                     <div className='flex items-center justify-between  m-auto py-4 max-w-[330px]'>
 

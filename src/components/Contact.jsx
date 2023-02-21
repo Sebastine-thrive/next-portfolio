@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 export const Contact = () => {
     return (
-        <div id='contact' className='w-full lg:h-screen h-2 mt-16' >
-            <div className='max-w-[1240px] w-full m-auto px-2 py-16 text-center'>
+        <div id='contact' className='w-full lg:h-screen h-2 mt-16 mx-auto' >
+            <div className='max-w-[1240px] w-full mx-auto px-2 pt-24 pb-12 text-center'>
                 <motion.h3
                     className='text-xl tracking-widest uppercase text-[#00a78e]'
                     initial={{ opacity: 0 }}
@@ -21,8 +21,8 @@ export const Contact = () => {
 
                 <motion.h2
                     className='py-2'
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    initial={{ opacity: 0.6, y:80 }}
+                    whileInView={{ opacity: 1, y:0 }}
                     transition={{ delay: 1, duration: 2 }}
                 >
                     Get in Touch

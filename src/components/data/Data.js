@@ -10,7 +10,7 @@ import react from '../../../public/assets/skills/react.svg';
 import git from '../../../public/assets/skills/git.svg';
 import saas from '../../../public/assets/skills/sass.png';
 import tailwind from '../../../public/assets/skills/tailwindcss.png';
-// import tailwind from '../../../public/assets/skills/tailwind.png';
+import next from '../../../public/assets/skills/nextjs.png'
 
 const MyNavbarLinks = [
     {
@@ -57,37 +57,50 @@ const Skillset = [
     {
         "id": "css",
         "name": "CSS",
-        "image": css
+        "image": css,
+        "url":"https://developer.mozilla.org/en-US/docs/Learn/CSS"
     },
     {
         "id": "bootstrap",
         "name": "bootstrap",
-        "image": bootstrap
+        "image": bootstrap,
+        "url":"https://getbootstrap.com/docs/5.0/getting-started/introduction/"
     },
     {
         "id": "Saas",
         "name": "Saas",
-        "image": saas
+        "image": saas,
+        "url":"https://sass-lang.com/"
     },
     {
         "id": "TailwindCSS",
         "name": "TailwindCSS",
-        "image": tailwind
+        "image": tailwind,
+        "url": "https://tailwindcss.com/"
     },
     {
         "id": "Javascript",
         "name": "Javascript",
-        "image": javascript
+        "image": javascript,
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
     },
     {
         "id": "React",
         "name": "React",
-        "image": react
+        "image": react,
+        "url":"https://reactjs.org/"
+    },
+    {
+        "id": "Next",
+        "name": "Next Js",
+        "image": next,
+        "url":"https://nextjs.org/"
     },
     {
         "id": "Git",
         "name": "git",
-        "image": git
+        "image": git,
+        "url": "https://git-scm.com/"
     },
 
   
