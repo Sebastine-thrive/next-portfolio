@@ -61,6 +61,12 @@ const Skillset = [
         "url":"https://developer.mozilla.org/en-US/docs/Learn/CSS"
     },
     {
+        "id": "Git",
+        "name": "git",
+        "image": git,
+        "url": "https://git-scm.com/"
+    },
+    {
         "id": "bootstrap",
         "name": "bootstrap",
         "image": bootstrap,
@@ -96,12 +102,7 @@ const Skillset = [
         "image": next,
         "url":"https://nextjs.org/"
     },
-    {
-        "id": "Git",
-        "name": "git",
-        "image": git,
-        "url": "https://git-scm.com/"
-    },
+
 
   
 ]

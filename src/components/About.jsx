@@ -9,7 +9,7 @@ export const About = () => {
             <div className='max-w-[1240px] pt-24 mx-[1rem] sm:flex sm:w-screen  lg:grid lg:grid-cols-4 gap-8'>
                 <div className='sm:flex sm:flex-col sm:m-0  lg:col-span-3 '>
                     <motion.h3
-                        className='text-[#00a78e] py-2 text-xl uppercase tracking-widest text-center'
+                        className='text-[#00a78e] py-2 font-extrabold text-xl uppercase tracking-widest text-center'
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 2.5 }}

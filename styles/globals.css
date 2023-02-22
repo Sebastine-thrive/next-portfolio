@@ -5,7 +5,8 @@
 
 html {
   scroll-behavior: smooth;
-    font-family: "Georgia", serif;
+  font-family: "Georgia", serif;
+ /* font-family:  "Roboto", sans-serif; */
     
 
 }
@@ -28,7 +29,12 @@ html {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3 {
+    @apply font-extrabold
+
+  }
+
+ h4, h5, h6 {
     @apply font-bold
   }
 

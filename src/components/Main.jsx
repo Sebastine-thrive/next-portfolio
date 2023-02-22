@@ -10,7 +10,7 @@ export const Main = () => {
                 <div>
 
                     <h1 className='px-2 justify-center font-normal  '>
-                        <span className=' '>
+                        <span className='text-[24px] md:text-[35px] font-bold '>
                             Hi! I'm
                         </span>
                         <motion.span
@@ -21,15 +21,16 @@ export const Main = () => {
                         > Sebastine
                         </motion.span>
                     </h1>
-                    <p className='text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg'> A Front-end Web Developer</p>
+                    <p className=' text-gray-600  font-semibold py-1 sm:text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg'> A Front-end Web Developer</p>
                     <motion.p
                         animate={{
                             scale: [1, 1.5, 1.5, 1]
                         }}
                         transition={{ delay: 2 }}
-                        className=' let-us text-gray-900 text-sm sm:py-1 tracking-widest lg:py-2'>Let's build something innovative together </motion.p>
+                        className=' let-us shadow-sm font-semibold shadow-green-400 sm:shadow-none text-gray-900 py-2 px-1 text-sm sm:py-1 tracking-widest lg:py-2'>Let's build something innovative together
+                    </motion.p>
 
-                    <p className='py-8 text-gray-600 max-w-[80%] m-auto text-base'> I'm focused on building and designing exceptional digital experiences that are responsive, interactive and scalable.</p>
+                    <p className='py-8 hidden sm:block font-semibold text-gray-600 max-w-[80%] m-auto text-base'> I'm focused on building and designing exceptional digital experiences that are responsive, interactive and scalable.</p>
 
                     <div className='flex items-center justify-between  m-auto py-4 max-w-[330px]'>
 

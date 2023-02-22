@@ -46,12 +46,12 @@ export const Navbar = () => {
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href="/" >
-                            <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>Home</li>
+                            <li className='ml-10 text-sm font-semibold text-[#00a78e] uppercase hover:border-b hover:text-orange-400'>Home</li>
                         </Link>
 
                         {MyNavbarLinks.map((navlink) => (
                             <Link href={`/${"#" + navlink.title}`} scroll={false} key={navlink.title} >
-                                <li className='ml-10 text-sm font-medium uppercase hover:border-b hover:text-orange-400'>{navlink.title}</li>
+                                <li className='ml-10 text-sm font-semibold text-[#00a78e] uppercase hover:border-b hover:text-orange-400'>{navlink.title}</li>
                             </Link>
                         ))
                         }
@@ -81,7 +81,7 @@ export const Navbar = () => {
                                 <Image src={logo}
                                     width={100}
                                     height={40}
-                                    className='cursor-pointer'
+                                    className='cursor-pointer '
                                     alt='logo'
                                 />
                             </Link>
@@ -98,18 +98,18 @@ export const Navbar = () => {
                                     scale: [1, 1.5, 1.5, 1]
                                 }}
                                 transition={{ delay: 2 }}
-                                className=' let-us text-orange-400 tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
+                                className=' let-us text-orange-400 font-medium tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
                         </div>
 
                         <div className='flex flex-col py-4 uppercase'>
                             <ul className=''>
                                 <Link href="/">
-                                    <li onClick={() => setNav(false)} className='py-4 text-sm  hover:border-b hover:text-orange-400'>Home</li>
+                                    <li onClick={() => setNav(false)} className='py-4 text-sm text-[00a78e] font-medium text-[#00a78e] hover:border-b hover:text-orange-400'>Home</li>
                                 </Link>
 
                                 {MyNavbarLinks.map((navlink) => (
                                     <Link href={`/${"#" + navlink.title}`} scroll={false} key={navlink.title} >
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400'>{navlink.title}</li>
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400 font-medium text-[#00a78e]'>{navlink.title}</li>
                                     </Link>
                                 ))
                                 }

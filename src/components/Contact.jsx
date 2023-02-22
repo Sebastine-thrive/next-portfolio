@@ -20,27 +20,27 @@ export const Contact = () => {
                 </motion.h3>
 
                 <motion.h2
-                    className='py-2'
-                    initial={{ opacity: 0.6, y:80 }}
+                    className='py-2 z-10'
+                    initial={{ opacity: 0.5, y:80 }}
                     whileInView={{ opacity: 1, y:0 }}
                     transition={{ delay: 1, duration: 2 }}
                 >
                     Get in Touch
                 </motion.h2>
 
-                <div className='grid lg:grid-cols-5 gap-8'>
+                <div className='grid lg:grid-cols-5 gap-8 z-50'>
 
                     {/* left part of the contact */}
 
                     <div className='col-span-3 lg:col-span-2 w-full h-full  shadow-xl  rounded-xl p-4'>
                         <div className='lg:p-4 h-full'>
-                            <div className='w-full py-2'>
+                            <div className='w-full py-2 '>
                                 <Image
                                     src={contact}
                                     width={200}
                                     height={220}
                                     alt='typing message image'
-                                    className='w-full rounded-xl  hover:scale-105 ease-in duration-300'
+                                    className='w-full rounded-xl z-20 hover:scale-105 ease-in duration-300'
                                 />
                             </div>
                             <div>
@@ -48,7 +48,7 @@ export const Contact = () => {
                             </div>
 
                             <div>
-                                <p className='uppercase pt-8'>Connect With Me </p>
+                                <p className='uppercase pt-8 font-semibold'>Connect With Me </p>
                                 <div className='flex items-center justify-between py-4'>
                                     {
                                         MyLinks.map((link) => (

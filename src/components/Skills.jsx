@@ -11,7 +11,7 @@ export const Skills = () => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 1, duration: 2 }}
-                    className='py-2 text-[#00a78e] text-center text-xl tracking-widest uppercase'
+                    className='py-2 text-[#00a78e] text-center text-xl font-bold tracking-widest uppercase'
                 >My Skills
                 </motion.h3>
                 <motion.h2
