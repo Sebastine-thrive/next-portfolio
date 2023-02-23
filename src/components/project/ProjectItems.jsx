@@ -12,25 +12,29 @@ export const ProjectItems = ({ data }) => {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ delay: 0.5 }}
-                    className='text-[#00a78e] uppercase tracking-widest  text-xl text-center py-2'
+                    className='title text-[#00a78e] uppercase tracking-widest  text-xl text-center py-2'
                 >Portfolio
                 </motion.h3>
 
                 <motion.h2
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ delay:1, duration: 2 }}
+                    transition={{ delay: 1, duration: 2 }}
                     className='text-center '
                 >Some of my projects
                 </motion.h2>
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className=' flex flex-wrap justify-center m-auto'>
 
                     {data.map((project) => {
                         return (
-                            <div className='flex' key={project.id}>
+                            <div
+                                className='flex  sm:w-full md:w-[50%] lg:w-[33%] justify-center px-4'
+                                key={project.id}
+                            >
 
-                                <div className='relative flex items-center justify-center mt-8 h-auto w-full shadow-xl shadow-green-200 rounded-xl p-4 group hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371]'>
-                                    <div>
+                                <div className=' relative flex   items-center justify-center  mt-8 h-auto w-full  shadow-xl shadow-green-200 rounded-xl p-4 group hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371]'
+                                >
+                                    <div className='p-4'>
                                         <Image
                                             src={project.image}
                                             alt='ecommerce project image'

@@ -27,7 +27,7 @@ const MyNavbarLinks = [
     }
 ]
 
-const  MyLinks = [
+const MyLinks = [
 
     {
         "href": 'https://github.com/Sebastine-thrive',
@@ -58,7 +58,7 @@ const Skillset = [
         "id": "css",
         "name": "CSS",
         "image": css,
-        "url":"https://developer.mozilla.org/en-US/docs/Learn/CSS"
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS"
     },
     {
         "id": "Git",
@@ -70,13 +70,13 @@ const Skillset = [
         "id": "bootstrap",
         "name": "bootstrap",
         "image": bootstrap,
-        "url":"https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+        "url": "https://getbootstrap.com/docs/5.0/getting-started/introduction/"
     },
     {
         "id": "Saas",
         "name": "Saas",
         "image": saas,
-        "url":"https://sass-lang.com/"
+        "url": "https://sass-lang.com/"
     },
     {
         "id": "TailwindCSS",
@@ -94,17 +94,17 @@ const Skillset = [
         "id": "React",
         "name": "React",
         "image": react,
-        "url":"https://reactjs.org/"
+        "url": "https://reactjs.org/"
     },
     {
         "id": "Next",
         "name": "Next Js",
         "image": next,
-        "url":"https://nextjs.org/"
+        "url": "https://nextjs.org/"
     },
 
 
-  
+
 ]
 
-export { Skillset, MyLinks, MyNavbarLinks};
+export { Skillset, MyLinks, MyNavbarLinks };

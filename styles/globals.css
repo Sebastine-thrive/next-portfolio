@@ -61,6 +61,10 @@ html {
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
   }
+
+  .title {
+     font-family: "Kaushan Script", cursive;
+  }
 }
 
 

@@ -46,12 +46,12 @@ export const Navbar = () => {
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href="/" >
-                            <li className='ml-10 text-sm font-semibold text-[#00a78e] uppercase hover:border-b hover:text-orange-400'>Home</li>
+                            <li className='ml-10 text-sm font-semibold text-[#00a78e] capitalize hover:border-b hover:text-orange-400'>Home</li>
                         </Link>
 
                         {MyNavbarLinks.map((navlink) => (
                             <Link href={`/${"#" + navlink.title}`} scroll={false} key={navlink.title} >
-                                <li className='ml-10 text-sm font-semibold text-[#00a78e] uppercase hover:border-b hover:text-orange-400'>{navlink.title}</li>
+                                <li className='ml-10 text-sm font-semibold text-[#00a78e] capitalize hover:border-b hover:text-orange-400'>{navlink.title}</li>
                             </Link>
                         ))
                         }
@@ -104,12 +104,12 @@ export const Navbar = () => {
                         <div className='flex flex-col py-4 uppercase'>
                             <ul className=''>
                                 <Link href="/">
-                                    <li onClick={() => setNav(false)} className='py-4 text-sm text-[00a78e] font-medium text-[#00a78e] hover:border-b hover:text-orange-400'>Home</li>
+                                    <li onClick={() => setNav(false)} className='py-4 capitalize text-sm text-[00a78e] font-semibold text-[#00a78e] hover:border-b hover:text-orange-400'>Home</li>
                                 </Link>
 
                                 {MyNavbarLinks.map((navlink) => (
                                     <Link href={`/${"#" + navlink.title}`} scroll={false} key={navlink.title} >
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:border-b hover:text-orange-400 font-medium text-[#00a78e]'>{navlink.title}</li>
+                                        <li onClick={() => setNav(false)} className='py-4 capitalize text-sm hover:border-b hover:text-orange-400 font-semibold text-[#00a78e]'>{navlink.title}</li>
                                     </Link>
                                 ))
                                 }
@@ -129,7 +129,7 @@ export const Navbar = () => {
                                             href={links.href}
                                             target='_blank'
                                         >
-                                            <div className='rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300 hover:shadow-green-300 hover:text-orange-400'>
+                                            <div className='rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300  hover:text-orange-400 hover:shadow-orange-400'>
                                                 {links.icon}
                                             </div>
                                         </Link>

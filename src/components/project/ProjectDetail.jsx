@@ -4,8 +4,6 @@ import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
 const ProjectDetail = ({ data }) => {
-    // console.log(data)
-    // console.log(pageName)
     return (
         <div className='w-full overflow-x-hidden '>
             <div className='w-screen h-[50vh] lg:h-[60vh] relative'>
@@ -22,7 +20,7 @@ const ProjectDetail = ({ data }) => {
                 </div>
             </div>
 
-            <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-3 gap-8 pt-8 mb-8'>
+            <div className='max-w-[1240px] mx-auto p-4 grid md:grid-cols-3 gap-8 pt-8 mb-8'>
                 <div className='col-span-4'>
                     <h2>Overview</h2>
                     <p>

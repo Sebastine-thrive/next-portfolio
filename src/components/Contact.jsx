@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export const Contact = () => {
     return (
         <div id='contact' className='w-full lg:h-screen h-2 mt-16 mx-auto' >
-            <div className='max-w-[1240px] w-full mx-auto px-2 pt-24 pb-12 text-center'>
+            <div className='title  max-w-[1240px] w-full mx-auto px-2 pt-24 pb-12 text-center'>
                 <motion.h3
                     className='text-xl tracking-widest uppercase text-[#00a78e]'
                     initial={{ opacity: 0 }}
@@ -21,8 +21,8 @@ export const Contact = () => {
 
                 <motion.h2
                     className='py-2 z-10'
-                    initial={{ opacity: 0.5, y:80 }}
-                    whileInView={{ opacity: 1, y:0 }}
+                    initial={{ opacity: 0.5, y: 80 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, duration: 2 }}
                 >
                     Get in Touch
@@ -32,7 +32,7 @@ export const Contact = () => {
 
                     {/* left part of the contact */}
 
-                    <div className='col-span-3 lg:col-span-2 w-full h-full  shadow-xl  rounded-xl p-4'>
+                    <div className='col-span-3 lg:col-span-2 w-full h-full  shadow-xl  rounded-[1rem] p-4'>
                         <div className='lg:p-4 h-full'>
                             <div className='w-full py-2 '>
                                 <Image
@@ -58,7 +58,8 @@ export const Contact = () => {
                                                 key={link.href}
 
                                             >
-                                                <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400'>
+                                                <div className='rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 
+                                                hover:text-orange-400 hover:shadow-orange-400'>
                                                     {link.icon}
                                                 </div>
                                             </Link>
@@ -70,53 +71,46 @@ export const Contact = () => {
                     </div>
 
                     {/* Right part */}
-                    <div className='col-span-3 w-full h-auto shadow-xl  rounded-xl lg:p-4'>
+                    <div className='col-span-3 w-full h-auto shadow-xl  rounded-[1rem] lg:p-4'>
                         <div className='p-4'>
 
-                            <form action="https://formspree.io/f/xyyobbal" method="POST">                                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
+                            <form action="https://formspree.io/f/xyyobbal" method="POST">                                
+                                <div className='grid md:grid-cols-2 gap-4 w-full py-2 my-4'>
 
-                                <div className='flex flex-col'>
-                                    <label className='uppercase text-sm py-2'> Name
-                                    </label>
+                                <div className='flex flex-col '>
                                     <input
-                                        className='border-2 rounded-lg p-3 flex ' type="text"
+                                        className='border-2 rounded-lg p-3 flex' placeholder='Name' type="text"
                                         name='name'
                                     />
                                 </div>
 
                                 <div className='flex flex-col'>
-                                    <label className='uppercase text-sm py-2'>Phone Number
-                                    </label>
                                     <input
-                                        className='border-2 rounded-lg p-3 flex ' type="text" name='phone Number'
+                                        className='border-2 rounded-lg p-3 flex ' type="number" name='phone Number' placeholder='Phone Number'
                                     />
                                 </div>
                             </div>
 
-                                <div className='flex flex-col py-2' >
-                                    <label className='uppercase text-sm py-2'>EmaIl
-                                    </label>
+                                <div className='flex flex-col py-2  my-4' >
                                     <input
-                                        className='border-2 rounded-lg p-3 flex '
-                                        type="email" name='email'
+                                        className='border-2 rounded-lg p-3 flex'
+                                        type="email" name='email' placeholder='Email from'
                                     />
                                 </div>
 
-                                <div className='flex flex-col py-2' >
-                                    <label className='uppercase text-sm py-2'> subject
-                                    </label>
+                                <div className='flex flex-col py-2  my-4'>
                                     <input
                                         className='border-2 rounded-lg p-3 flex '
-                                        type="text" name='subject'
+                                        type="text" name='subject' placeholder='Subject'
                                     />
                                 </div>
-                                <div className='flex flex-col py-2' >
-                                    <label className='uppercase text-sm py-2'>Message
-                                    </label>
+                                <div className='flex flex-col py-2 my-4' >
                                     <textarea
                                         className='border-2 rounded-lg p-3 border-gray-300'
                                         type='text'
                                         name='message'
+                                        placeholder='Message'
+                                        cols="30" rows="4"
                                     >
                                     </textarea>
                                 </div>
@@ -124,11 +118,11 @@ export const Contact = () => {
                             </form>
                         </div>
                     </div>
-                </div>
+                </div >
 
                 {/* Scroll-to-top button */}
 
-                <div className='flex justify-center py-12'>
+                < div className='flex justify-center py-12' >
                     <Link href='/' >
                         <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <HiOutlineChevronDoubleUp
@@ -137,9 +131,9 @@ export const Contact = () => {
                             />
                         </div>
                     </Link>
-                </div>
+                </div >
 
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
