@@ -1,6 +1,21 @@
 {
     "projects": [
         {
+            "id": "PartyTyme Cocktails",
+            "title": "PartyTyme Cocktails",
+            "class": "projects",
+            "description": "This project utilises ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a beautiful, informative cocktail recipe site. Users can search for cocktails recipe by typing a letter or the cocktail name. It is currently hosted on netlify. ",
+            "tech": [
+                "ReactJs ",
+                "Redux ",
+                "Apolloclient ",
+                "Netlify "
+            ],
+            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676350295/Portfolio%20project%20Images/c_nfspyd.png",
+            "url": "https://partytymecocktails.netlify.app/",
+            "github": "https://github.com/Sebastine-thrive/cocktail-hub"
+        },
+        {
             "id": "EasyShop Itemstore",
             "title": "EasyShop Itemstore",
             "class": "projects",
@@ -39,27 +54,13 @@
             "tech": [
                 "ReactJs ",
                 "ContextAPI ",
-                "React HookForm ",
+                "React-HookForm ",
                 "Netlify "
             ],
             "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090290/Portfolio%20project%20Images/scrumlife_pic_ib47sr.png",
             "url": "https://scrumlife.netlify.app/",
             "github": "https://github.com/Sebastine-thrive/chatscrum"
-        },
-        {
-            "id": "PartyTyme Cocktails",
-            "title": "PartyTyme Cocktails",
-            "class": "projects",
-            "description": "This project utilises ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a beautiful, informative cocktail recipe site. Users can search for cocktails recipe by typing a letter or the cocktail name. It is currently hosted on netlify. ",
-            "tech": [
-                "ReactJs ",
-                "Redux ",
-                "Apolloclient ",
-                "Netlify "
-            ],
-            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676350295/Portfolio%20project%20Images/c_nfspyd.png",
-            "url": "https://partytymecocktails.netlify.app/",
-            "github": "https://github.com/Sebastine-thrive/cocktail-hub"
         }
+      
     ]
 }

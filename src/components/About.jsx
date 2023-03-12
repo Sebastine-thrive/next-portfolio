@@ -17,21 +17,17 @@ export const About = () => {
                         About Me
                     </motion.h3>
 
-
-                    <p className="p-4 sm:w-full sm:text-sm md:text-lg  bg-white rounded-lg font-serif ">
-                        As an experienced former Mathematics instructor, I am able to bring my ability to break down complex concepts to my work as a web developer.
+                    <p className="p-4 sm:w-full sm:text-sm md:text-lg  bg-white rounded-lg font-serif "> Hello, I'm <span className='text-[#00a78e] font-bold'> Sebastine </span>, a web developer with a background in teaching mathematics. My experience in teaching has helped me approach problem-solving and code organization in a structured and logical way.
                         <br />
                         <br />
 
-                        As a web developer, I am highly-skilled in creating and maintaining websites and web applications. I have experience in front-end  technologies: a strong understanding of HTML, CSS, JavaScript; CSS frameworks/libraries such as Bootstrap, SASS, TailwindCSS; Javascript libraries (REACT) and frameworks(NEXTJS) and various programming technologies. I am always looking for ways to improve the user experience and make websites more visually appealing, responsive and accessible.
+                        As a web developer, I am skilled in creating and maintaining websites and web applications. I have experience in front-end technologies: a strong understanding of HTML, CSS, JavaScript; CSS frameworks/libraries such as Bootstrap, SASS, TailwindCSS; Javascript libraries (REACT) and frameworks(NEXTJS) and various programming technologies. I am always looking for ways to improve the user experience and make websites more visually appealing, responsive and accessible.
                         <br />
                         <br />
 
-
-                        I am a problem solver with a knack for finding creative solutions to complex challenges. I am passionate about keeping up-to-date with the latest technologies, trends, and best practices in web development. I am always eager to acquire new skills and to stay ahead of the curve in the ever-evolving world of web development.
+                        I'm passionate about software development as it allows me to combine my love of technology and mathematics. I enjoy keeping up with new technologies and learning new skills, and I'm always looking for ways to improve my work.
                         <br />
                         <br />
-
 
                         I possess great communication skills, the ability to collaborate, a positive
                         attitude and good work ethics.

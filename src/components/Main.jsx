@@ -10,9 +10,15 @@ export const Main = () => {
                 <div>
 
                     <h1 className='px-2 justify-center font-normal  '>
-                        <span className='text-[24px] md:text-[35px] font-bold '>
+                        <motion.span 
+                        className='text-[24px] md:text-[35px] font-bold'
+                    
+                            initial={{ opacity: 0.6 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ delay: 1 }}
+                        >
                             Hi! I'm
-                        </span>
+                        </motion.span>
                         <motion.span
                             className='font-bold text-[#00a78e] sm:text-6xl md:text-7xl '
                             initial={{ opacity: 0 }}
