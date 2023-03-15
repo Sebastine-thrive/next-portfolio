@@ -21,7 +21,7 @@ export const Contact = () => {
 
                 <motion.h2
                     className='py-2 z-10'
-                    initial={{ opacity: 0.5, y: 80 }}
+                    initial={{ opacity: 0.5, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, duration: 2 }}
                 >

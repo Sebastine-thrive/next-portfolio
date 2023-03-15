@@ -28,11 +28,11 @@ export const ProjectItems = ({ data }) => {
                     {data.map((project) => {
                         return (
                             <div
-                                className='flex  sm:w-full md:w-[50%] lg:w-[33%] justify-center p-4'
+                                className='flex sm:w-full md:w-[50%] lg:w-[33%] justify-center p-4'
                                 key={project.id}
                             >
 
-                                <div className=' relative flex items-center justify-center  mt-8 h-auto w-full  shadow-xl shadow-green-200 rounded-xl p-4 group hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371]'
+                                <div className=' relative flex items-center justify-center my-8 h-auto w-full  shadow-xl shadow-green-200 rounded-xl p-4 group hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371]'
                                 >
                                     <div className='p-4 h-auto'>
                                         <Image
@@ -43,11 +43,11 @@ export const ProjectItems = ({ data }) => {
                                             className='rounded-xl  group-hover:opacity-10 ' />
                                     </div>
 
-                                    <div className='hidden group-hover:flex absolute flex-col text-center items-center justify-center my-2'>
-                                        <h3 className='sm:text-xl md:text-2xl text-orange-300 tracking-wider text-center'> {project.title} </h3>
-                                        <p className='pb-4 pt-2 px-2 text-white text-center'>{project.tech}</p>
+                                    <div className='hidden sm:h-auto  group-hover:flex absolute flex-col text-center items-center justify-center my-2'>
+                                        <h3 className='sm:text-xl md:text-2xl text-orange-300 tracking-wider text-center mt-2'> {project.title} </h3>
+                                        <p className='p-2 text-white text-center'>{project.tech}</p>
 
-                                        <div className='text-center w-[6rem] h-[2rem]'>
+                                        <div className='text-center w-[6rem] my-2 h-auto'>
                                             <Link href={`/projects/projects/${project.title}`}>
                                                 <p className='text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'> Details </p>
                                             </Link>

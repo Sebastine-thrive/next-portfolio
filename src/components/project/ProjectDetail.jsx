@@ -20,10 +20,10 @@ const ProjectDetail = ({ data }) => {
                 </div>
             </div>
 
-            <div className='max-w-[1240px] mx-auto p-4 grid md:grid-cols-3 gap-8 pt-8 mb-8'>
+            <div className='max-w-[1240px] mx-auto p-4 grid md:grid-cols-3 gap-8 pt-8 mb-8 '>
                 <div className='col-span-4'>
                     <h2>Overview</h2>
-                    <p>
+                    <p className='bg-white rounded-lg font-serif p-4'>
                         {data?.description}
                     </p>
 
@@ -45,14 +45,15 @@ const ProjectDetail = ({ data }) => {
                     </Link>
                 </div>
 
-                <div className='col-span-3 md:col-span-2 shadow-xl shadow-green-300 rounded-xl p-4'>
+                <div className='col-span-3 md:col-span-2 shadow-xl shadow-green-100 bg-black/80 text-white rounded-xl p-4'>
                     <div className='p-2'>
                         <p className='text-center font-bold p-2'> Technologies</p>
                         <div className='lg:grid grid-cols-3 md:grid-cols-1'>
 
-                            {data?.tech?.map((t) => (
-                                <p className='text-gray-600 py-2 flex items-center' key={t}>
-                                    <RiRadioButtonFill className='pr-1' /> {t}
+                            {data?.tech?.map((text) => (
+                                <p className='text-white py-2 flex items-center' key={text}>
+                                    <RiRadioButtonFill className='pr-1' /> 
+                                    {text}
                                 </p>
                             ))}
                         </div>

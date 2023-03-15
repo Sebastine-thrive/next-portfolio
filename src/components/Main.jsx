@@ -31,7 +31,7 @@ export const Main = () => {
                    
 
                     <p className='mt-8 py-4  hidden sm:block font-semibold text-gray-600 max-w-[80%] m-auto text-base'> 
-                    I'm focused on building and designing exceptional digital experiences that are responsive, interactive and scalable.
+                    I'm focused on designing and building exceptional digital experiences that are responsive, interactive and scalable.
                     </p>
                     <motion.p
                         animate={{
