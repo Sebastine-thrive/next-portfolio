@@ -32,7 +32,7 @@ export const ProjectItems = ({ data }) => {
                                 key={project.id}
                             >
 
-                                <div className=' relative flex items-center justify-center my-8 h-auto w-full  shadow-xl shadow-green-200 rounded-xl p-4 group hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371]'
+                                <div className=' relative flex items-center justify-center my-8 h-auto w-full  shadow-xl border-white border-2 rounded-xl  p-4 group hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371] hover:border-0'
                                 >
                                     <div className='p-4 h-auto'>
                                         <Image

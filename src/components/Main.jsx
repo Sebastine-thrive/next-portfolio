@@ -50,7 +50,7 @@ export const Main = () => {
                                 target='_blank'
                                 key={links.href}
                             >
-                                <div className= 'rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400 hover:shadow-orange-400'
+                                <div className= 'rounded-lg md:rounded-full shadow-md shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400 hover:shadow-orange-400'
                                  >
                                     {links.icon}
                                 </div>

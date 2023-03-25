@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const Skills = () => {
     return (
-        <div id='skills' className='w-full min-h-screen md:h-screen px-2 my-16  py-8 '>
+        <div id='skills' className='w-full min-h-screen md:h-screen px-2   py-8 '>
             <div className='max-w-[1240px] mx-auto py-16 text-center justify-center'>
                 <motion.h3
                     initial={{ opacity: 0 }}
@@ -17,11 +17,11 @@ export const Skills = () => {
                 <motion.h2
                     initial={{ y: -100, opacity: 0.4 }}
                     whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 1, duration: 2 }}
+                    transition={{ delay: 0.5, duration: 2 }}
                 >Technologies I use
                 </motion.h2>
 
-                <div className='flex flex-wrap justify-center text-center gap-8 mx-auto px-10 mt-16'>
+                <div className='flex flex-wrap justify-center text-center gap-8 mx-auto px-10 my-16 '>
 
                     {
                         Skillset.map((skill) => {

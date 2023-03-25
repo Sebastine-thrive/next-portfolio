@@ -21,9 +21,9 @@ export const Contact = () => {
 
                 <motion.h2
                     className='py-2 z-10'
-                    initial={{ opacity: 0.5, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1, duration: 2 }}
+                    initial={{ y: -100, opacity: 0.4 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 2 }}
                 >
                     Get in Touch
                 </motion.h2>
@@ -32,7 +32,7 @@ export const Contact = () => {
 
                     {/* left part of the contact */}
 
-                    <div className='col-span-3 lg:col-span-2 w-full h-full  shadow-xl  rounded-[1rem] p-4'>
+                    <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl border-white border-2 rounded-[1rem] p-4'>
                         <div className='lg:p-4 h-full'>
                             <div className='w-full py-2 '>
                                 <Image
@@ -71,7 +71,7 @@ export const Contact = () => {
                     </div>
 
                     {/* Right part */}
-                    <div className='col-span-3 w-full h-auto shadow-xl  rounded-[1rem] lg:p-4'>
+                    <div className='col-span-3 w-full h-auto shadow-xl border-white border-2 rounded-[1rem] lg:p-4'>
                         <div className='p-4'>
 
                             <form action="https://formspree.io/f/xyyobbal" method="POST">                                
