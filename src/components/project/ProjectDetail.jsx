@@ -22,7 +22,7 @@ const ProjectDetail = ({ data }) => {
 
             <div className='max-w-[1240px] mx-auto p-4 grid md:grid-cols-3 gap-8 pt-8 mb-8 '>
                 <div className='col-span-4'>
-                    <h2>Overview</h2>
+                    <h2 className='my-4'>Overview</h2>
                     <p className='bg-white rounded-lg font-serif p-4'>
                         {data?.description}
                     </p>
@@ -52,7 +52,7 @@ const ProjectDetail = ({ data }) => {
 
                             {data?.tech?.map((text) => (
                                 <p className='text-white py-2 flex items-center' key={text}>
-                                    <RiRadioButtonFill className='pr-1' /> 
+                                    <RiRadioButtonFill className='pr-1' />
                                     {text}
                                 </p>
                             ))}

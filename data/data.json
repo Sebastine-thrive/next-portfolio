@@ -60,7 +60,21 @@
             "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090290/Portfolio%20project%20Images/scrumlife_pic_ib47sr.png",
             "url": "https://scrumlife.netlify.app/",
             "github": "https://github.com/Sebastine-thrive/chatscrum"
+        },
+        {
+            "id": "Talk-And-Show Africa",
+            "title": "Talk-And-Show Africa",
+            "class": "projects",
+            "description": "Designed and built this beautiful, responsive home page of a website that showcases links to single movies, movie series, news, etc., using HTML, CSS and vanilla Javascript according to provided user interface design. Movies can be rated, news and events viewed with answeres to FAQs. The design makes it easy to fetch a user's rating of a movie to the backend, modify News and events updates, etc.",
+            "tech": [
+                "HTML ",
+                "CSS ",
+                "JavaScript ",
+                "Netlify "
+            ],
+            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1679977174/TashAfrica_blh0ty.png",
+            "url": "https://talkafrica.netlify.app",
+            "github": "https://github.com/Sebastine-thrive/talkafrica"
         }
-      
     ]
 }
