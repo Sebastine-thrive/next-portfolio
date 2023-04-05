@@ -32,7 +32,7 @@ export const Contact = () => {
 
                     {/* left part of the contact */}
 
-                    <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl border-white border-2 rounded-[1rem] p-4'>
+                    <div className='col-span-3 lg:col-span-2 w-full mx-[0.2rem] h-full shadow-xl border-white border-2 rounded-[1rem] p-4'>
                         <div className='lg:p-4 h-full'>
                             <div className='w-full py-2 '>
                                 <Image

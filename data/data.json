@@ -1,80 +1,54 @@
 {
-    "projects": [
-        {
-            "id": "PartyTyme Cocktails",
-            "title": "PartyTyme Cocktails",
-            "class": "projects",
-            "description": "This project utilises ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a beautiful, informative cocktail recipe site. Users can search for cocktails recipe by typing a letter or the cocktail name. It is currently hosted on netlify. ",
-            "tech": [
-                "ReactJs ",
-                "Redux ",
-                "Apolloclient ",
-                "Netlify "
-            ],
-            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676350295/Portfolio%20project%20Images/c_nfspyd.png",
-            "url": "https://partytymecocktails.netlify.app/",
-            "github": "https://github.com/Sebastine-thrive/cocktail-hub"
-        },
-        {
-            "id": "EasyShop Itemstore",
-            "title": "EasyShop Itemstore",
-            "class": "projects",
-            "description": "This project was created using  ReactJs and the Redux toolkit with data sourced from a graphQl backend endpoint via Apolloclient.  Users can view products and their details, toogle  currency options and proceed to checkout. It is currently hosted on netlify. The checkout page will be available soon.",
-            "tech": [
-                "ReactJs ",
-                "Redux ",
-                "Graphql ",
-                "Apolloclient ",
-                "Netlify "
-            ],
-            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676349534/Portfolio%20project%20Images/easyshop_jki1w4.png",
-            "url": "https://easyshop-itemstore.netlify.app/",
-            "github": "https://github.com/Sebastine-thrive/Itemstore-"
-        },
-        {
-            "id": "Thrive Ecommerce Admin Dashboard",
-            "title": "Thrive Ecommerce Admin Dashboard",
-            "class": "projects",
-            "description": "Created and designed using ReactJS, TailwindCSS and Context API for state data management, this project utilises available dummy data to illustrate a typical e-commerce admin dashboard. Features include dynamically rendering a side navigation, rendering components such as an order page, charts, calendar, color picker, text editor etc. Different color modes can be effected. It is currently hosted on netlify.",
-            "tech": [
-                "ReactJs ",
-                "ContextAPI ",
-                "TailwindCSS ",
-                "Netlify "
-            ],
-            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090378/Portfolio%20project%20Images/admin_dashboard_cxukm7.png",
-            "url": "https://thriveadmin-dashboard.netlify.app/",
-            "github": "https://github.com/Sebastine-thrive/admin-dashboard"
-        },
-        {
-            "id": "Scrumlife Scrumboard App",
-            "title": "Scrumlife Scrumboard App",
-            "class": "projects",
-            "description": "Built with React and React BeautifulDND, Context API  for state data management, this project provides a means of applying scrum locally in managing tasks. It currently uses the user's local storage for storing data. With a sign-in and sign-up form managed by React Hook Form to validate a user. Common operations include create, read and delete. It is currently hosted on netlify.",
-            "tech": [
-                "ReactJs ",
-                "ContextAPI ",
-                "React-HookForm ",
-                "Netlify "
-            ],
-            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090290/Portfolio%20project%20Images/scrumlife_pic_ib47sr.png",
-            "url": "https://scrumlife.netlify.app/",
-            "github": "https://github.com/Sebastine-thrive/chatscrum"
-        },
-        {
-            "id": "Talk-And-Show Africa",
-            "title": "Talk-And-Show Africa",
-            "class": "projects",
-            "description": "Designed and built this beautiful, responsive home page of a website that showcases links to single movies, movie series, news, etc., using HTML, CSS and vanilla Javascript according to provided user interface design. Movies can be rated, news and events viewed with answeres to FAQs. The design makes it easy to fetch a user's rating of a movie to the backend, modify News and events updates, etc.",
-            "tech": [
-                "HTML ",
-                "CSS ",
-                "JavaScript ",
-                "Netlify "
-            ],
-            "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1679977174/TashAfrica_blh0ty.png",
-            "url": "https://talkafrica.netlify.app",
-            "github": "https://github.com/Sebastine-thrive/talkafrica"
-        }
-    ]
+  "projects": [
+    {
+      "id": "PartyTyme Cocktails",
+      "title": "PartyTyme Cocktails",
+      "class": "projects",
+      "description": "This project utilises ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a beautiful, informative cocktail recipe site. Users can search for cocktails recipe by typing a letter or the cocktail name. It is currently hosted on netlify. ",
+      "tech": ["ReactJs ", "Redux ", "Apolloclient ", "Netlify "],
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676350295/Portfolio%20project%20Images/c_nfspyd.png",
+      "url": "https://partytymecocktails.netlify.app/",
+      "github": "https://github.com/Sebastine-thrive/cocktail-hub"
+    },
+    {
+      "id": "Thrive Ecommerce Admin Dashboard",
+      "title": "Thrive Ecommerce Admin Dashboard",
+      "class": "projects",
+      "description": "Created and designed using ReactJS, TailwindCSS and Context API for state data management, this project utilises available dummy data to illustrate a typical e-commerce admin dashboard. Features include dynamically rendering a side navigation, rendering components such as an order page, charts, calendar, color picker, text editor etc. Different color modes can be effected. It is currently hosted on netlify.",
+      "tech": ["ReactJs ", "ContextAPI ", "TailwindCSS ", "Netlify "],
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090378/Portfolio%20project%20Images/admin_dashboard_cxukm7.png",
+      "url": "https://thriveadmin-dashboard.netlify.app/",
+      "github": "https://github.com/Sebastine-thrive/admin-dashboard"
+    },
+    {
+      "id": "Scrumlife Scrumboard App",
+      "title": "Scrumlife Scrumboard App",
+      "class": "projects",
+      "description": "Built with React and React BeautifulDND, Context API  for state data management, this project provides a means of applying scrum locally in managing tasks. It currently uses the user's local storage for storing data. With a sign-in and sign-up form managed by React Hook Form to validate a user. Common operations include create, read and delete. It is currently hosted on netlify.",
+      "tech": ["ReactJs ", "ContextAPI ", "React-HookForm ", "Netlify "],
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090290/Portfolio%20project%20Images/scrumlife_pic_ib47sr.png",
+      "url": "https://scrumlife.netlify.app/",
+      "github": "https://github.com/Sebastine-thrive/chatscrum"
+    },
+    {
+      "id": "Talk-And-Show Africa",
+      "title": "Talk-And-Show Africa",
+      "class": "projects",
+      "description": "Designed and built this beautiful, responsive home page of a website that showcases links to single movies, movie series, news, etc., using HTML, CSS and vanilla Javascript according to provided user interface design. Movies can be rated, news and events viewed with answeres to FAQs. The design makes it easy to fetch a user's rating of a movie to the backend, modify News and events updates, etc.",
+      "tech": ["HTML ", "CSS ", "JavaScript ", "Netlify "],
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1679977174/TashAfrica_blh0ty.png",
+      "url": "https://talkafrica.netlify.app",
+      "github": "https://github.com/Sebastine-thrive/talkafrica"
+    },
+    {
+      "id": "Workit",
+      "title": "Workit",
+      "class": "projects",
+      "description": "Curved backgrounds are a beauty to behold on websites as they add some aethethic viewing. I created this home page following a challenge at <a>www.dribble.com> Dribble </> using HTML, CSS and the TailwindCSS library. ",
+      "tech": ["HTML ", "CSS ", "Netlify"],
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1680695119/workit_rbhen7.png",
+      "url": "https://thrive-workit.netlify.app/",
+      "github": "https://github.com/Sebastine-thrive/workit-"
+    }
+  ]
 }
