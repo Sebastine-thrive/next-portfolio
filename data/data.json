@@ -44,8 +44,8 @@
       "id": "Workit",
       "title": "Workit",
       "class": "projects",
-      "description": "Curved backgrounds are a beauty to behold on websites as they add some aethethic viewing. I created this home page following a challenge at <a>www.dribble.com> Dribble </> using HTML, CSS and the TailwindCSS library. ",
-      "tech": ["HTML ", "CSS ", "Netlify"],
+      "description": "Curved backgrounds are a beauty to behold in websites as they add some aesthethic viewing thereby improving the user experience. I created this home page following a challenge at Dribble using HTML, plain CSS and the TailwindCSS library. ",
+      "tech": ["HTML ", "CSS ", "TailwindCSS ", "Netlify"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1680695119/workit_rbhen7.png",
       "url": "https://thrive-workit.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/workit-"

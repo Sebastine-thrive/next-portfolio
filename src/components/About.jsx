@@ -33,10 +33,10 @@ export const About = () => {
             <br />
             <br />
             As a web developer, I am skilled in creating and maintaining
-            websites and web applications. I have spent a year using front-end
-            technologies: a strong understanding of HTML, CSS, JavaScript; CSS
+            websites and web applications. I have spent about 15 months learning and using front-end
+            technologies. I have a strong understanding of HTML, CSS, JavaScript; CSS
             frameworks/libraries such as Bootstrap, SASS, TailwindCSS;
-            Javascript libraries (REACT) and frameworks(NEXTJS) and various
+            Javascript, REACT, NEXTJS and various
             other programming technologies. I am always looking for ways to
             improve the user experience and make websites more visually
             appealing, responsive and accessible.
@@ -44,10 +44,11 @@ export const About = () => {
             <br />
             Being passionate about software development motivates me in solving
             problems with the use of technology. I enjoy keeping up with new
-            technologies, learning new relevant skills and always looking for
+            technologies, learning new, relevant skills and always looking for
             ways to improve my work.
             <br />
-            <br />I am a team player who is able to work well with others. I
+            <br />
+            I am a team player who believes in achieving more with like-minded people. I
             possess great communication skills, the ability to collaborate, a
             positive attitude and good work ethics.
           </motion.p>

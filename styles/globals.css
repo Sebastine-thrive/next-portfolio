@@ -52,7 +52,7 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase text-white bg-[#00a78e] hover:bg-[#FB923C] 
   }
 
-.let-us {
+.intro {
  background: linear-gradient(to right, #f32170,
                     #ff6b08, #00a78e, #eedd44);
                     background-clip: text;
