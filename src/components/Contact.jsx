@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export const Contact = () => {
     return (
-        <div id='contact' className='w-full lg:h-screen h-2 mt-16 mx-auto' >
+        <div id='contact' className='w-full  h-2 my-4 mx-auto' >
             <div className='title  max-w-[1240px] w-full mx-auto px-2 pt-24 pb-12 text-center'>
                 <motion.h3
                     className='text-xl tracking-widest uppercase text-[#00a78e]'

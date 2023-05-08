@@ -75,7 +75,7 @@ export const Navbar = () => {
                     : 'fixed left-[-150%] top-0 p-10 ease-in duration-1000'}>
 
                     <div>
-                        <div className='flex w-full items-center justify-between'>
+                        <div className='flex w-full items-center justify-between z-[2]'>
 
                             <Link href='/' scroll={false}>
                                 <Image src={logo}
@@ -98,7 +98,7 @@ export const Navbar = () => {
                                     scale: [1, 1.5, 1.5, 1]
                                 }}
                                 transition={{ delay: 2 }}
-                                className=' let-us text-orange-400 font-medium tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
+                                className='intro font-medium tracking-widest w-[85%] md:w-[90%] py-4 '> Let's build something innovative together</p>
                         </div>
 
                         <div className='flex flex-col py-4 uppercase'>

@@ -1,13 +1,11 @@
-import { About } from '@/components/About';
-import { Contact } from '@/components/Contact';
-import Footer from '@/components/Footer';
-import { Main } from '@/components/Main';
-import { Navbar } from '@/components/Navbar';
-import { ProjectItems } from '@/components/project/ProjectItems';
-import { Skills } from '@/components/Skills';
-import Head from 'next/head';
-
-
+import { About } from "@/components/About";
+import { Contact } from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { Main } from "@/components/Main";
+import { Navbar } from "@/components/Navbar";
+import { ProjectItems } from "@/components/project/ProjectItems";
+import { Skills } from "@/components/Skills";
+import Head from "next/head";
 
 export default function Home({ data }) {
   return (
@@ -24,18 +22,17 @@ export default function Home({ data }) {
       <Skills />
       <ProjectItems data={data} />
       <Contact />
+      {/* <Footer /> */}
     </div>
-  )
+  );
 }
 
-
-
 export async function getStaticProps() {
-  const { projects } = await import('/data/data.json');
+  const { projects } = await import("/data/data.json");
 
   return {
     props: {
-      data: projects
-    }
+      data: projects,
+    },
   };
 }

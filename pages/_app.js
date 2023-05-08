@@ -1,13 +1,13 @@
 
 import '../styles/globals.css';
-// import { Navbar } from '@/components/Navbar';
+import { Navbar } from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Component {...pageProps} />
+      <Component {...pageProps}  className="mt-16" />
       {/* <Footer /> */}
 
     </>

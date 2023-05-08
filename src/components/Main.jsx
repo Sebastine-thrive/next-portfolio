@@ -45,7 +45,7 @@ export const Main = () => {
               scale: [1, 1.5, 1.5, 1],
             }}
             transition={{ delay: 1.2 }}
-            className=" intro  mt-10 sm:mt-0 shadow-sm font-semibold shadow-green-400 sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest "
+            className=" intro  mt-10 sm:mt-0  font-semibold shadow-green-400 sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
           >
             Let's build something innovative together
           </motion.p>

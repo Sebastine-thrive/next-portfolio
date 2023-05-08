@@ -42,10 +42,7 @@ export const About = () => {
             appealing, responsive and accessible.
             <br />
             <br />
-            Being passionate about software development motivates me in solving
-            problems with the use of technology. I enjoy keeping up with new
-            technologies, learning new, relevant skills and always looking for
-            ways to improve my work.
+            I enjoy learning and leveraging on relevant technologies in solving problems and providing utility.
             <br />
             <br />
             I am a team player who believes in achieving more with like-minded people. I
