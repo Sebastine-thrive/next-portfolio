@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import myImage from "../../public/sebastine.jpg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const About = () => {
   return (
@@ -20,7 +21,7 @@ export const About = () => {
         </motion.h3>
         <div className="sm:flex sm:m-0 ">
           <motion.p
-            className="p-4 sm:w-full mx-[0.5rem] sm:text-sm md:text-lg  bg-white rounded-lg font-serif "
+            className="p-4 sm:w-full mx-[0.5rem] sm:text-sm md:text-lg  bg-black text-white rounded-lg font-serif "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 3.5 }}
@@ -33,21 +34,28 @@ export const About = () => {
             <br />
             <br />
             As a web developer, I am skilled in creating and maintaining
-            websites and web applications. I have spent about 15 months learning and using front-end
-            technologies. I have a strong understanding of HTML, CSS, JavaScript; CSS
-            frameworks/libraries such as Bootstrap, SASS, TailwindCSS;
-            Javascript, REACT, NEXTJS and various
-            other programming technologies. I am always looking for ways to
-            improve the user experience and make websites more visually
-            appealing, responsive and accessible.
+            websites and web applications. I have spent about 18 months learning
+            and providing solutions using front-end technologies such as HTML,
+            CSS, CSS frameworks/libraries like Bootstrap, SASS, TailwindCSS;
+            Javascript, REACT, NEXTJS and various other programming
+            technologies. I am always looking for ways to improve the user
+            experience by making websites more visually appealing, responsive
+            and accessible.
             <br />
             <br />
-            I enjoy learning and leveraging on relevant technologies in solving problems and providing utility.
+            I enjoy learning and leveraging on relevant technologies in solving
+            problems and providing utility.
             <br />
             <br />
-            I am a team player who believes in achieving more with like-minded people. I
-            possess great communication skills, the ability to collaborate, a
-            positive attitude and good work ethics.
+            As a team player, I believe in achieving more with focus-minded
+            people. I possess great communication skills, the ability to
+            collaborate, a positive attitude and good work ethics.
+            <br />
+            Do{" "}
+            <Link href={"/#contact"} className="text-[#00a78e]">
+              get in touch
+            </Link>
+            {""} with me.
           </motion.p>
         </div>
       </div>
