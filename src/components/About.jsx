@@ -11,17 +11,17 @@ export const About = () => {
       className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center py-16"
     >
       <div className="max-w-[1240px] pt-24 mx-auto sm:flex flex-col sm:w-screen justify-center items-center align-center">
-        <motion.h3
+        <motion.h2
           className="title text-[#00a78e] py-2 font-extrabold text-xl uppercase tracking-widest text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2.5 }}
         >
           About Me
-        </motion.h3>
+        </motion.h2>
         <div className="sm:flex sm:m-0 ">
           <motion.p
-            className="p-4 sm:w-full mx-[0.5rem] sm:text-sm md:text-lg  bg-black text-white rounded-lg font-serif "
+            className="p-4 sm:w-full mx-[0.5rem] sm:text-sm md:text-lg  bg-[#C37120] text-white rounded-lg font-serif "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 3.5 }}
@@ -52,7 +52,16 @@ export const About = () => {
             collaborate, a positive attitude and good work ethics.
             <br />
             Do{" "}
-            <Link href={"/#contact"} className="text-[#00a78e]">
+            <Link
+              href={"/#contact"}
+              className="text-[black]"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               get in touch
             </Link>
             {""} with me.

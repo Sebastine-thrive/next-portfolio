@@ -36,6 +36,7 @@ export const Main = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 2 }}
+            viewport={{ once: true }}
             className=" text-gray-600  font-semibold py-1 sm:text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
           >
             A Front-end Web Developer
@@ -45,11 +46,12 @@ export const Main = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 2.5 }}
-            className="mt-8 py-4  hidden sm:block font-semibold text-gray-600 max-w-[80%] m-auto text-base"
+            viewport={{ once: true }}
+            className="mt-8 py-4  hidden sm:block font-semibold text-gray-600 max-w-[90%] m-auto text-base"
           >
             I'm focused on designing and building exceptional digital
-            experiences that are responsive, user-friendly, interactive and
-            scalable.
+            experiences that are responsive, <br /> user-friendly, interactive
+            and scalable.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
@@ -57,6 +59,7 @@ export const Main = () => {
             animate={{
               scale: [1, 1.5, 1.5, 1],
             }}
+            viewport={{ once: true }}
             transition={{ delay: 3.5 }}
             className=" intro  mt-10 sm:mt-0  font-semibold shadow-green-400 sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
           >
@@ -69,6 +72,7 @@ export const Main = () => {
             animate={{
               scale: [1, 1.2, 1.2, 1],
             }}
+            viewport={{ once: true }}
             transition={{ delay: 4 }}
             className="flex items-center justify-between  m-auto py-4 max-w-[330px]"
           >
