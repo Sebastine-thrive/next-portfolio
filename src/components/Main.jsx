@@ -8,9 +8,9 @@ export const Main = () => {
     <div id="home" className=" w-full h-screen text-center mx-auto">
       <div className="max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center">
         <div>
-          <h1 className="px-2 justify-center font-normal  ">
+          <h1 className="px-2 justify-center font-normal ">
             <motion.span
-              className="text-[24px] md:text-[35px] font-bold"
+              className="text-[24px] md:text-[35px] font-bold -scroll-mb-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 1 }}
@@ -18,7 +18,7 @@ export const Main = () => {
               Hi! I'm
             </motion.span>
             <motion.span
-              className="font-bold text-[#00a78e] sm:text-6xl md:text-7xl "
+              className="font-bold text-[#00a78e] text-[28px] md:text-5xl xl:text-6xl"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{
@@ -37,7 +37,7 @@ export const Main = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 2 }}
             viewport={{ once: true }}
-            className=" text-gray-600  font-semibold py-1 sm:text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
+            className=" text-gray-600  font-semibold py-2 sm:text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
           >
             A Front-end Web Developer
           </motion.p>
@@ -47,11 +47,11 @@ export const Main = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 2.5 }}
             viewport={{ once: true }}
-            className="mt-8 py-4  hidden sm:block font-semibold text-gray-600 max-w-[90%] m-auto text-base"
+            className="mt-6 py-4  hidden sm:block font-semibold text-gray-600 w-[90%] max-w-[90%] m-auto text-base"
           >
-            I'm focused on designing and building exceptional digital
-            experiences that are responsive, <br /> user-friendly, interactive
-            and scalable.
+            I'm focused on delivering value through developing and building
+            exceptional digital experiences <br /> that are responsive,
+            user-friendly, safe, interactive and scalable.
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}

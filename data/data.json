@@ -21,18 +21,8 @@
       "github": "https://github.com/Sebastine-thrive/admin-dashboard"
     },
     {
-      "id": "Scrumlife Scrumboard App",
-      "title": "Scrumlife Scrumboard App",
-      "class": "projects",
-      "description": "Built with React, React BeautifulDND and Context API  for state data management, this project provides a means of applying scrum locally in managing tasks. It currently utilises the user's local storage for storing data. With a sign-in and sign-up form managed by React Hook Form to validate a user. Task operations include create, read and delete. It is currently hosted on netlify.",
-      "tech": ["ReactJs ", "ContextAPI ", "React-HookForm ", "Netlify "],
-      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090290/Portfolio%20project%20Images/scrumlife_pic_ib47sr.png",
-      "url": "https://scrumlife.netlify.app/",
-      "github": "https://github.com/Sebastine-thrive/chatscrum"
-    },
-    {
-      "id": "Talk-And-Show Africa",
-      "title": "Talk-And-Show Africa",
+      "id": "Talk-And-Show Africa Homepage",
+      "title": "Talk-And-Show Africa Homepage",
       "class": "projects",
       "description": "Designed and built this beautiful, responsive home page of a movie-marketing agency website that showcases links to  movies and  series, news, etc., using HTML, CSS and vanilla Javascript according to provided user interface design. Features include movie rating which can be easily fetched at the backend, news and events viewing with answeres to FAQs.",
       "tech": ["HTML ", "CSS ", "JavaScript ", "Netlify "],
@@ -41,7 +31,7 @@
       "github": "https://github.com/Sebastine-thrive/talkafrica"
     },
     {
-      "id": "Workit landing page",
+      "id": "Workit Landing Page",
       "title": "Workit landing page",
       "class": "projects",
       "description": "Curved backgrounds are a beauty to behold in websites as they add some aesthetic viewing. I developed this landing page following a challenge at Dribble using HTML, plain CSS and the TailwindCSS library. ",
