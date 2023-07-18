@@ -21,7 +21,6 @@ html {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }
 
-  
   h2 {
     font-family: "Gilroy-Bold", sans-serif;
   }
@@ -29,14 +28,14 @@ html {
   h3,
   h4,
   h5,
-  h6, p {
+  h6,
+  p {
     font-family: "Gilroy-Medium", sans-serif;
   }
 
   h1 {
     @apply font-extrabold;
   }
-
 
   /* 
  h4, h5, h6 {
@@ -65,4 +64,26 @@ html {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
+}
+
+input:focus {
+  border: 2px solid #00a78e;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ff6b08;
+  transition: 2s;
+}
+
+input:focus::placeholder {
+  transform: translate(0, -100%);
+  font-size: 0.8em;
+  opacity: 1;
+}
+
+textarea:focus::placeholder {
+  transform: translate(0, -60%);
+  font-size: 0.8em;
+  opacity: 1;
 }

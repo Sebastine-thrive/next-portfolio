@@ -44,7 +44,7 @@ export const Contact = () => {
               <div>
                 <p className="py-4">
                   {" "}
-                  I am available for freelance, contract or full-time positions.
+                  I am available for freelance projects, contract or full-time positions.
                   Do get in touch!{" "}
                 </p>
               </div>
@@ -93,7 +93,7 @@ export const Contact = () => {
 
                 <div className="flex flex-col py-2  my-4">
                   <input
-                    className="border-2 rounded-lg p-3 flex"
+                    className=" rounded-lg p-3 flex"
                     type="email"
                     name="email"
                     placeholder="Email from"
@@ -102,7 +102,7 @@ export const Contact = () => {
 
                 <div className="flex flex-col py-2  my-4">
                   <input
-                    className="border-2 rounded-lg p-3 flex "
+                    className=" rounded-lg p-3 flex "
                     type="text"
                     name="subject"
                     placeholder="Subject"
@@ -110,7 +110,7 @@ export const Contact = () => {
                 </div>
                 <div className="flex flex-col py-2 my-4">
                   <textarea
-                    className="border-2 rounded-lg p-3 border-gray-300"
+                    className="rounded-lg p-3 flex"
                     type="text"
                     name="message"
                     placeholder="Message"
@@ -129,7 +129,7 @@ export const Contact = () => {
 
         {/* Scroll-to-top button */}
 
-        <div className="flex justify-center py-12">
+        <div className="flex justify-center py-12 z-3">
           <Link
             href="/"
             onClick={(e) => {
