@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import myImage from "../../public/sebastine.jpg";
+// import Resume from "../../public/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -26,22 +27,22 @@ export const About = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 3.5 }}
           >
-          
-            I'm a web developer skilled in creating and maintaining
-            websites and web applications. I have spent the past eighteen months learning
-            and providing solutions using front-end technologies such as HTML,
-            CSS, CSS frameworks/libraries such as Bootstrap, SASS, TailwindCSS;
+            I'm a web developer skilled in creating and maintaining websites and
+            web applications. I have spent the past eighteen months learning and
+            providing solutions using front-end technologies such as HTML, CSS,
+            CSS frameworks/libraries such as Bootstrap, SASS, TailwindCSS;
             Javascript, REACT, NEXTJS and various other programming
             technologies. I am always looking for ways to improve the user
             experience by making websites more visually appealing, responsive
             and accessible.
             <br />
             <br />
-            I enjoy learning and leveraging on relevant technologies in solving
-            problems and providing utility.
+            I learn and leverage on relevant technologies in solving problems
+            and providing utility.
             <br />
             <br />
-            As a team player, I believe in achieving more with focus-minded team members. I possess great communication skills, the ability to
+            As a team-player, I believe in achieving more with focus-minded team
+            members. I possess great communication skills, the ability to
             collaborate, a positive attitude and good work ethics.
             <br />
             Do{" "}
@@ -59,6 +60,8 @@ export const About = () => {
             </Link>
             {""} with me.
           </motion.p>
+
+         
         </div>
       </div>
     </div>

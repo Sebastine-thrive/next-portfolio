@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* #2e51ed */
+
 html {
   scroll-behavior: smooth;
   font-family: "Georgia", sans-serif;
@@ -57,17 +59,24 @@ html {
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase text-white bg-[#00a78e] hover:bg-[#FB923C];
   }
-
-  .intro {
-    background: linear-gradient(to right, #f32170, #ff6b08, #00a78e, #eedd44);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
 }
 
-input:focus {
-  border: 2px solid #00a78e;
+.intro {
+  background: linear-gradient(to right, #f32170, #ff6b08, #00a78e, #eedd44);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+input {
+  border: none;
+    outline: none;
+
+}
+
+input:focus, textarea:focus {
+  border-bottom: 2px solid #00a78e;
+  outline: none;
 }
 
 input::placeholder,

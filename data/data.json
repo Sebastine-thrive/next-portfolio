@@ -32,7 +32,7 @@
     },
     {
       "id": "Workit Landing Page",
-      "title": "Workit landing page",
+      "title": "Workit Landing Page",
       "class": "projects",
       "description": "Curved backgrounds are a beauty to behold in websites as they add some aesthetic viewing. I developed this landing page following a challenge at Dribble using HTML, plain CSS and the TailwindCSS library. ",
       "tech": ["HTML ", "CSS ", "TailwindCSS ", "Netlify"],

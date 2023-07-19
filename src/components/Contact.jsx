@@ -30,7 +30,7 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-8 z-50">
           {/* left part of the contact */}
 
-          <div className="col-span-3 lg:col-span-2 w-full mx-[0.2rem] h-full shadow-xl  rounded-[1rem] p-4">
+          <div className="col-span-3 lg:col-span-2 w-full mx-[0.2rem] h-full shadow-xl  rounded-[1rem] p-4 ">
             <div className="lg:p-4 h-full">
               <div className="w-full py-2 ">
                 <Image
@@ -44,8 +44,8 @@ export const Contact = () => {
               <div>
                 <p className="py-4">
                   {" "}
-                  I am available for freelance projects, contract or full-time positions.
-                  Do get in touch!{" "}
+                  I am available for freelance projects, contract or full-time
+                  positions. Do get in touch!{" "}
                 </p>
               </div>
 
@@ -74,7 +74,7 @@ export const Contact = () => {
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2 my-4">
                   <div className="flex flex-col ">
                     <input
-                      className="border-2 rounded-lg p-3 flex"
+                      className=" rounded-lg p-3 flex"
                       placeholder="Name"
                       type="text"
                       name="name"
@@ -83,7 +83,7 @@ export const Contact = () => {
 
                   <div className="flex flex-col">
                     <input
-                      className="border-2 rounded-lg p-3 flex "
+                      className="rounded-lg p-3 flex "
                       type="number"
                       name="phone Number"
                       placeholder="Phone Number"
@@ -129,7 +129,7 @@ export const Contact = () => {
 
         {/* Scroll-to-top button */}
 
-        <div className="flex justify-center py-12 z-3">
+        <div className="flex justify-center py-12 z-20">
           <Link
             href="/"
             onClick={(e) => {
@@ -140,7 +140,7 @@ export const Contact = () => {
             }}
           >
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-[#009E60]" size={30} />
+              <HiOutlineChevronDoubleUp className="text-[#00a78e]" size={30} />
             </div>
           </Link>
         </div>
