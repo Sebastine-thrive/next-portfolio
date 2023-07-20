@@ -25,7 +25,7 @@ export const ProjectItems = ({ data }) => {
           Some of my projects
         </motion.h2>
         <div className=" flex flex-wrap justify-center m-auto">
-          {data.map((project) => {
+          {data?.map((project) => {
             return (
               <div
                 className="flex sm:w-full md:w-[50%] lg:w-[33%] justify-center p-4"
@@ -50,7 +50,8 @@ export const ProjectItems = ({ data }) => {
                     <p className="p-2 text-white text-center">{project.tech}</p>
 
                     <div className="text-center w-[6rem] my-2 h-auto">
-                      <Link href={`/projects/projects/${project.title}`}>
+                                     
+                      <Link href={`/projects/${project.title}`}>
                         <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                           {" "}
                           Details{" "}

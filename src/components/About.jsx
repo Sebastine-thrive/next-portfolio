@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import myImage from "../../public/sebastine.jpg";
-// import Resume from "../../public/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf";
+// import Resume from "/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -21,7 +22,7 @@ export const About = () => {
           About Me
         </motion.h2>
         <div className="sm:flex sm:m-0 ">
-          <motion.p
+          <motion.div
             className="p-4 sm:w-full mx-[0.5rem] sm:text-sm md:text-lg  bg-[#C37120] text-white rounded-lg font-serif "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -48,7 +49,7 @@ export const About = () => {
             Do{" "}
             <Link
               href={"/#contact"}
-              className="text-[black]"
+              className="text-black"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -59,9 +60,30 @@ export const About = () => {
               get in touch
             </Link>
             {""} with me.
-          </motion.p>
-
-         
+            <div className="flex justify-start my-8 items-center">
+              <div className="hover:text-[#00a78e]">
+                <a
+                  href="/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf"
+                  target="blank"
+                >
+                  {" "}
+                  View Resume{" "}
+                </a>{" "}
+              </div>
+              <div>
+                <button className="px-4 py-2 capitalize ml-4 shadow-none">
+                  {" "}
+                  <a
+                    href="/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf"
+                    download
+                  >
+                    {" "}
+                    Download resume{" "}
+                  </a>
+                </button>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

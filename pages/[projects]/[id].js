@@ -2,7 +2,6 @@ import ProjectDetail from '@/components/project/ProjectDetail';
 
 
 const SingleProjectPage = ({data, pageName}) => {
-    console.log(data)
     return (
         <div>
             <ProjectDetail

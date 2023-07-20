@@ -4,8 +4,8 @@
       "id": "PartyTyme Cocktails",
       "title": "PartyTyme Cocktails",
       "class": "projects",
-      "description": "This project utilises ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a beautiful, informative cocktail recipe site. The project illustrates proper use of APIs for data presentation and presentation of information of unique items, which are cocktails in this case. Users can search for cocktail recipes by typing a letter or the cocktail name. It is currently hosted on netlify. ",
-      "tech": ["ReactJs ", "Redux ", "Apolloclient ", "Netlify "],
+      "description": "This project was built with ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a simple, beautiful,responsive, user-friendly, informative cocktail recipe site. The project illustrates the use of APIs as data source and presentation of information of unique items, which are cocktails in this case. Users can search for cocktail recipes by typing a letter or the cocktail name. It is currently hosted on netlify. ",
+      "tech": ["ReactJs ", "context API ", "Netlify "],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676350295/Portfolio%20project%20Images/c_nfspyd.png",
       "url": "https://partytymecocktails.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/cocktail-hub"

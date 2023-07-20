@@ -19,7 +19,6 @@ export default function Home({ data }) {
           rel="stylesheet"
         />
 
-        <link rel="icon" href="logo.ico" />
       </Head>
       <Navbar />
       <Main />
