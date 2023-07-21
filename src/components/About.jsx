@@ -61,7 +61,7 @@ export const About = () => {
             </Link>
             {""} with me.
             <div className="flex justify-start my-8 items-center">
-              <div className="hover:text-[#00a78e]">
+              <div className="hover:text-black">
                 <a
                   href="/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf"
                   target="blank"

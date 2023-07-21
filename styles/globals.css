@@ -31,7 +31,7 @@ html {
   h4,
   h5,
   h6,
-  p {
+  p,span {
     font-family: "Gilroy-Medium", sans-serif;
   }
 

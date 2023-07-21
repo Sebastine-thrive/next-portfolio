@@ -1,7 +1,6 @@
 import { ProjectItems } from '@/components/project/ProjectItems';
 import React from 'react';
-// import  ProjectDetail  from '@/components/project/ProjectDetail';
-// import ProjectDetail from "../../../src/components/project/ProjectDetail"
+
 
 const ProjectsPage = ( { data} ) => {
     return (

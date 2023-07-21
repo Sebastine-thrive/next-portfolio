@@ -1,5 +1,5 @@
-import Image from "next/image";
-// import Image from "next/legacy/image"; 
+// import Image from "next/image";
+import Image from "next/legacy/image"; 
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
@@ -13,7 +13,6 @@ const ProjectDetail = ({ data }) => {
           className="absolute z-1 object-cover	"
           src={data?.image}
           alt="ecommerce project image"
-        
           layout="fill"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full p-4 text-white z-10  ">
