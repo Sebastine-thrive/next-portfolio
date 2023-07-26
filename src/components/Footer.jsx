@@ -5,17 +5,17 @@ import { MyLinks } from "./data/Data";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[14rem] bg-[#00a78e] mb-0">
+    <div className="w-full h-[14rem] bg-[#00a78e] mb-0 ">
       <div className="text-center">
-        <p className="text-[white] pt-4  text-[24px] md:text-[32px] ">
+        <p className="text-[white] pt-4  text-[20px] md:text-[28px] ">
           {" "}
-          <span className="mr-4  text-[18px] md:text-[28px] ">
+          <span className="mr-4  text-[16px] md:text-[24px] ">
             {" "}
             &copy; 2022{" "}
           </span>{" "}
           <b>
             {" "}
-            <a href="https://sebastine-ogu.vercel.app/"> Sebastine Ogu </a>{" "}
+            <Link href="https://sebastine-ogu.vercel.app/" className=" text-[24px] md:text-[32px]"> Sebastine Ogu </Link>{" "}
           </b>{" "}
         </p>
 

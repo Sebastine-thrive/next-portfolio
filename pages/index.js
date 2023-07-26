@@ -27,7 +27,10 @@ export default function Home({ data }) {
       </Head>
       <Navbar />
       <Main />
-      <About />
+      <section id="about">
+        {" "}
+        <About />
+      </section>
       <Skills />
       <ProjectItems data={data} />
       <Contact />

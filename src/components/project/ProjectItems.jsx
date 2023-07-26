@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const ProjectItems = ({ data }) => {
   return (
-    <div id="projects" className="w-full min-h-screen px-4 my-16">
+    <div id="projects" className="w-full min-h-screen px-4 my-16 bg-white">
       <div className="max-w-[1240px] px-4 pt-24 pb-16 mx-auto">
         <motion.h2
           initial={{ opacity: 0 }}
@@ -50,7 +50,6 @@ export const ProjectItems = ({ data }) => {
                     <p className="p-2 text-white text-center">{project.tech}</p>
 
                     <div className="text-center w-[6rem] my-2 h-auto">
-                                     
                       <Link href={`/projects/${project.title}`}>
                         <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                           {" "}

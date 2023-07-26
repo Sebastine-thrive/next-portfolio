@@ -163,17 +163,30 @@ export const Navbar = () => {
                     Home
                   </li>
                 </Link>
+                {/* 
+                <li class="nav-item">
+                  <a href="#skills" class="nav-link">
+                    Skills
+                  </a>
+                </li> */}
 
                 {MyNavbarLinks.map((navlink) => (
                   <Link
                     href={`/${"#" + navlink.title}`}
+                    passHref
+                    legacyBehavior
                     scroll={false}
                     key={navlink.title}
                   >
                     <li
                       onClick={() => setNav(false)}
                       className="py-4 capitalize text-sm hover:border-b hover:text-orange-400 font-semibold text-[#00a78e]"
+                      // key={navlink.title}
                     >
+                      {/* <a href={`/${"#" + navlink.title}`} className="nav-link">
+                      {navlink.title}
+                    </a> */}
+
                       {navlink.title}
                     </li>
                   </Link>

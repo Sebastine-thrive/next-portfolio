@@ -10,20 +10,20 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center py-16"
+      className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center my-16 bg-white"
     >
-      <div className="max-w-[1240px] pt-24 mx-auto sm:flex flex-col sm:w-screen justify-center items-center align-center">
+      <div className="max-w-[1240px] my-8  mx-auto sm:flex flex-col sm:w-screen justify-center items-center align-center">
         <motion.h2
-          className="title text-[#00a78e] py-2 font-extrabold text-xl uppercase tracking-widest text-center"
+          className="title text-[#00a78e] pt-24 font-extrabold text-xl uppercase tracking-widest text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2.5 }}
         >
           About Me
         </motion.h2>
-        <div className="sm:flex sm:m-0 ">
+        <div className="sm:m-[1rem] ">
           <motion.div
-            className="p-4 sm:w-full mx-[0.5rem] sm:text-sm md:text-lg  bg-[#C37120] text-white rounded-lg font-serif "
+            className="p-4 sm:w-full mx-[0.5rem] my-[1rem] sm:text-sm md:text-lg bg-[#C37120] text-white rounded-lg font-serif "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 3.5 }}
