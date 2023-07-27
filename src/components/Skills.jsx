@@ -7,9 +7,9 @@ export const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full min-h-screen md:h-screen px-2 my-8  py-8 "
+      className="w-full min-h-screen md:h-screen px-2 my-16  py-8 "
     >
-      <div className="max-w-[1240px] mx-auto pt-24 text-center justify-center">
+      <div className="max-w-[1240px] mx-auto pt-8 text-center justify-center">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -27,7 +27,7 @@ export const Skills = () => {
           Technologies I use
         </motion.h2>
 
-        <div className="flex flex-wrap justify-center text-center gap-8 mx-auto px-10 my-16 ">
+        <div className="flex flex-wrap justify-center text-center gap-8 mx-auto px-10 my-8 ">
           {Skillset.map((skill) => {
             return (
               <div className="flex flex-wrap text-center" key={skill.id}>

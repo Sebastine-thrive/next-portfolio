@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 export const ProjectItems = ({ data }) => {
   return (
-    <div id="projects" className="w-full min-h-screen px-4 my-16 bg-white">
-      <div className="max-w-[1240px] px-4 pt-24 pb-16 mx-auto">
+    <div id="projects" className="w-full min-h-screen px-4 mt-24 bg-white">
+      <div className="max-w-[1240px] px-4 py-16 mx-auto">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

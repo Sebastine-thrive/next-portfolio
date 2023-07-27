@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { MyLinks, MyNavbarLinks } from "./data/Data";
-import logo from "../../public/assets/logo/logo1.gif";
+import logo from "../../public/assets/logo/logo.gif";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export const Navbar = () => {
@@ -32,8 +32,8 @@ export const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-[20] shadow-xl z-[100] "
-          : "fixed w-full h-[20] z-[100] "
+          ? "fixed w-full h-[3rem] shadow-xl z-[100] "
+          : "fixed w-full h-[3rem] z-[100] "
       }
     >
       <div className="flex justify-between items-center w-full h-full px-8 2xl:px-16">
@@ -45,13 +45,14 @@ export const Navbar = () => {
             scale: [1, 1.2, 1.2, 1],
           }}
           viewport={{ once: true }}
+          className="h-[2.5ren]"
         >
           <Link href="/">
             <Image
               src={logo}
               alt="logo"
               width={100}
-              height={40}
+              height={10}
               className="cursor-pointer"
             />
           </Link>
@@ -163,12 +164,6 @@ export const Navbar = () => {
                     Home
                   </li>
                 </Link>
-                {/* 
-                <li class="nav-item">
-                  <a href="#skills" class="nav-link">
-                    Skills
-                  </a>
-                </li> */}
 
                 {MyNavbarLinks.map((navlink) => (
                   <Link
@@ -181,12 +176,7 @@ export const Navbar = () => {
                     <li
                       onClick={() => setNav(false)}
                       className="py-4 capitalize text-sm hover:border-b hover:text-orange-400 font-semibold text-[#00a78e]"
-                      // key={navlink.title}
                     >
-                      {/* <a href={`/${"#" + navlink.title}`} className="nav-link">
-                      {navlink.title}
-                    </a> */}
-
                       {navlink.title}
                     </li>
                   </Link>
