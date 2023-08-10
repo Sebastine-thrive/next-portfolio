@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import myImage from "../../public/sebastine.jpg";
-// import Resume from "/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf";
-
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -23,7 +21,7 @@ export const About = () => {
         </motion.h2>
         <div className="sm:m-[1rem] ">
           <motion.div
-            className="p-4 sm:w-full mx-[0.5rem] my-[1rem] sm:text-sm md:text-lg bg-[#C37120] text-white rounded-lg font-serif "
+            className="about-me p-4 sm:w-full mx-[0.5rem] my-[1rem] sm:text-sm md:text-lg bg-[#C37120] text-white rounded-lg font-serif "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 3.5 }}
@@ -32,7 +30,7 @@ export const About = () => {
             web applications. I have spent the past eighteen months learning and
             providing solutions using front-end technologies such as HTML, CSS,
             CSS frameworks/libraries such as Bootstrap, SASS, TailwindCSS;
-            Javascript, REACT, NEXTJS and various other programming
+            Javascript, ReactJS, NextJS and various other programming
             technologies. I am always looking for ways to improve the user
             experience by making websites more visually appealing, responsive
             and accessible.
@@ -62,10 +60,7 @@ export const About = () => {
             {""} with me.
             <div className="flex justify-start my-8 items-center">
               <div className="hover:text-black">
-                <a
-                  href="/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf"
-                  target="blank"
-                >
+                <a href="https://01sebastine-ogu.tiiny.site/" target="blank">
                   {" "}
                   View Resume{" "}
                 </a>{" "}

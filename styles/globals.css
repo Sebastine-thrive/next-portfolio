@@ -31,7 +31,8 @@ html {
   h4,
   h5,
   h6,
-  p,span {
+  p,
+  span {
     font-family: "Gilroy-Medium", sans-serif;
   }
 
@@ -70,11 +71,11 @@ html {
 
 input {
   border: none;
-    outline: none;
-
+  outline: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-bottom: 2px solid #00a78e;
   outline: none;
 }
