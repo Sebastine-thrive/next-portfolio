@@ -35,7 +35,7 @@ export const ProjectItems = ({ data }) => {
                   <div className="p-4 h-auto">
                     <Image
                       src={project.image}
-                      alt="ecommerce project image"
+                      alt={project.title}
                       width={400}
                       height={400}
                       className="rounded-xl  group-hover:opacity-10 "

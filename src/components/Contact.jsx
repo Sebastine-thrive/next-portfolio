@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import contact from "../../public/assets/contact/contact_image.png";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { MyLinks } from "./data/Data";
 import { motion } from "framer-motion";
+
+import contact from "../../public/assets/contact/contact_image.png";
+import { MyLinks } from "./data/Data";
 
 export const Contact = () => {
   return (
@@ -125,24 +125,6 @@ export const Contact = () => {
               </form>
             </div>
           </div>
-        </div>
-
-        {/* Scroll-to-top button */}
-
-        <div className="flex justify-center py-12 z-20">
-          <Link
-            href="/"
-            onClick={(e) => {
-              e.preventDefault();
-              document
-                .getElementById("home")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-[#00a78e]" size={30} />
-            </div>
-          </Link>
         </div>
       </div>
     </div>

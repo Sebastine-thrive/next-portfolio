@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 import { MyLinks } from "./data/Data";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[14rem] bg-[#00a78e] mb-0 ">
+    <div className="relative w-full h-[14rem] bg-[#00a78e] mb-0 ">
       <div className="text-center">
         <p className="text-[white] pt-4  text-[20px] md:text-[28px] ">
           {" "}
@@ -15,7 +17,13 @@ const Footer = () => {
           </span>{" "}
           <b>
             {" "}
-            <Link href="https://sebastine-ogu.vercel.app/" className=" text-[24px] md:text-[32px]"> Sebastine Ogu </Link>{" "}
+            <Link
+              href="https://sebastine-ogu.vercel.app/"
+              className=" text-[24px] md:text-[32px]"
+            >
+              {" "}
+              Sebastine Ogu{" "}
+            </Link>{" "}
           </b>{" "}
         </p>
 
@@ -33,6 +41,32 @@ const Footer = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* Scroll-to-top button */}
+
+      <div className=" absolute flex justify-center py-12 right-[10vw] top-[5vh] z-10">
+        <Link
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("home")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          <motion.div
+            initial={{ y: 0 }}
+            animate={{ y: [-20, 0, 20] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+            className="rounded-full bg-black  p-2 cursor-pointer hover:scale-120 ease-in duration-300 text-black hover:text-black hover:bg-white"
+          >
+            <HiOutlineChevronDoubleUp
+              className=" rounded-full bg-black hover:bg-white  text-white hover:text-black "
+              size={25}
+            />
+          </motion.div>
+        </Link>
       </div>
     </div>
   );

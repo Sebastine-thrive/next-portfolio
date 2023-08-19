@@ -2,10 +2,11 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { MyLinks } from "./data/Data";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 export const Main = () => {
   return (
-    <div id="home" className=" w-full h-screen text-center mx-auto">
+    <div id="home" className="relative w-full h-screen text-center mx-auto">
       <div className="max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="px-2 justify-center font-normal  text-[24px] md:text-[35px] ">
@@ -88,6 +89,25 @@ export const Main = () => {
             ))}
           </motion.div>
         </div>
+      </div>
+      <div className=" absolute max-w-[30] right-[10vw] top-[85vh] z-10">
+        <motion.div
+          initial={{ y: 0, opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          animate={{ y: [-20, 0, 20] }}
+          transition={{
+            delay: 5,
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          className="rounded-full bg-black  p-2 hover:scale-120 ease-in duration-300 text-black hover:text-black hover:bg-white"
+        >
+          <HiOutlineChevronDoubleDown
+            className=" rounded-full bg-black hover:bg-white  text-white hover:text-black "
+            size={25}
+          />
+        </motion.div>
       </div>
     </div>
   );
