@@ -33,9 +33,9 @@ const ProjectDetail = ({ data }) => {
             </button>
           </Link>
 
-          <Link href={data?.github} target="_blank">
+          {/* <Link href={data?.github} target="_blank">
             <button className="px-8 py-2 mt-4 hover:text-[white]"> Code</button>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="col-span-3 md:col-span-2 shadow-xl shadow-green-100 bg-black/80 text-white rounded-xl p-4">
