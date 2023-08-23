@@ -29,8 +29,7 @@ export const Contact = () => {
 
         <div className="grid lg:grid-cols-5 gap-8 z-50">
           {/* left part of the contact */}
-
-          <div className="col-span-3 lg:col-span-2 w-full mx-[0.2rem] h-full   rounded-lg p-4 ">
+          <div className="col-span-3 lg:col-span-2 w-full mx-[0.2rem] h-full shadow-lg rounded-lg p-4 ">
             <div className="lg:p-4 h-full">
               <div className="w-full py-2 ">
                 <Image
@@ -68,7 +67,7 @@ export const Contact = () => {
           </div>
 
           {/* Right part */}
-          <div className="col-span-3 w-full h-auto shadow-lg  rounded-lg lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-lg rounded-lg lg:p-4">
             <div className="p-4">
               <form action="https://formspree.io/f/xyyobbal" method="POST">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2 my-4">
