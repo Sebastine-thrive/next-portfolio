@@ -77,7 +77,7 @@ export const Navbar = () => {
                   .scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <li className="ml-10 text-sm font-semibold text-[#00a78e] capitalize hover:border-b hover:text-orange-400">
+              <li className="ml-10 text-sm font-bold text-[#00a78e] capitalize hover:border-b hover:text-orange-400">
                 Home
               </li>
             </Link>
@@ -93,7 +93,7 @@ export const Navbar = () => {
                     .scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                <li className="ml-10 text-sm font-semibold text-[#00a78e] capitalize hover:border-b hover:text-orange-400">
+                <li className="ml-10 text-sm font-bold text-[#00a78e] capitalize hover:border-b hover:text-orange-400">
                   {navlink.title}
                 </li>
               </Link>

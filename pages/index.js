@@ -20,10 +20,6 @@ export default function Home({ data }) {
             Javascript, Typescript REACT, NEXTJS etc."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          href="https://fonts.cdnfonts.com/css/gilroy-bold"
-          rel="stylesheet"
-        />
       </Head>
       <Navbar />
       <Main />

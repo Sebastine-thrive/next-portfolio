@@ -14,7 +14,7 @@ export const Main = () => {
               className="font-medium -scroll-mb-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
+              transition={{ duration: 1 }}
             >
               Hi! I'm
             </motion.span>
@@ -25,8 +25,8 @@ export const Main = () => {
               transition={{
                 type: "spring",
                 bounce: 1,
-                duration: 2,
                 delay: 0.5,
+                duration: 2,
               }}
             >
               {" "}
@@ -97,9 +97,9 @@ export const Main = () => {
           animate={{ y: [-20, 0, 20] }}
           transition={{
             delay: 5,
-            duration: 1.5,
-            repeat: Infinity,
+            duration: 3,
             ease: "linear",
+            repeat: Infinity,
           }}
           className="rounded-full bg-black  p-2 hover:scale-120 ease-in duration-300 text-black hover:text-black hover:bg-white"
         >

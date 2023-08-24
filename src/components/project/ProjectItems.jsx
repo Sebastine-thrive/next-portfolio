@@ -38,7 +38,7 @@ export const ProjectItems = ({ data }) => {
                       alt={project.title}
                       width={400}
                       height={400}
-                      className=" group-hover:opacity-10  "
+                      className=" group-hover:opacity-10 border-2 border-white "
                     />
                   </div>
 

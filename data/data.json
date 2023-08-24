@@ -6,7 +6,7 @@
       "class": "projects",
       "description": "This project was built with ReactJS, Context API for state data management and cocktail information sourced from https://www.thecocktaildb.com to present a simple, beautiful,responsive, user-friendly, informative cocktail recipe site. The project illustrates the use of APIs as data source and presentation of information of unique items, which are cocktails in this case. Users can search for cocktail recipes by typing a letter or the cocktail name. It is currently hosted on netlify. ",
       "tech": ["ReactJs ", "context API ", "Netlify "],
-      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676350295/Portfolio%20project%20Images/c_nfspyd.png",
+      "image":"https://res.cloudinary.com/dffplr9xe/image/upload/v1692892207/Portfolio%20project%20Images/partytyme_wdqeh0.png",
       "url": "https://partytymecocktails.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/cocktail-hub"
     },
@@ -16,7 +16,7 @@
       "class": "projects",
       "description": "Created and developed using ReactJS, TailwindCSS and Context API for state data management, this project utilises available dummy data to illustrate a typical e-commerce admin dashboard. Features include dynamically rendering a side navigation, rendering components such as an order page, charts, calendar, color picker and text editor, etc.  Dark mode and theme selection can be effected at the click of a button. It is currently hosted on netlify.",
       "tech": ["ReactJs ", "ContextAPI ", "TailwindCSS ", "Netlify "],
-      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1676090378/Portfolio%20project%20Images/admin_dashboard_cxukm7.png",
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1692892186/Portfolio%20project%20Images/thrive-admin-dashboard_zmfayr.png",
       "url": "https://thriveadmin-dashboard.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/admin-dashboard"
     },

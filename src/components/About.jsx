@@ -7,7 +7,7 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center my-16 bg-white"
+      className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center mb-16 bg-white"
     >
       <div className="max-w-[1240px] my-8  mx-auto sm:flex flex-col sm:w-screen justify-center items-center align-center">
         <motion.h2
