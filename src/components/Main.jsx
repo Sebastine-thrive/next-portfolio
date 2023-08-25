@@ -6,8 +6,11 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 export const Main = () => {
   return (
-    <div id="home" className="relative w-full h-screen text-center mx-auto">
-      <div className="max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center">
+    <div
+      id="home"
+      className="relative w-full h-screen flex justify-center items-center text-center bg-[#ecf0f3]"
+    >
+      <div className="home-wrapper max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="px-2 justify-center font-normal  text-[24px] md:text-[35px] ">
             <motion.span
@@ -38,10 +41,10 @@ export const Main = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 2 }}
             viewport={{ once: true }}
-            className=" text-gray-600  font-semibold py-2 sm:text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
+            className=" text-gray-600  font-semibold xxs:mt-8 sm:mt-2 sm:text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
           >
             I'm a Front-end Web Developer <br />
-            <span className="text-black sm:text-[16px] md:text-[20px] lg:text[24px]">
+            <span className="text-black sm:text-[16px] md:text-[20px] lg:text[24px] pt-4">
               (Javascript, Typescript, NextJS){" "}
             </span>
           </motion.p>
@@ -51,7 +54,7 @@ export const Main = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 2.5 }}
             viewport={{ once: true }}
-            className="mt-6 py-4  hidden sm:block font-semibold text-gray-600 w-[90%] max-w-[90%] m-auto text-base"
+            className="mt-8 py-4  hidden sm:block font-semibold text-gray-600 w-[90%] max-w-[90%] m-auto text-base"
           >
             I'm focused on delivering value through developing and building
             exceptional digital experiences <br /> that are responsive,
@@ -90,7 +93,7 @@ export const Main = () => {
           </motion.div>
         </div>
       </div>
-      <div className=" absolute max-w-[30] right-[10vw] top-[85vh] z-10">
+      <div className=" absolute max-w-[30] right-[10vw] xxs:top-[80vh]  sm:top-[550px] z-10">
         <motion.div
           initial={{ y: 0, opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -9,7 +9,7 @@ export const About = () => {
       id="about"
       className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center mb-16 bg-white"
     >
-      <div className="max-w-[1240px] my-8  mx-auto sm:flex flex-col sm:w-screen justify-center items-center align-center">
+      <div className="about-container max-w-[1240px] my-8  mx-auto sm:flex flex-col sm:w-screen justify-center items-center align-center">
         <motion.h2
           className="title text-[#00a78e] pt-24 font-extrabold text-xl uppercase tracking-widest text-center"
           initial={{ opacity: 0 }}

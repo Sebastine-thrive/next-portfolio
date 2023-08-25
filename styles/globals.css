@@ -88,14 +88,32 @@ textarea:focus::placeholder {
 #home {
   background-image: url("../public/assets/background/main-bg.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  /* background-size: 100% auto; */
 }
 
-
-@media (max-width: 912px) {
+@media (min-height: 1365px) {
   #home {
-    background-image: none;
+    height: 70vh;
+    max-height: 70vh;
+    /* margin-top: -6rem; */
+  }
+
+  .home-wrapper {
+    margin-top: -6rem;
+  }
+
+  .about-container {
+    margin-top: -12rem;
+  }
+}
+
+@media (max-width: 913px) {
+  #home {
+    background-image: url("../public/assets/background/main-sm-bg2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

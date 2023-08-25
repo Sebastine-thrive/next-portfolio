@@ -44,7 +44,7 @@ export const Contact = () => {
                 <p className="py-4">
                   {" "}
                   I am available for freelance projects, contract or full-time
-                  positions. Do get in touch!{" "}
+                  positions. <br /> <span className="font-bold text-orange-400">Get in touch! </span>
                 </p>
               </div>
 

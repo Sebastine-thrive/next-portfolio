@@ -6,20 +6,36 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   animation: {
-    typing: "typing 5s steps(22), blink .5s step-end infinite alternate;"
+    typing: "typing 5s steps(22), blink .5s step-end infinite alternate;",
   },
   keyframes: {
     typing: {
-      "from": {
-        width: 0
+      from: {
+        width: 0,
       },
-      "50": {
-        borderColor: "transparent"
+      50: {
+        borderColor: "transparent",
       },
-    }
+    },
   },
-theme: {
-    extend: {},
+  theme: {
+    screens: {
+      xxs: "280px",
+
+      xs: "360px",
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... },
+    },
+    plugins: [],
   },
-  plugins: [],
-}
+};

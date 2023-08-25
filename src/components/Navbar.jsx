@@ -36,7 +36,7 @@ export const Navbar = () => {
           : "fixed w-full h-[3rem] z-[100] "
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-8 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-8 2xl:px-16 z-20">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
