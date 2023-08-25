@@ -35,12 +35,12 @@ export const About = () => {
             and accessible.
             <br />
             <br />
-            I learn and leverage on relevant technologies in solving problems
+            I leverage on relevant technologies in solving problems
             and providing utility.
             <br />
             <br />
-            As a team-player, I believe in achieving more with focus-minded team
-            members. I possess great communication skills, the ability to
+             I am a team-player who believes in achieving more with focus-minded team
+            members. I possess good communication skills, the ability to
             collaborate, a positive attitude and good work ethics.
             <br />
             Do{" "}

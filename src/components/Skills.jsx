@@ -7,7 +7,7 @@ export const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full min-h-screen md:h-screen px-2 my-16  py-8 "
+      className="w-full min-h-screen md:h-screen px-2 my-16 py-8 "
     >
       <div className="max-w-[1240px] mx-auto pt-8 text-center justify-center">
         <motion.h2
