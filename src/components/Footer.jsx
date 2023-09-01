@@ -59,10 +59,10 @@ const Footer = () => {
             initial={{ y: 0 }}
             animate={{ y: [-20, 0, 20] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-            className="rounded-full bg-black  p-2 cursor-pointer hover:scale-120 ease-in duration-300 text-black hover:text-black hover:bg-white"
+            className="rounded-full p-2 cursor-pointer hover:scale-120 ease-in duration-300 bg-black  hover:bg-white"
           >
             <HiOutlineChevronDoubleUp
-              className=" rounded-full bg-black hover:bg-white  text-white hover:text-black "
+              className=" rounded-full bg-transparent  text-white hover:text-black "
               size={25}
             />
           </motion.div>
