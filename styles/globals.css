@@ -86,11 +86,17 @@ textarea:focus::placeholder {
 }
 
 #home {
-  background-image: url("../public/assets/background/main-bg.png");
+  background-image: url("../public/assets/background/main-bg2.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   /* background-size: 100% auto; */
+}
+
+.profile-pic {
+  background-color: #ff6b08;
+  padding-left: 15px;
+  box-shadow: -10px 10px #00a78e;
 }
 
 @media (min-height: 1365px) {
@@ -111,7 +117,7 @@ textarea:focus::placeholder {
 
 @media (max-width: 913px) {
   #home {
-    background-image: url("../public/assets/background/main-sm-bg2.png");
+    background-image: url("../public/assets/background/main-sm-bg.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
