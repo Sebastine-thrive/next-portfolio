@@ -6,7 +6,7 @@
       "class": "projects",
       "description": "This e-commerce project was built with NextJS, Context API for state data management and Sanity for products data management. Items for sale are displayed in various categories from which their details can be viewed and then they are addded to cart. The payment checkout will be integrated into the project. It is currently hosted on vercel.",
       "tech": ["nextJs ", "context API ", "Sanity ", "vercel"],
-      "image": "  https://res.cloudinary.com/dffplr9xe/image/upload/v1694100052/ShopIt-screenshot_zrlzt6.png",
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1694349988/ShopIt1_mnok9i.png",
       "url": "https://shopit-nigeria.vercel.app/",
       "github": "https://github.com/Sebastine-thrive/shopit-ecommerce"
     },
@@ -19,6 +19,16 @@
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1692892186/Portfolio%20project%20Images/thrive-admin-dashboard_zmfayr.png",
       "url": "https://thriveadmin-dashboard.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/admin-dashboard"
+    },
+    {
+      "id": "Portfolio Website",
+      "title": "Portfolio Website",
+      "class": "projects",
+      "description": "Developed this beautiful portfolio site which using NextJS, TailwindCSS and Framer-motion. Project data are fetched from the API backend",
+      "tech": ["NextJS ", "TailwindCSS ", "Framer-Motion", "Vercel "],
+      "image": "  https://res.cloudinary.com/dffplr9xe/image/upload/v1694348943/portfolio1_qkfila.png",
+      "url": "https://sebastine-ogu.vercel.app/",
+      "github": "https://github.com/Sebastine-thrive/next-portfolio"
     },
     {
       "id": "Talk-And-Show Africa Homepage",
@@ -41,5 +51,4 @@
       "github": "https://github.com/Sebastine-thrive/workit-"
     }
   ]
-  
 }
