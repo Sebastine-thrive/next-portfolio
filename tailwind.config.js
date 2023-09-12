@@ -32,7 +32,7 @@ module.exports = {
       lmd: "822px",
       // => @media (min-width: 822px) { ... }
 
-      lg: "1024px",
+      lg: "1025px",
       // => @media (min-width: 1024px) { ... }
 
       xl: "1280px",

@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import Image from "next/legacy/image"; 
+import Image from "next/legacy/image";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
@@ -40,7 +40,7 @@ const ProjectDetail = ({ data }) => {
 
         <div className="col-span-3 md:col-span-2 shadow-xl shadow-green-100 bg-black/80 text-white rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold p-2"> Technologies Utilised:</p>
+            <p className="text-center font-bold p-2"> Technologies Used:</p>
             <div className="lg:grid grid-cols-3 md:grid-cols-1">
               {data?.tech?.map((text) => (
                 <p className="text-white py-2 flex items-center" key={text}>

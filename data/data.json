@@ -5,7 +5,7 @@
       "title": "ShopIt Ecommerce",
       "class": "projects",
       "description": "This e-commerce project was built with NextJS, Context API for state data management and Sanity for products data management. Items for sale are displayed in various categories from which their details can be viewed and then they are addded to cart. The payment checkout will be integrated into the project. It is currently hosted on vercel.",
-      "tech": ["nextJs ", "context API ", "Sanity ", "vercel"],
+      "tech": ["NextJs  ", "Context API  ", "Sanity  ", "Vercel"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1694349988/ShopIt1_mnok9i.png",
       "url": "https://shopit-nigeria.vercel.app/",
       "github": "https://github.com/Sebastine-thrive/shopit-ecommerce"
@@ -15,7 +15,7 @@
       "title": "Thrive Ecommerce Admin Dashboard",
       "class": "projects",
       "description": "Created and developed using ReactJS, TailwindCSS and Context API for state data management, this project utilises available dummy data to illustrate a typical e-commerce admin dashboard. Features include dynamically rendering a side navigation, rendering components such as an order page, charts, calendar, color picker and text editor, etc.  Dark mode and theme selection can be effected at the click of a button. It is currently hosted on netlify.",
-      "tech": ["ReactJs ", "ContextAPI ", "TailwindCSS ", "Netlify "],
+      "tech": ["ReactJs  ", "ContextAPI  ", "TailwindCSS  ", "Netlify "],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1692892186/Portfolio%20project%20Images/thrive-admin-dashboard_zmfayr.png",
       "url": "https://thriveadmin-dashboard.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/admin-dashboard"
@@ -25,7 +25,7 @@
       "title": "Portfolio Website",
       "class": "projects",
       "description": "Developed this beautiful portfolio site which using NextJS, TailwindCSS and Framer-motion. Project data are fetched from the API backend",
-      "tech": ["NextJS ", "TailwindCSS ", "Framer-Motion", "Vercel "],
+      "tech": ["NextJS ", "TailwindCSS ", "Framer-Motion ", "Vercel"],
       "image": "  https://res.cloudinary.com/dffplr9xe/image/upload/v1694348943/portfolio1_qkfila.png",
       "url": "https://sebastine-ogu.vercel.app/",
       "github": "https://github.com/Sebastine-thrive/next-portfolio"
@@ -34,8 +34,8 @@
       "id": "Talk-And-Show Africa Homepage",
       "title": "Talk-And-Show Africa Homepage",
       "class": "projects",
-      "description": "Designed and built this beautiful, responsive home page of a movie-marketing agency website that showcases links to  movies and  series, news, etc., using HTML, CSS and vanilla Javascript according to provided user interface design. Features include movie rating which can be easily fetched at the backend, news and events viewing with answeres to FAQs.",
-      "tech": ["HTML ", "CSS ", "JavaScript ", "Netlify "],
+      "description": "Designed and built this beautiful, responsive home page of a movie-marketing agency website that showcases links to  movies and  series, news, etc., using HTML, CSS and vanilla Javascript according to provided user interface design. Features also include movie rating which can be easily fetched at the backend, news and events viewing with answers to FAQs.",
+      "tech": ["HTML  ", "CSS  ", "Javascript  ", "Netlify"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1679977174/TashAfrica_blh0ty.png",
       "url": "https://talkafrica.netlify.app",
       "github": "https://github.com/Sebastine-thrive/talkafrica"
@@ -45,7 +45,7 @@
       "title": "Workit Landing Page",
       "class": "projects",
       "description": "Curved backgrounds are a beauty to behold in websites as they add some aesthetic viewing. I developed this landing page following a challenge at Dribble using HTML, plain CSS and the TailwindCSS library. ",
-      "tech": ["HTML ", "CSS ", "TailwindCSS ", "Netlify"],
+      "tech": ["HTML  ", "CSS  ", "TailwindCSS  ", "Netlify"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1680695119/workit_rbhen7.png",
       "url": "https://thrive-workit.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/workit-"

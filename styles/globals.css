@@ -94,8 +94,10 @@ textarea:focus::placeholder {
 }
 
 .profile-pic {
-  background-color: #ff6b08;
-  padding-left: 15px;
+  background-color: #ffe6cf;
+    /* background-color: #ff6b08; */
+
+  /* padding-left: 15px; */
   box-shadow: -10px 10px #00a78e;
 }
 

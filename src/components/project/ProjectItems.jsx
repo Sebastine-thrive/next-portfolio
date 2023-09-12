@@ -31,25 +31,27 @@ export const ProjectItems = ({ data }) => {
                 className="flex sm:w-full md:w-[50%] lg:w-[33%] justify-center p-4"
                 key={project.id}
               >
-                <div className=" relative flex items-center justify-center my-8 h-auto w-full  p-4 group rounded-md hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371] hover:border-0">
+                <div className="xxs:p-4 lg:p-0 xss:rounded-lg lg:rounded-none xxs:bg-[#ecf0f3] lg:bg-white lg:relative lg:flex xss:flex-col items-center justify-center my-8 h-auto w-full  p-4 group rounded-md lg:hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371] hover:border-0 ">
                   <div className=" max-h-[400px]">
                     <Image
                       src={project.image}
                       alt={project.title}
                       width={400}
                       height={400}
-                      className=" group-hover:opacity-10 border-2 border-orange-400 "
+                      className=" lg:group-hover:opacity-10 border-2 border-orange-400 "
                     />
                   </div>
 
-                  <div className="hidden sm:h-auto  group-hover:flex absolute flex-col text-center items-center justify-center my-2">
+                  <div className="sm:h-auto lg:hidden  xxs:flex xxs:w-[280px] lg:group-hover:flex lg:absolute flex-col text-center items-center justify-center my-2">
                     <h3 className="sm:text-xl md:text-2xl text-orange-300 tracking-wider text-center mt-2">
                       {" "}
                       {project.title}{" "}
                     </h3>
-                    <p className="p-2 text-white text-center">{project.tech}</p>
+                    <p className="p-2 hidden lg:block  xxs:text-[#00a78e] lg:text-white text-center">
+                      {project.tech}
+                    </p>
 
-                    <div className="text-center w-[6rem] my-2 h-auto">
+                    <div className="block text-center w-[6rem] my-2 h-auto">
                       <Link href={`/projects/${project.title}`}>
                         <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                           {" "}

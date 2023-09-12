@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../../public/sebastine.jpg";
+// import myImage from "../../public/sebastine.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -20,7 +20,7 @@ export const About = () => {
         </motion.h2>
         <div className="sm:m-[1rem] ">
           <motion.div
-            className="about-me p-4 sm:w-full mx-[0.5rem] my-[1rem] sm:text-sm md:text-lg bg-[#C37120] text-white rounded-lg font-serif "
+            className="about-me p-4 sm:w-full xss:leading-8  lg:leading-6 mx-[0.5rem] my-[1rem] sm:text-sm md:text-lg bg-[#C37120] text-white rounded-lg font-serif "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 3.5 }}
@@ -35,12 +35,12 @@ export const About = () => {
             and accessible.
             <br />
             <br />
-            I leverage on relevant technologies in solving problems
-            and providing utility.
+            I leverage on relevant technologies in solving problems and
+            providing utility.
             <br />
             <br />
-             I am a team-player who believes in achieving more with focus-minded team
-            members. I possess good communication skills, the ability to
+            I am a team-player who believes in achieving more with focus-minded
+            team members. I possess good communication skills, the ability to
             collaborate, a positive attitude and good work ethics.
             <br />
             Do{" "}
@@ -68,7 +68,7 @@ export const About = () => {
                 <button className="px-4 py-2 capitalize ml-4 shadow-none">
                   {" "}
                   <a
-                    href="/assets/resume/01Sebastine_Ogu_Front-end_Web_developer.pdf"
+                    href="/assets/resume/01Sebastine Ogu Web-developer.pdf"
                     download
                   >
                     {" "}
