@@ -19,7 +19,7 @@ const Footer = () => {
             {" "}
             <Link
               href="https://sebastine-ogu.vercel.app/"
-              className=" text-[24px] md:text-[32px]"
+              className=" text-[16x] md:text-[24px]"
             >
               {" "}
               Sebastine Ogu{" "}

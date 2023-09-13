@@ -43,7 +43,7 @@ export const ProjectItems = ({ data }) => {
                   </div>
 
                   <div className="sm:h-auto lg:hidden  xxs:flex xxs:w-[280px] lg:group-hover:flex lg:absolute flex-col text-center items-center justify-center my-2">
-                    <h3 className="sm:text-xl md:text-2xl text-orange-300 tracking-wider text-center mt-2">
+                    <h3 className="sm:text-xl md:text-2xl text-orange-600 tracking-wider text-center mt-2">
                       {" "}
                       {project.title}{" "}
                     </h3>

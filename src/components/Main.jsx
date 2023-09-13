@@ -21,7 +21,7 @@ export const Main = () => {
               transition={{
                 type: "spring",
                 bounce: 1,
-                delay: 0.7,
+                delay: 1.0,
                 duration: 2,
               }}
             >
@@ -34,7 +34,7 @@ export const Main = () => {
               />
             </motion.div>
             <div>
-              <h1 className="px-2 font-normal  text-[24px] md:text-[35px] ">
+              <h1 className="px-2 font-medium  text-[24px] md:text-[35px] ">
                 <motion.span
                   className="font-medium -scroll-mb-4"
                   initial={{ opacity: 0 }}
@@ -64,7 +64,7 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2 }}
                 viewport={{ once: true }}
-                className=" text-gray-600  font-semibold xxs:mt-8 sm:mt-2 sm:text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
+                className="font-semibold xxs:mt-8 sm:mt-2 text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
               >
                 I'm a Front-end Web Developer <br />
               </motion.p>
