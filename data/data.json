@@ -15,7 +15,7 @@
       "title": "Thrive Ecommerce Admin Dashboard",
       "class": "projects",
       "description": "Created and developed using ReactJS, TailwindCSS and Context API for state data management, this project utilises available dummy data to illustrate a typical e-commerce admin dashboard. Features include dynamically rendering a side navigation, rendering components such as an order page, charts, calendar, color picker and text editor, etc.  Dark mode and theme selection are effected at the click of a button. It is currently hosted on netlify.",
-      "tech": ["ReactJs  ","ContextAPI  ","TailwindCSS  ", "Netlify"],
+      "tech": ["ReactJs  ", "ContextAPI  ", "TailwindCSS  ", "Netlify"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1692892186/Portfolio%20project%20Images/thrive-admin-dashboard_zmfayr.png",
       "url": "https://thriveadmin-dashboard.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/admin-dashboard"
@@ -26,7 +26,7 @@
       "class": "projects",
       "description": "Developed this beautiful portfolio site using NextJS, TailwindCSS and Framer-motion. Project data are fetched from the Next app API backend",
       "tech": ["NextJS ", "TailwindCSS ", "Framer-Motion ", "Vercel"],
-      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1694348943/portfolio1_qkfila.png",
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1696297995/Sebastine-Ogu-Front-end-Web-Developer_klraeb.png",
       "url": "https://sebastine-ogu.vercel.app/",
       "github": "https://github.com/Sebastine-thrive/next-portfolio"
     },

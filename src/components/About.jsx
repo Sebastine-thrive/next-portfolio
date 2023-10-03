@@ -27,21 +27,16 @@ export const About = () => {
           >
             <p>
               I'm a web developer skilled in creating and maintaining websites
-              and web applications. I have spent the past eighteen months
-              learning and providing solutions using front-end technologies such
+              and web applications. I leverage technologies such
               as HTML, CSS, CSS frameworks/libraries such as Bootstrap, SASS,
-              TailwindCSS; Javascript, ReactJS, NextJS and various other
+              TailwindCSS; Git, Javascript, ReactJS, NextJS and various other
               programming technologies. I am always looking for ways to improve
-              the user experience by making websites more visually appealing,
+              the user experience by making websites more visually-appealing,
               responsive and accessible.
               <br />
               <br />
-              I leverage on relevant technologies in solving problems and
-              providing utility.
-              <br />
-              <br />
-              As a team-player who believes in achieving more with
-              focus-minded team members, I possess good communication skills,
+              I am a team-player who believes in achieving more with
+              focus-minded team members. I possess good communication skills,
               the ability to collaborate, a positive attitude and good work
               ethics.
               <br />
