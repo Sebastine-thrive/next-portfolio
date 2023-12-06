@@ -28,15 +28,14 @@ export const About = () => {
             <p>
               I'm a web developer skilled in creating and maintaining websites
               and web applications. I leverage technologies such
-              as HTML, CSS, CSS frameworks/libraries such as Bootstrap, SASS,
-              TailwindCSS; Git, Javascript, ReactJS, NextJS and various other
-              programming technologies. I am always looking for ways to improve
-              the user experience by making websites more visually-appealing,
+              as HTML, CSS, CSS frameworks and libraries like Bootstrap, SASS and
+              TailwindCSS. I utilise Git (Github), Javascript, ReactJS, NextJS etc. I am always looking for ways to meet business needs and improve
+              the user experience by making websites and web applications more visually-appealing,
               responsive and accessible.
               <br />
               <br />
               I am a team-player who believes in achieving more with
-              focus-minded team members. I possess good communication skills,
+              focus-minded team-members. I possess good communication skills,
               the ability to collaborate, a positive attitude and good work
               ethics.
               <br />

@@ -3,7 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MyLinks } from "./data/Data";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
-import ProfilePic from "../../public/assets/profile-picture/seb.png";
+// import ProfilePic from "../../public/assets/profile-picture/seb.png";
+import ProfilePic from "../../public/assets/profile-picture/seb_1.jpg";
+
 import Image from "next/image";
 
 export const Main = () => {
@@ -24,19 +26,21 @@ export const Main = () => {
                 delay: 1.0,
                 duration: 2,
               }}
+              // className="xxs:w-[180px] h-[150px]"
             >
               <Image
                 src={ProfilePic}
                 alt="Sebastine's picture"
                 width={150}
-                height={100}
+                height={180}  
+                loading="lazy"	
                 className="profile-pic mr-0 md:mr-6 mb-4 lmd:mb-0"
               />
             </motion.div>
             <div>
-              <h1 className="px-2 font-medium  text-[24px] md:text-[35px] ">
+              <h1 className="px-2  text-[24px] md:text-[35px] ">
                 <motion.span
-                  className="font-medium -scroll-mb-4"
+                  className="font-semibold -scroll-mb-4"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1 }}
@@ -64,7 +68,7 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2 }}
                 viewport={{ once: true }}
-                className="font-semibold xxs:mt-8 sm:mt-2 text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
+                className="font-semibold xxs:mt-8 lg:mt-10 sm:mt-2 text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
               >
                 I'm a Front-end Web Developer <br />
               </motion.p>
