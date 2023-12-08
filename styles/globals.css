@@ -86,13 +86,13 @@ textarea:focus::placeholder {
   opacity: 1;
 }
 
+/* 
 #home {
   background-image: url("../public/assets/background/main-bg2.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  /* background-size: 100% auto; */
-}
+} */
 
 .profile-pic {
   background-color: #ffe6cf;
@@ -114,6 +114,8 @@ textarea:focus::placeholder {
   }
 }
 
+
+/* 
 @media (max-width: 913px) {
   #home {
     background-image: url("../public/assets/background/main-sm-bg.png");
@@ -121,4 +123,4 @@ textarea:focus::placeholder {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
+} */
