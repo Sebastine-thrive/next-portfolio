@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +11,6 @@ html {
   /* font-family: "Georgia", sans-serif; */
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -86,17 +87,9 @@ textarea:focus::placeholder {
   opacity: 1;
 }
 
-/* 
-#home {
-  background-image: url("../public/assets/background/main-bg2.png");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-} */
-
 .profile-pic {
   background-color: #ffe6cf;
-  box-shadow: -10px 10px #00a78e;
+  box-shadow: -6px 8px #00a78e;
 }
 
 @media (min-height: 1365px) {
@@ -115,12 +108,3 @@ textarea:focus::placeholder {
 }
 
 
-/* 
-@media (max-width: 913px) {
-  #home {
-    background-image: url("../public/assets/background/main-sm-bg.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-} */

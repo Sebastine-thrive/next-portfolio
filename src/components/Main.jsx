@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MyLinks } from "./data/Data";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 // import ProfilePic from "../../public/assets/profile-picture/seb.png";
-import ProfilePic from "../../public/assets/profile-picture/seb_1.jpg";
+import ProfilePic from "../../public/assets/profile-picture/seb_2.jpg";
 
 import Image from "next/image";
 
@@ -26,7 +26,6 @@ export const Main = () => {
                 delay: 1.0,
                 duration: 2,
               }}
-              // className="xxs:w-[180px] h-[150px]"
             >
               <Image
                 src={ProfilePic}
@@ -34,7 +33,7 @@ export const Main = () => {
                 width={150}
                 height={180}  
                 loading="lazy"	
-                className="profile-pic mr-0 md:mr-6 mb-4 lmd:mb-0"
+                className="profile-pic mr-0 md:mr-6 mb-4 lmd:mb-0 rounded-md"
               />
             </motion.div>
             <div>
@@ -68,7 +67,7 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2 }}
                 viewport={{ once: true }}
-                className="font-semibold xxs:mt-8 lg:mt-10 sm:mt-2 text-orange-400 sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
+                className="font-semibold xxs:mt-8 lg:mt-10 sm:mt-2 text-orange-400 bg-[#fff] rounded-t-md sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg"
               >
                 I'm a Front-end Web Developer <br />
               </motion.p>
@@ -77,9 +76,9 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2 }}
                 viewport={{ once: true }}
-                className="text-black font-semibold sm:text-[16px] md:text-[20px] lg:text[24px] "
+                className="text-black bg-[#fff] rounded-b-md font-semibold sm:text-[16px] md:text-[20px] lg:text[24px] "
               >
-                (Javascript, Typescript, ReactJS, NextJS){" "}
+                Javascript | Typescript | ReactJS | NextJS{" "}
               </motion.p>
             </div>
           </div>

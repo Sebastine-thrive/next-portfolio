@@ -1,5 +1,4 @@
 import React from "react";
-// import myImage from "../../public/sebastine.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
