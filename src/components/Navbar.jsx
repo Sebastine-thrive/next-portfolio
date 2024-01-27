@@ -82,10 +82,10 @@ export const Navbar = () => {
               </li>
             </Link>
 
-            {MyNavbarLinks.map((navlink) => (
+            {MyNavbarLinks.map((navlink, index) => (
               <Link
                 href={`/${"#" + navlink.title}`}
-                key={navlink.title}
+                key={index}
                 onClick={(e) => {
                   e.preventDefault();
                   document

@@ -11,7 +11,6 @@ html {
   /* font-family: "Georgia", sans-serif; */
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -24,18 +23,25 @@ html {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-family: "Gilroy-Bold", sans-serif;
   }
 
   h3,
   h4,
   h5,
-  h6,
-  p,
-  a,
-  span {
+  a {
     font-family: "Gilroy-Medium", sans-serif;
+  }
+
+  h6,
+  p {
+    font-family: "Gilroy-Regular", sans-serif;
+  }
+
+  span {
+    font-family: "Gilroy-Light", sans-serif;
   }
 
   h1 {
@@ -106,5 +112,3 @@ textarea:focus::placeholder {
     margin-top: -12rem;
   }
 }
-
-
