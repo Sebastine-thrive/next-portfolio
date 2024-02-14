@@ -44,7 +44,10 @@ export const Contact = () => {
                 <p className="py-4">
                   {" "}
                   I am available for freelance projects, contract or full-time
-                  positions. <br /> <span className="font-bold text-orange-400">Get in touch! </span>
+                  positions. <br />{" "}
+                  <span className="font-bold text-orange-400">
+                    Get in touch!{" "}
+                  </span>
                 </p>
               </div>
 
@@ -69,6 +72,8 @@ export const Contact = () => {
           {/* Right part */}
           <div className="col-span-3 w-full h-auto shadow-lg rounded-lg lg:p-4">
             <div className="p-4">
+              
+              {/* Contact Form */}
               <form action="https://formspree.io/f/xyyobbal" method="POST">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2 my-4">
                   <div className="flex flex-col ">
@@ -122,6 +127,7 @@ export const Contact = () => {
                   Send Message{" "}
                 </button>
               </form>
+
             </div>
           </div>
         </div>

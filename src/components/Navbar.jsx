@@ -109,7 +109,7 @@ export const Navbar = () => {
 
       <div
         className={
-          nav ? "fixed left-0 top-0 w-full h-screen bg-black/60 md:hidden" : ""
+          nav ? "fixed left-0 top-0 w-full h-screen bg-black/70 md:hidden" : ""
         }
       >
         {/* side drawer menu */}
@@ -117,7 +117,7 @@ export const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-1000 "
+              ? "fixed left-0 top-0 w-[85%] sm:w-[75%] h-screen bg-[#ecf0f3] p-10 ease-in duration-1000 "
               : "fixed left-[-150%] top-0 p-10 ease-in duration-1000"
           }
         >
@@ -150,7 +150,7 @@ export const Navbar = () => {
                 className="intro font-medium tracking-widest w-[85%] md:w-[90%] py-4 "
               >
                 {" "}
-                Let's build something innovative together
+                Let's create solutions together
               </p>
             </div>
 

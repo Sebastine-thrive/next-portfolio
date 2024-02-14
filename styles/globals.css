@@ -4,11 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* #2e51ed */
-
 html {
   scroll-behavior: smooth;
-  /* font-family: "Georgia", sans-serif; */
 }
 
 * {
@@ -57,11 +54,26 @@ html {
   }
 }
 
+#home {
+    background-image: url('/assets/background/portfolio-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* background-image: url("/assets/images/2vid.png"); */
+}
+
+
+
 .intro {
   background: linear-gradient(to right, #f32170, #ff6b08, #00a78e, #eedd44);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+.coder-bg {
+  max-width:none;
 }
 
 input {

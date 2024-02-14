@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { Tooltip } from "react-tooltip";
 
 import { MyLinks } from "./data/Data";
 
@@ -59,7 +60,7 @@ const Footer = () => {
             initial={{ y: 0 }}
             animate={{ y: [-20, 0, 20] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-            className="rounded-full p-2 cursor-pointer hover:scale-120 ease-in duration-300 bg-black  hover:bg-white"
+            className="scroll-up-button__main rounded-full p-2 cursor-pointer hover:scale-120 ease-in duration-300 bg-black  hover:bg-white"
           >
             <HiOutlineChevronDoubleUp
               className=" rounded-full bg-transparent  text-white hover:text-black "
@@ -67,6 +68,12 @@ const Footer = () => {
             />
           </motion.div>
         </Link>
+        <Tooltip
+          anchorSelect=".scroll-up-button__main"
+          place="top"
+          content="Scroll to the top"
+          className="hidden lg:block"
+        />
       </div>
     </div>
   );

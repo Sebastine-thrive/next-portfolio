@@ -3,8 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MyLinks } from "./data/Data";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
-// import ProfilePic from "../../public/assets/profile-picture/seb.png";
+import { Tooltip } from "react-tooltip";
 import ProfilePic from "../../public/assets/profile-picture/seb_2.jpg";
+import coder from "../../public/assets/background/coder.svg";
 
 import Image from "next/image";
 
@@ -12,11 +13,11 @@ export const Main = () => {
   return (
     <div
       id="home"
-      className="relative w-full h-screen flex justify-center items-center text-center bg-[#ecf0f3]"
+      className="relative w-full max-w-[100vw] h-screen flex justify-center items-center text-center bg-[#ecf0f3] overflow-hidden"
     >
-      <div className="home-wrapper max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center">
+      <div className="home-wrapper max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center z-5">
         <div>
-          <div className="flex items-center flex-col lmd:flex-row  ">
+          <div className="flex items-center justify-center flex-col lg:flex-row  ">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -33,10 +34,10 @@ export const Main = () => {
                 width={150}
                 height={180}
                 loading="lazy"
-                className="profile-pic mr-0 md:mr-6 mb-4 md:mb-0 rounded-md"
+                className="profile-pic w-[150px] h-[150px] mr-0 mb-4 md:mb-0 rounded-md"
               />
             </motion.div>
-            <div>
+            <div className="lg:ml-8">
               <h1 className="px-2  text-[24px] md:text-[35px] ">
                 <motion.span
                   className="font-semibold -scroll-mb-4"
@@ -47,7 +48,7 @@ export const Main = () => {
                   Hi! I'm
                 </motion.span>
                 <motion.span
-                  className="font-bold text-[#00a78e]  text-[26px] md:text-[38px] "
+                  className=" text-[#00a78e]  text-[26px] md:text-[38px] "
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{
@@ -67,7 +68,7 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 2 }}
                 viewport={{ once: true }}
-                className="font-semibold xxs:mt-8 lg:mt-10 sm:mt-2 text-orange-400 bg-[#fff] rounded-t-md sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg shadow-sm shadow-orange-200"
+                className="font-semibold xxs:mt-8 lg:mt-10 sm:mt-2 text-orange-400 bg-[#fff] rounded-md sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg shadow-sm shadow-orange-200"
               >
                 I'm a Front-end Web Developer <br />
               </motion.p>
@@ -76,7 +77,7 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 2 }}
                 viewport={{ once: true }}
-                className="text-black bg-[#fff] rounded-b-md font-semibold sm:text-[16px] md:text-[20px] lg:text[24px] "
+                className="text-black font-semibold mt-2 sm:text-[16px] md:text-[20px] lg:text[24px] "
               >
                 Javascript | Typescript | ReactJS | NextJS{" "}
               </motion.p>
@@ -88,18 +89,19 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 2, duration: 2 }}
             viewport={{ once: true }}
-            className="mt-8 py-4  hidden sm:block font-semibold text-gray-600 w-[90%] max-w-[90%] m-auto text-base"
+            className="mt-8 py-4  hidden sm:block font-semibold text-gray-600 w-[90%] md:w-[80%] lg:w-[60%] max-w-[90%] m-auto text-base"
           >
-            I'm focused on delivering value through developing and building
-            exceptional digital experiences <br /> that are responsive,
-            user-friendly, safe, interactive and scalable.
+            I'm focused on delivering value and providing business solutions
+            through developing and building exceptional digital experiences{" "}
+            <br /> that are responsive, user-friendly, safe, interactive and
+            scalable.
           </motion.p>
           <motion.p
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 4, duration: 3 }}
-            className=" intro  mt-10 sm:mt-0  font-semibold shadow-green-400 sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
+            className=" intro  mt-10 sm:mt-0 md:mt-8  font-semibold shadow-green-400 sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
           >
             Let's create solutions together
           </motion.p>
@@ -109,7 +111,7 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 2, duration: 2 }}
-            className="flex items-center justify-between  m-auto py-4 max-w-[330px]"
+            className="flex items-center justify-between  m-auto py-2 max-w-[330px]"
           >
             {MyLinks.map((links) => (
               <Link href={links.href} target="_blank" key={links.href}>
@@ -123,24 +125,47 @@ export const Main = () => {
       </div>
 
       {/* Scroll-down  indicator */}
-      <div className=" absolute max-w-[30] right-[10vw] xxs:top-[80vh]  sm:top-[550px] z-10">
-        <motion.div
-          initial={{ y: 0, opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          animate={{ y: [-20, 0, 20] }}
-          transition={{
-            delay: 5,
-            duration: 3,
-            ease: "linear",
-            repeat: Infinity,
-          }}
-          className="rounded-full p-2 cursor-pointer hover:scale-120 ease-in duration-300 bg-black  hover:bg-white"
-        >
-          <HiOutlineChevronDoubleDown
-            className=" rounded-full bg-transparent  text-white hover:text-black "
-            size={25}
-          />
-        </motion.div>
+      <div className=" absolute w-auto right-[10vw] xxs:top-[80vh]  sm:top-[550px] z-10">
+        <Link
+          href="/#about"        >
+          <motion.div
+            initial={{ y: 0, opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            animate={{ y: [-20, 0, 20] }}
+            transition={{
+              delay: 5,
+              duration: 3,
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            className="scroll-down-button__main p-2 cursor-pointer hover:scale-120 ease-in duration-300 "
+            role="please scroll down"
+            id="scroll-down button"
+          >
+            <HiOutlineChevronDoubleDown
+              className="  bg-transparent text-black hover:text-[#00a78e] "
+              size={25}
+            />
+          </motion.div>
+        </Link>
+        <Tooltip
+          anchorSelect=".scroll-down-button__main"
+          place="top"
+          content="Scroll down"
+          className="hidden lg:block"
+        />
+      </div>
+
+      {/* coder image for background */}
+      <div className="coder-bg absolute left-0 top-[10vh] md:left-0 md:bottom-0 ">
+        <Image
+          src={coder}
+          width={200}
+          height={200}
+          alt="coder image"
+          priority
+          className="coder-bg xxs:w-[100px] xxs:h-[100px] w-[150px] h-[150px] md:w-[200px] md:h-[200px]"
+        />
       </div>
     </div>
   );

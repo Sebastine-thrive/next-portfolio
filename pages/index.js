@@ -9,7 +9,7 @@ import Head from "next/head";
 
 export default function Home({ data }) {
   return (
-    <div>
+    <div className="w-[100vw] max-w-[1920px]">
       <Head>
         <title> Sebastine Ogu | Front-end Web Developer</title>
         <meta

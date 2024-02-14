@@ -26,11 +26,12 @@ export const About = () => {
           >
             <p>
               I'm a web developer skilled in creating and maintaining websites
-              and web applications. I leverage technologies such
-              as HTML, CSS, CSS frameworks and libraries like Bootstrap, SASS and
-              TailwindCSS. I utilise Git (Github), Javascript, ReactJS, NextJS etc. I am always looking for ways to meet business needs and improve
-              the user experience by making websites and web applications more visually-appealing,
-              responsive and accessible.
+              and web applications. I leverage technologies such as HTML, CSS,
+              CSS frameworks and libraries like Bootstrap, SASS and TailwindCSS.
+              I utilise Git (Github), Javascript, ReactJS, NextJS etc. I am
+              always looking for ways to meet business needs and improve the
+              user experience by making websites and web applications more
+              visually-appealing, responsive and accessible.
               <br />
               <br />
               I am a team-player who believes in achieving more with
@@ -40,7 +41,7 @@ export const About = () => {
               <br />
               <Link
                 href={"/#contact"}
-                className="text-black"
+                className="text-black underline hover:text-[#fff]"
                 onClick={(e) => {
                   e.preventDefault();
                   document
