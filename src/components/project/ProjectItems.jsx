@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 
 export const ProjectItems = ({ data }) => {
   return (
-    <div id="projects" className="w-full min-h-screen px-4 mt-24 bg-white">
+    <div id="projects" className="w-full min-h-screen px-4  bg-[#151527]">
       <div className="max-w-[1240px] px-4 py-16 mx-auto">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="title text-[#00a78e] uppercase tracking-widest font-extrabold text-xl text-center py-2"
+          className="title text-blue-200 uppercase tracking-widest font-extrabold text-xl text-center py-2"
         >
           Portfolio
         </motion.h2>
@@ -31,18 +31,18 @@ export const ProjectItems = ({ data }) => {
                 className="flex sm:w-full md:w-[50%] lg:w-[33%] justify-center p-4"
                 key={project.id}
               >
-                <div className="xxs:p-4 lg:p-0 xss:rounded-lg lg:rounded-none xxs:bg-[#ecf0f3] lg:bg-white lg:relative lg:flex xss:flex-col items-center justify-center my-8 h-auto w-full  p-4 group rounded-md lg:hover:bg-gradient-to-r from-[#00a78e] to-[#3cb371] hover:border-0 ">
-                  <div className=" max-h-[400px]">
+                <div className="xxs:p-4 lg:p-0 xss:rounded-lg lg:rounded-none xxs:bg-[#ecf0f3] lg:bg-white lg:relative lg:flex xss:flex-col items-center justify-center my-8 h-auto w-auto max-w-[260px] xs:max-w-[350px]  p-4 group rounded-md lg:hover:bg-gradient-to-r from-gray-900 to-blue-700 hover:border-0 ">
+                  <div className=" max-h-[300px] h-auto w-auto">
                     <Image
                       src={project.image}
                       alt={project.title}
-                      width={400}
-                      height={400}
-                      className=" lg:group-hover:opacity-10 border-2 border-orange-400 "
+                      width={200}
+                      height={150}
+                      className="w-[250px] h-[150px] lg:w-[300px] lg:h-[250px] lg:group-hover:opacity-10 border-2 border-orange-400 mx-auto "
                     />
                   </div>
 
-                  <div className="sm:h-auto lg:hidden  xxs:flex xxs:w-[280px] lg:group-hover:flex lg:absolute flex-col text-center items-center justify-center my-2">
+                  <div className="sm:h-auto w-auto max-w-[250px] lg:max-w-[300px] lg:hidden  lg:group-hover:flex lg:absolute flex-col text-center items-center justify-center my-2">
                     <h3 className="sm:text-xl md:text-2xl xxs:text-orange-600 lg:text-orange-300 tracking-wider text-center mt-2">
                       {" "}
                       {project.title}{" "}
@@ -51,7 +51,7 @@ export const ProjectItems = ({ data }) => {
                       {project.tech}
                     </p>
 
-                    <div className="block text-center w-[6rem] my-2 h-auto">
+                    <div className="block mx-auto text-center w-[6rem] my-2 h-auto">
                       <Link href={`/projects/${project.title}`}>
                         <p className="text-center p-2 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                           {" "}

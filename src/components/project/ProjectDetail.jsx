@@ -3,6 +3,7 @@ import Image from "next/legacy/image";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import { HiOutlineChevronLeft } from "react-icons/hi";
 
 const ProjectDetail = ({ data }) => {
   return (
@@ -32,8 +33,6 @@ const ProjectDetail = ({ data }) => {
               View
             </button>
           </Link>
-
-         
         </div>
 
         <div className="col-span-3 md:col-span-2 shadow-xl shadow-green-100 bg-black/80 text-white rounded-xl p-4">
@@ -50,9 +49,12 @@ const ProjectDetail = ({ data }) => {
           </div>
         </div>
 
-        <p className="underline text-[#00a78e] cursor-pointer sm:w-4 h-2">
-          <Link href="/#projects">Back</Link>
-        </p>
+        <Link href="/#projects">
+          <div className=" text-blue-700 cursor-pointer sm:w-4 h-2 flex items-center">
+            <HiOutlineChevronLeft />
+            <p className="ml-1">Back</p>
+          </div>
+        </Link>
       </div>
     </div>
   );

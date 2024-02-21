@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MyLinks } from "./data/Data";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import { Tooltip } from "react-tooltip";
-import ProfilePic from "../../public/assets/profile-picture/seb_2.jpg";
+import ProfilePic from "../../public/assets/profile-picture/seb1.jpg";
 import coder from "../../public/assets/background/coder.svg";
 
 import Image from "next/image";
@@ -31,16 +31,16 @@ export const Main = () => {
               <Image
                 src={ProfilePic}
                 alt="Sebastine's picture"
-                width={150}
-                height={180}
-                loading="lazy"
-                className="profile-pic w-[150px] h-[150px] mr-0 mb-4 md:mb-0 rounded-md"
+                width={170}
+                height={150}
+                priority
+                className="profile-pic w-[170px] h-[150px] mr-0 mb-4 md:mb-0 rounded-md"
               />
             </motion.div>
             <div className="lg:ml-8">
               <h1 className="px-2  text-[24px] md:text-[35px] ">
                 <motion.span
-                  className="font-semibold -scroll-mb-4"
+                  className="font-semibold -scroll-mb-4 text-white"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1 }}
@@ -48,7 +48,7 @@ export const Main = () => {
                   Hi! I'm
                 </motion.span>
                 <motion.span
-                  className=" text-[#00a78e]  text-[26px] md:text-[38px] "
+                  className=" text-[#3844f9] font-bold text-[26px] md:text-[38px] "
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{
@@ -68,7 +68,7 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 2 }}
                 viewport={{ once: true }}
-                className="font-semibold xxs:mt-8 lg:mt-10 sm:mt-2 text-orange-400 bg-[#fff] rounded-md sm:text-[20px] md:text-[24px] lg:text[28px] sm:py-1 lg:py-2 tracking-wide text-lg shadow-sm shadow-orange-200"
+                className="developer font-bold xxs:mt-8 lg:mt-10 sm:mt-2 text-orange-400 bg-[#fff] rounded-md sm:text-[20px] md:text-[24px] lg:text[28px] p-1 tracking-wide text-lg shadow-sm shadow-orange-200"
               >
                 I'm a Front-end Web Developer <br />
               </motion.p>
@@ -77,7 +77,7 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 2 }}
                 viewport={{ once: true }}
-                className="text-black font-semibold mt-2 sm:text-[16px] md:text-[20px] lg:text[24px] "
+                className="text-[#312fb9] font-semibold mt-2 sm:text-[16px] md:text-[20px] lg:text[24px] "
               >
                 Javascript | Typescript | ReactJS | NextJS{" "}
               </motion.p>
@@ -89,11 +89,10 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 2, duration: 2 }}
             viewport={{ once: true }}
-            className="mt-8 py-4  hidden sm:block font-semibold text-gray-600 w-[90%] md:w-[80%] lg:w-[60%] max-w-[90%] m-auto text-base"
+            className="mt-8 py-4  hidden sm:block font-semibold text-white w-[90%] md:w-[80%] lg:w-[60%] max-w-[90%] m-auto text-base"
           >
-            I'm focused on delivering value and providing business solutions
-            through developing and building exceptional digital experiences{" "}
-            <br /> that are responsive, user-friendly, safe, interactive and
+            I'm focused on providing business solutions through developing and building exceptional digital experiences{" "}
+            <br /> that are responsive, safe, user-friendly, interactive and
             scalable.
           </motion.p>
           <motion.p
@@ -101,7 +100,7 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 4, duration: 3 }}
-            className=" intro  mt-10 sm:mt-0 md:mt-8  font-semibold shadow-green-400 sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
+            className="solutions  mt-10 sm:mt-0 md:mt-8  font-semibold shadow-custom sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
           >
             Let's create solutions together
           </motion.p>
@@ -115,7 +114,7 @@ export const Main = () => {
           >
             {MyLinks.map((links) => (
               <Link href={links.href} target="_blank" key={links.href}>
-                <div className="md:rounded-full md:shadow-md md:shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400 hover:shadow-orange-400">
+                <div className="  text-blue-700 md:rounded-full md:shadow-md md:shadow-[#312fb9] p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400 hover:shadow-orange-400">
                   {links.icon}
                 </div>
               </Link>
@@ -126,8 +125,7 @@ export const Main = () => {
 
       {/* Scroll-down  indicator */}
       <div className=" absolute w-auto right-[10vw] xxs:top-[80vh]  sm:top-[550px] z-10">
-        <Link
-          href="/#about"        >
+        <Link href="/#about">
           <motion.div
             initial={{ y: 0, opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -143,7 +141,7 @@ export const Main = () => {
             id="scroll-down button"
           >
             <HiOutlineChevronDoubleDown
-              className="  bg-transparent text-black hover:text-[#00a78e] "
+              className="  bg-transparent text-white hover:text-[#ff6b08] "
               size={25}
             />
           </motion.div>
@@ -156,17 +154,10 @@ export const Main = () => {
         />
       </div>
 
-      {/* coder image for background */}
-      <div className="coder-bg absolute left-0 top-[10vh] md:left-0 md:bottom-0 ">
-        <Image
-          src={coder}
-          width={200}
-          height={200}
-          alt="coder image"
-          priority
-          className="coder-bg xxs:w-[100px] xxs:h-[100px] w-[150px] h-[150px] md:w-[200px] md:h-[200px]"
-        />
-      </div>
+     
+      {/* Image by <a href="https://www.freepik.com/free-vector/gradient-geometric-shapes-dark-background_6849656.htm#query=portfolio%20background&position=11&from_view=keyword&track=ais&uuid=c94efb3c-e448-4c04-9a4e-a41cb374ce52">Freepik</a> */}
+
+      {/* <a href="https://www.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_18220884.htm#query=portfolio%20background&position=17&from_view=keyword&track=ais&uuid=c94efb3c-e448-4c04-9a4e-a41cb374ce52">Image by rawpixel.com</a> on Freepik */}
     </div>
   );
 };

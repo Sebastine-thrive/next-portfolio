@@ -1,5 +1,20 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
+/* CSS HEX */
+/* former bg bg-[#ecf0f3] */
+/*  text-blue 200, link-icons:text-blue-500  text-blue-700 yellow- #eedd44,
+--woodsmoke: #111214;
+--port-gore: #191939;x
+--mirage: #151527;  2
+--cloud-burst: #1c2448; x
+
+/* 
+--governor-bay: #312fb9;  light purple
+--blue-ribbon: #3844f9;  bluish purple
+--madison: #0c2569;   dark blue
+--thunder: #1c141b; very dark purple
+--port-gore: #2c1c4c;  mid purple */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +32,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply text-[#1f2937] tracking-wide;
   }
 
   h1,
@@ -50,30 +65,32 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 p-2 rounded-xl uppercase text-white bg-[#00a78e] hover:bg-[#FB923C];
+    @apply shadow-lg shadow-gray-400 p-2 rounded-xl uppercase text-white bg-[#312fb9] hover:bg-[#FB923C];
   }
 }
 
 #home {
-    background-image: url('/assets/background/portfolio-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* background-image: url("/assets/images/2vid.png"); */
+  background-image: url("/assets/background/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: url("/assets/images/2vid.png"); */
 }
 
-
-
-.intro {
-  background: linear-gradient(to right, #f32170, #ff6b08, #00a78e, #eedd44);
+.solutions {
+  background: linear-gradient(to right, white, #312fb9, #ff6b08);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
+
+.developer {
+text-shadow: 1px 1px 2px black, 0 0 0.5em white, 0 0 0.5em blue ;
+}
+
 .coder-bg {
-  max-width:none;
+  max-width: none;
 }
 
 input {
@@ -81,10 +98,25 @@ input {
   outline: none;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  color: black;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 300;
+}
+/* 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus, */
 input:focus,
 textarea:focus {
-  border-bottom: 2px solid #00a78e;
+  border-bottom: 2px solid blueviolet;
+  background-color: #333;
   outline: none;
+  color: white;
+  font-weight: 300;
+  font-family: "Gilroy-Regular", sans-serif;
 }
 
 input::placeholder,
@@ -105,10 +137,17 @@ textarea:focus::placeholder {
   opacity: 1;
 }
 
+
+/* Style the caret color */
+input[type="text"]::selection {
+  color: #333; /* Selection text color */
+}
+
 .profile-pic {
   background-color: #ffe6cf;
-  box-shadow: -6px 8px #00a78e;
+  box-shadow: -6px 8px #3844f9;
 }
+
 
 @media (min-height: 1365px) {
   #home {

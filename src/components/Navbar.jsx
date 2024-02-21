@@ -4,13 +4,13 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { MyLinks, MyNavbarLinks } from "./data/Data";
-import logo from "../../public/assets/logo/logo.gif";
+import logo from "../../public/assets/logo/logo_1.gif";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [navBg, setNavBg] = useState("");
 
   const handleNav = () => {
     setNav(!nav);
@@ -32,8 +32,8 @@ export const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-[3rem] shadow-xl z-[100] "
-          : "fixed w-full h-[3rem] z-[100] "
+          ? "fixed w-full h-[3rem] shadow-xl z-[100] bg-opacity-0  "
+          : "fixed w-full h-[3rem] z-[100] bg-opacity-0  "
       }
     >
       <div className="flex justify-between items-center w-full h-full px-8 2xl:px-16 z-20">
@@ -45,15 +45,15 @@ export const Navbar = () => {
             scale: [1, 1.2, 1.2, 1],
           }}
           viewport={{ once: true }}
-          className="h-[2.5ren]"
+          className=""
         >
           <Link href="/">
             <Image
               src={logo}
               alt="logo"
               width={100}
-              height={10}
-              className="cursor-pointer"
+              height={50}
+              className="cursor-pointer border border-white rounded-md w-[100px] h-[35px] lg:w-[100px] lg:h-[40px]"
             />
           </Link>
         </motion.div>
@@ -77,7 +77,7 @@ export const Navbar = () => {
                   .scrollIntoView({ behavior: "smooth" });
               }}
             >
-              <li className="ml-10 text-sm font-bold text-[#00a78e] capitalize hover:border-b hover:text-orange-400">
+              <li className="ml-10 text-sm font-bold text-white capitalize hover:border-b hover:text-orange-400">
                 Home
               </li>
             </Link>
@@ -93,13 +93,13 @@ export const Navbar = () => {
                     .scrollIntoView({ behavior: "smooth" });
                 }}
               >
-                <li className="ml-10 text-sm font-bold text-[#00a78e] capitalize hover:border-b hover:text-orange-400">
+                <li className="ml-10 text-sm font-bold text-white capitalize hover:border-b hover:text-orange-400">
                   {navlink.title}
                 </li>
               </Link>
             ))}
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className="md:hidden text-white">
             <AiOutlineMenu size={25} />
           </div>
         </motion.div>
@@ -117,7 +117,7 @@ export const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[85%] sm:w-[75%] h-screen bg-[#ecf0f3] p-10 ease-in duration-1000 "
+              ? "fixed left-0 top-0 w-[85%] sm:w-[75%] h-screen bg-[#1c2448] p-10 ease-in duration-1000 "
               : "fixed left-[-150%] top-0 p-10 ease-in duration-1000"
           }
         >
@@ -128,13 +128,13 @@ export const Navbar = () => {
                   src={logo}
                   width={100}
                   height={40}
-                  className="cursor-pointer "
+                  className="cursor-pointer border border-white rounded-md w-[100px] h-[35px] "
                   alt="logo"
                 />
               </Link>
 
               <div
-                className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer"
+                className="text-white rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer"
                 onClick={handleNav}
               >
                 <AiOutlineClose />
@@ -159,7 +159,7 @@ export const Navbar = () => {
                 <Link href="/">
                   <li
                     onClick={() => setNav(false)}
-                    className="py-4 capitalize text-sm text-[00a78e] font-semibold text-[#00a78e] hover:border-b hover:text-orange-400"
+                    className="py-4 capitalize text-sm text-white font-semibold  hover:border-b hover:text-orange-400"
                   >
                     Home
                   </li>
@@ -175,7 +175,7 @@ export const Navbar = () => {
                   >
                     <li
                       onClick={() => setNav(false)}
-                      className="py-4 capitalize text-sm hover:border-b hover:text-orange-400 font-semibold text-[#00a78e]"
+                      className="py-4 capitalize text-white text-sm hover:border-b hover:text-orange-400 font-semibold "
                     >
                       {navlink.title}
                     </li>
@@ -183,14 +183,14 @@ export const Navbar = () => {
                 ))}
               </ul>
               <div className="pt-10">
-                <p className="uppercase tracking-widest text-[#00a78e]">
+                <p className="uppercase tracking-widest text-blue-200">
                   Let's connect
                 </p>
 
                 <div className="flex items-center justify-between my-4 w-full sm:w[80%]">
                   {MyLinks.map((links) => (
                     <Link key={links.href} href={links.href} target="_blank">
-                      <div className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300  hover:text-orange-400 hover:shadow-orange-400">
+                      <div className="rounded-full text-blue-500 shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300  hover:text-orange-400 hover:shadow-orange-400">
                         {links.icon}
                       </div>
                     </Link>

@@ -8,10 +8,10 @@ import { MyLinks } from "./data/Data";
 
 export const Contact = () => {
   return (
-    <div id="contact" className="w-full my-4 mx-auto">
+    <div id="contact" className="w-full mx-auto bg-black">
       <div className="title max-w-[1240px] w-full mx-auto px-2 pt-24 pb-12 text-center">
         <motion.h2
-          className="text-xl tracking-widest font-extrabold uppercase text-[#00a78e]"
+          className="text-xl tracking-widest font-extrabold uppercase text-blue-200"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
         >
@@ -41,7 +41,7 @@ export const Contact = () => {
                 />
               </div>
               <div>
-                <p className="py-4">
+                <p className="py-4 text-gray-500">
                   {" "}
                   I am available for freelance projects, contract or full-time
                   positions. <br />{" "}
@@ -52,12 +52,12 @@ export const Contact = () => {
               </div>
 
               <div>
-                <p className="uppercase pt-8 font-semibold">Connect With Me </p>
+                <p className="uppercase pt-8 font-semibold text-gray-500">Connect With Me </p>
                 <div className="flex items-center justify-between py-4">
                   {MyLinks.map((link) => (
                     <Link href={link.href} target="_blank" key={link.href}>
                       <div
-                        className="rounded-full shadow-lg shadow-green-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 
+                        className="rounded-full text-blue-700 shadow-md shadow-[#312fb9] p-6 cursor-pointer hover:scale-110 ease-in duration-300 
                                                 hover:text-orange-400 hover:shadow-orange-400"
                       >
                         {link.icon}
@@ -70,11 +70,11 @@ export const Contact = () => {
           </div>
 
           {/* Right part */}
-          <div className="col-span-3 w-full h-auto shadow-lg rounded-lg lg:p-4">
-            <div className="p-4">
+          <div className="col-span-3 w-full h-auto shadow-md lg:p-4">
+            <div className="px-4 py-8 border border-orange-400 rounded-md lg:border-none lg:hover:border">
               
               {/* Contact Form */}
-              <form action="https://formspree.io/f/xyyobbal" method="POST">
+              <form action="https://formspree.io/f/xyyobbal" method="POST" className=" contact-form">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2 my-4">
                   <div className="flex flex-col ">
                     <input
@@ -88,7 +88,7 @@ export const Contact = () => {
                   <div className="flex flex-col">
                     <input
                       className="rounded-lg p-3 flex "
-                      type="number"
+                      type="tel"
                       name="phone Number"
                       placeholder="Phone Number"
                     />

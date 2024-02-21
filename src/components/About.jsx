@@ -6,11 +6,11 @@ export const About = () => {
   return (
     <div
       id="about"
-      className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center mb-16 bg-white"
+      className="w-full text-gray-700 min-h-screen md:h-screen mx-auto flex items-center bg-[#151527]"
     >
       <div className="about-container max-w-[1240px] my-8  mx-auto sm:flex flex-col sm:w-screen justify-center items-center align-center">
         <motion.h2
-          className="title text-[#00a78e] pt-24 font-extrabold text-xl uppercase tracking-widest text-center"
+          className="title text-blue-200 pt-24 font-extrabold text-xl uppercase tracking-widest text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2.5 }}
@@ -28,10 +28,11 @@ export const About = () => {
               I'm a web developer skilled in creating and maintaining websites
               and web applications. I leverage technologies such as HTML, CSS,
               CSS frameworks and libraries like Bootstrap, SASS and TailwindCSS.
-              I utilise Git (Github), Javascript, ReactJS, NextJS etc. I am
-              always looking for ways to meet business needs and improve the
-              user experience by making websites and web applications more
-              visually-appealing, responsive and accessible.
+              I also employ Git (specifically GitHub), JavaScript, ReactJS,
+              NextJS, and other related technologies. I am constantly seeking
+              ways to fulfill business requirements and enhance user experiences
+              by enhancing the visual appeal, responsiveness, and accessibility
+              of websites and web applications.
               <br />
               <br />
               I am a team-player who believes in achieving more with
@@ -55,21 +56,12 @@ export const About = () => {
             </p>
 
             <div className="flex justify-start my-8 items-center">
-              <div className="hover:text-black">
-                <a href="https://01sebastine-ogu.tiiny.site/" target="blank">
-                  {" "}
-                  View Resume{" "}
-                </a>{" "}
-              </div>
               <div>
-                <button className="px-4 py-2 capitalize ml-4 shadow-none">
+                <button className="px-4 py-2 capitalize  shadow-none">
                   {" "}
-                  <a
-                    href="/assets/resume/01Sebastine Ogu Web-developer.pdf"
-                    download
-                  >
+                  <a href="https://01sebastine-ogu.tiiny.site/" target="blank">
                     {" "}
-                    Download resume{" "}
+                    View resume{" "}
                   </a>
                 </button>
               </div>

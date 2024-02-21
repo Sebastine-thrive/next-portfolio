@@ -24,9 +24,17 @@
       "id": "Portfolio Website",
       "title": "Portfolio Website",
       "class": "projects",
-      "description": "Developed this beautiful portfolio site using NextJS, TailwindCSS and Framer-motion. Project data are fetched from the Next app API backend",
-      "tech": ["NextJS ", "TailwindCSS ", "Framer-Motion ", "Vercel"],
-      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1696297995/Sebastine-Ogu-Front-end-Web-Developer_klraeb.png",
+      "description": "Developed this beautiful portfolio site using NextJS, TailwindCSS and Framer-motion. Project data are fetched from the Next app API backend. Features include cool animations using framer motion, improroved usability and accessiblity using React tooltip etc.",
+      "tech": [
+        "NextJS ",
+        "TailwindCSS ",
+        "Framer-Motion ",
+        "Cloudinary",
+        "React Tooltip",
+        "React-Icons",
+        "Vercel"
+      ],
+      "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1708515058/mr_seb_website_-_Copy_it04zv.png",
       "url": "https://sebastine-ogu.vercel.app/",
       "github": "https://github.com/Sebastine-thrive/next-portfolio"
     },
@@ -34,8 +42,7 @@
       "id": "Talk-And-Show Africa Homepage",
       "title": "Talk-And-Show Africa Homepage",
       "class": "projects",
-      "description": "Designed and built this beautiful, responsive home page of a movie-marketing agency website that showcases links to  movies and  series, news, etc., using HTML, CSS and vanilla Javascript according to provided user interface design. Features also include movie rating which can be easily fetched at the backend, news and events viewing with answers to FAQs.",
-      "tech": ["HTML  ", "CSS  ", "Javascript  ", "Netlify"],
+      "description": "Designed and developed a visually stunning and responsive homepage for a movie marketing agency website. The site showcases links to movies and series, latest news, and more, all according to the provided user interface design. Implemented features include: responsive design, animations- for visual delight and ana enjoyable user experience Movie Rating - Integration to easily fetch movie ratings from the backend; News and Events: Section for viewing the latest news and upcoming events; FAQs: Answers to frequently asked questions.",
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1679977174/TashAfrica_blh0ty.png",
       "url": "https://talkafrica.netlify.app",
       "github": "https://github.com/Sebastine-thrive/talkafrica"
