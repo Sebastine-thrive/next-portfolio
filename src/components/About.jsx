@@ -59,7 +59,7 @@ export const About = () => {
               <div>
                 <button className="px-4 py-2 capitalize  shadow-none">
                   {" "}
-                  <a href="https://01sebastine-ogu.tiiny.site/" target="blank">
+                  <a href="https://mrseb.tiiny.site/" target="blank">
                     {" "}
                     View resume{" "}
                   </a>
