@@ -5,7 +5,7 @@
       "title": "ShopIt Ecommerce",
       "class": "projects",
       "description": "This e-commerce project was built with NextJS, Context API for state data management and Sanity for products data management. Items for sale are displayed in various categories from which their details can be viewed and then they are addded to cart. Paystack test payment checkout is integrated into the project. It is currently hosted on vercel.",
-      "tech": ["NextJs  ", "Context API  ", "Sanity  ", "Vercel"],
+      "tech": ["NextJs  ", "Context API  ", "Sanity  ", "Paystack ", "Vercel"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1694349988/ShopIt1_mnok9i.png",
       "url": "https://shopit-nigeria.vercel.app/",
       "github": "https://github.com/Sebastine-thrive/shopit-ecommerce"
@@ -14,7 +14,7 @@
       "id": "Thrive Ecommerce Admin Dashboard",
       "title": "Thrive Ecommerce Admin Dashboard",
       "class": "projects",
-      "description": "Created and developed using ReactJS, TailwindCSS and Context API for state data management, this project utilises available dummy data to illustrate a typical e-commerce admin dashboard. Features include dynamically rendering a side navigation, rendering components such as an order page, charts, calendar, color picker and text editor, etc.  Dark mode and theme selection are effected at the click of a button. It is currently hosted on netlify.",
+      "description": "Created and developed using ReactJS, TailwindCSS and Context API for state data management, this awesome project utilises available dummy data to display an e-commerce admin dashboard. Features include several page elements: an order page, employee records page etc, apps: a kanban board, text editor,display information in bar charts, pie charts etc., and ability to change themes and toggle dark and light modes",
       "tech": ["ReactJs  ", "ContextAPI  ", "TailwindCSS  ", "Netlify"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1692892186/Portfolio%20project%20Images/thrive-admin-dashboard_zmfayr.png",
       "url": "https://thriveadmin-dashboard.netlify.app/",
@@ -27,12 +27,12 @@
       "description": "Developed this beautiful portfolio site using NextJS, TailwindCSS and Framer-motion. Project data are fetched from the Next app API backend. Features include cool animations using framer motion, improroved usability and accessiblity using React tooltip etc.",
       "tech": [
         "NextJS ",
-        "TailwindCSS ",
-        "Framer-Motion ",
-        "Cloudinary",
-        "React Tooltip",
-        "React-Icons",
-        "Vercel"
+        " TailwindCSS ",
+        " Framer-Motion ",
+        " Cloudinary ",
+        " React-Tooltip ",
+        " React-Icons ",
+        " Vercel"
       ],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1708515058/mr_seb_website_-_Copy_it04zv.png",
       "url": "https://sebastine-ogu.vercel.app/",
@@ -44,6 +44,7 @@
       "class": "projects",
       "description": "Designed and developed a visually stunning and responsive homepage for a movie marketing agency website. The site showcases links to movies and series, latest news, and more, all according to the provided user interface design. Implemented features include: responsive design, animations- for visual delight and ana enjoyable user experience Movie Rating - Integration to easily fetch movie ratings from the backend; News and Events: Section for viewing the latest news and upcoming events; FAQs: Answers to frequently asked questions.",
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1679977174/TashAfrica_blh0ty.png",
+      "tech": ["HTML  ", "Vanilla CSS  ", " Netlify"],
       "url": "https://talkafrica.netlify.app",
       "github": "https://github.com/Sebastine-thrive/talkafrica"
     },
@@ -52,7 +53,7 @@
       "title": "Workit Landing Page",
       "class": "projects",
       "description": "Curved backgrounds are a beauty to behold in websites as they add some aesthetic viewing. I developed this landing page following a challenge at Dribble using HTML, plain CSS and the TailwindCSS library. ",
-      "tech": ["HTML  ", "CSS  ", "TailwindCSS  ", "Netlify"],
+      "tech": ["HTML  ", " CSS  ", " TailwindCSS  ", " Netlify"],
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1680695119/workit_rbhen7.png",
       "url": "https://thrive-workit.netlify.app/",
       "github": "https://github.com/Sebastine-thrive/workit-"

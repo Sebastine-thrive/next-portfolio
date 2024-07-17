@@ -48,7 +48,7 @@ export const Main = () => {
                   Hi! I'm
                 </motion.span>
                 <motion.span
-                  className=" text-[#3844f9] font-bold text-[26px] md:text-[38px] "
+                  className=" text-[#ff6b08] font-extrabold text-[26px] md:text-[38px] "
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{
@@ -77,9 +77,12 @@ export const Main = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 2, duration: 2 }}
                 viewport={{ once: true }}
-                className="text-[#312fb9] font-semibold mt-2 sm:text-[16px] md:text-[20px] lg:text[24px] "
+                className=" font-semibold mt-2 sm:text-[16px] md:text-[20px] lg:text[24px] "
               >
-                Javascript | Typescript | ReactJS | NextJS{" "}
+                <span className="text-[#fff]">Javascript | </span>{" "}
+                <span className="text-[#ff6b08]"> Typescript |</span>{" "}
+                <span className="text-[#fff]">ReactJS |</span>{" "}
+                <span className="text-[#ff6b08]">NextJS </span>
               </motion.p>
             </div>
           </div>
@@ -89,18 +92,18 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 2, duration: 2 }}
             viewport={{ once: true }}
-            className="mt-8 py-4  hidden sm:block font-semibold text-white w-[90%] md:w-[80%] lg:w-[60%] max-w-[90%] m-auto text-base"
+            className="lg:my-12 py-4  hidden sm:block font-semibold text-white w-[90%] md:w-[80%] max-w-[90%] m-auto text-base"
           >
-            I'm focused on providing business solutions through developing and building exceptional digital experiences{" "}
-            <br /> that are responsive, safe, user-friendly, interactive and
-            scalable.
+            I'm focused on providing business solutions through developing and
+            building exceptional digital experiences <br /> that are responsive,
+            safe, user-friendly, interactive and scalable.
           </motion.p>
           <motion.p
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 4, duration: 3 }}
-            className="solutions  mt-10 sm:mt-0 md:mt-8  font-semibold shadow-custom sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
+            className="solutions mt-10 sm:mt-0 md:mt-8  font-semibold shadow-custom sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
           >
             Let's create solutions together
           </motion.p>
@@ -154,7 +157,6 @@ export const Main = () => {
         />
       </div>
 
-     
       {/* Image by <a href="https://www.freepik.com/free-vector/gradient-geometric-shapes-dark-background_6849656.htm#query=portfolio%20background&position=11&from_view=keyword&track=ais&uuid=c94efb3c-e448-4c04-9a4e-a41cb374ce52">Freepik</a> */}
 
       {/* <a href="https://www.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_18220884.htm#query=portfolio%20background&position=17&from_view=keyword&track=ais&uuid=c94efb3c-e448-4c04-9a4e-a41cb374ce52">Image by rawpixel.com</a> on Freepik */}

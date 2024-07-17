@@ -28,21 +28,21 @@ export const About = () => {
               I'm a web developer skilled in creating and maintaining websites
               and web applications. I leverage technologies such as HTML, CSS,
               CSS frameworks and libraries like Bootstrap, SASS and TailwindCSS.
-              I also employ Git (specifically GitHub), JavaScript, ReactJS,
+              Additionally, I utilise Git (specifically GitHub), JavaScript, ReactJS,
               NextJS, and other related technologies. I am constantly seeking
               ways to fulfill business requirements and enhance user experiences
               by enhancing the visual appeal, responsiveness, and accessibility
               of websites and web applications.
               <br />
               <br />
-              I am a team-player who believes in achieving more with
+              As a team-player who believes in achieving more with
               focus-minded team-members. I possess good communication skills,
-              the ability to collaborate, a positive attitude and good work
+              the ability to collaborate, a positive attitude and overall good work
               ethics.
               <br />
               <Link
                 href={"/#contact"}
-                className="text-black underline hover:text-[#fff]"
+                className="text-[#312fb9] hover:text-[#fff]"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -57,7 +57,7 @@ export const About = () => {
 
             <div className="flex justify-start my-8 items-center">
               <div>
-                <button className="px-4 py-2 capitalize  shadow-none">
+                <button className="px-4 py-2 capitalize shadow-none">
                   {" "}
                   <a href="https://mrseb.tiiny.site/" target="blank">
                     {" "}

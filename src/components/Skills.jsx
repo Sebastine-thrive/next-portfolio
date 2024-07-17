@@ -40,7 +40,7 @@ export const Skills = () => {
                   <Image
                     src={skill.image}
                     alt="html5 logo"
-                    className=" bg-white rounded-xl shadow-[0_3px_10px_rgba(0,158,96,1)] w-[5.5rem] h-[5.5rem] m-0 p-[5px] md:w-[7.5rem] md:h-[7.5rem]  md:p-[20px] md:m-[5px] lg:w-[11.875rem] lg:h-[11.25rem]"
+                    className=" bg-white rounded-xl shadow-[0_3px_10px_rgba(0,158,96,1)] w-[5.5rem] h-[5.5rem] m-0 p-[5px] md:w-[7.5rem] md:h-[7.5rem]  md:p-[20px] md:m-[5px] lg:w-[11.5rem] lg:h-[9.5rem] lg:m-[8px]"
                     loading="lazy"
                   />
                   <span className="mt-2 capitalize text-blue-200 cursor-pointer">
