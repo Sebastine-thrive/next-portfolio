@@ -77,16 +77,15 @@ html {
   /* background-image: url("/assets/images/2vid.png"); */
 }
 
-.solutions {
+/* .create-solutions {
   background: linear-gradient(to right, white, #312fb9, #ff6b08);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
+} */
 
 .developer {
-text-shadow: 1px 1px  #312fb9, 0 0 0.5em white ;
+  text-shadow: 1px 1px #312fb9, 0 0 0.5em white;
 }
 
 .coder-bg {
@@ -105,6 +104,7 @@ input[type="tel"] {
   font-family: "Gilroy-Regular", sans-serif;
   font-weight: 300;
 }
+
 /* 
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -137,7 +137,6 @@ textarea:focus::placeholder {
   opacity: 1;
 }
 
-
 /* Style the caret color */
 input[type="text"]::selection {
   color: #333; /* Selection text color */
@@ -148,6 +147,59 @@ input[type="text"]::selection {
   box-shadow: -6px 8px #3844f9;
 }
 
+@keyframes neon {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.create-solutions {
+  background: linear-gradient(90deg, #3844f9, #ff6b08, #312fb9, #3844f9);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: neon 5s linear infinite;
+  text-align: center; /* Center align the text */
+  display: inline-block; /* Ensure the element behaves as an inline block */
+}
+
+.stylish-borders {
+  position: relative;
+  padding: 5px; /* Adjust padding as needed */
+  /* background: #f0f0f0; Background color of the element */
+}
+
+.stylish-borders::before,
+.stylish-borders::after {
+  content: "";
+  position: absolute;
+  width: 50px; /* Adjust width as needed */
+  height: 5px; /* Adjust height as needed */
+  background: #3844f9; /* Border color */
+}
+
+.stylish-borders::before {
+  top: 0;
+  left: 0;
+  width: 50px; /* Horizontal border length */
+  height: 5px; /* Horizontal border thickness */
+  border-top: 5px solid #3844f9;
+  border-left: 5px solid #3844f9;
+}
+
+.stylish-borders::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 5px solid #3844f9;
+  border-right: 5px solid #3844f9;
+}
 
 @media (min-height: 1365px) {
   #home {

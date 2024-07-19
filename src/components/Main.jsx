@@ -92,7 +92,7 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 2, duration: 2 }}
             viewport={{ once: true }}
-            className="lg:my-12 py-4  hidden sm:block font-semibold text-white w-[90%] md:w-[80%] max-w-[90%] m-auto text-base"
+            className="bio-summary stylish-borders mx-auto mt-24 py-4 hidden sm:block font-semibold text-white w-[90%] md:w-[80%] max-w-[90%] text-base"
           >
             I'm focused on providing business solutions through developing and
             building exceptional digital experiences <br /> that are responsive,
@@ -103,7 +103,7 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 4, duration: 3 }}
-            className="solutions mt-10 sm:mt-0 md:mt-8  font-semibold shadow-custom sm:shadow-none text-gray-900  px-4 py-2 text-sm  tracking-widest"
+            className="create-solutions sm:mt-0 text-base font-semibold shadow-custom sm:shadow-none text-gray-900 px-4 mt-2 py-2 tracking-widest"
           >
             Let's create solutions together
           </motion.p>
@@ -113,7 +113,7 @@ export const Main = () => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 2, duration: 2 }}
-            className="flex items-center justify-between  m-auto py-2 max-w-[330px]"
+            className="flex items-center justify-between mx-auto my-2 py-2 max-w-[330px]"
           >
             {MyLinks.map((links) => (
               <Link href={links.href} target="_blank" key={links.href}>
