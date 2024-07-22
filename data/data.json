@@ -42,7 +42,7 @@
       "id": "Talk-And-Show Africa Homepage",
       "title": "Talk-And-Show Africa Homepage",
       "class": "projects",
-      "description": "Designed and developed a visually stunning and responsive homepage for a movie marketing agency website. The site showcases links to movies and series, latest news, and more, all according to the provided user interface design. Implemented features include: responsive design, animations- for visual delight and ana enjoyable user experience Movie Rating - Integration to easily fetch movie ratings from the backend; News and Events: Section for viewing the latest news and upcoming events; FAQs: Answers to frequently asked questions.",
+      "description": "Designed and developed this visually stunning and responsive homepage for a movie marketing agency website. The site showcases links to movies and series, latest news, and more, all according to the provided user interface design. Implemented features include: responsive design, animations- for visual delight and an enjoyable user experience; Movie Rating - integrated to easily fetch movie ratings from the backend; News and Events Section- for viewing the latest news and upcoming events; FAQs: Answers to frequently asked questions, etc.",
       "image": "https://res.cloudinary.com/dffplr9xe/image/upload/v1679977174/TashAfrica_blh0ty.png",
       "tech": ["HTML  ", "Vanilla CSS  ", " Netlify"],
       "url": "https://talkafrica.netlify.app",

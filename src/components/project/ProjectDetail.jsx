@@ -36,18 +36,18 @@ const ProjectDetail = ({ data }) => {
             </Link>
 
             <Link href="/#projects">
-              <div className=" text-blue-700 cursor-pointer sm:w-auto h-auto flex items-center">
+              <div className=" text-blue-700 hover:bg-[#FB923C] hover:text-[white] hover:p-2 hover:rounded-xl cursor-pointer sm:w-auto h-auto flex items-center">
                 <HiOutlineChevronLeft />
-                <p className="ml-1">Back</p>
+                <p className="ml-1 ">Back</p>
               </div>
             </Link>
           </div>
         </div>
 
-        <div className="col-span-3 md:col-span-2 shadow-xl shadow-green-100 bg-black/80 text-white rounded-xl p-4">
+        <div className="col-span-3 md:col-span-2 shadow-xl shadow-green-100 bg-black/80 rounded-xl p-4">
           <div className="p-2">
-            <p className="text-center font-bold p-2"> Technologies Used:</p>
-            <div className=" flex justify-between ">
+            <p className="text-center font-bold text-blue-200 p-2"> Technologies Used:</p>
+            <div className=" flex justify-between gap-x-4 gap-y-2 text-white ">
               {data?.tech?.map((text) => (
                 <p className="text-white py-2 flex items-center" key={text}>
                   <RiRadioButtonFill className="pr-1" />
