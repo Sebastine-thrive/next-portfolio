@@ -147,15 +147,15 @@ export const Navbar = () => {
                   scale: [1, 1.5, 1.5, 1],
                 }}
                 transition={{ delay: 2 }}
-                className="intro font-medium tracking-widest w-[85%] md:w-[90%] py-4 "
+                className="intro font-medium tracking-widest py-4 "
               >
                 {" "}
                 Let's create solutions together
               </p>
             </div>
 
-            <div className="flex flex-col py-4 uppercase">
-              <ul className="">
+            <div className="flex flex-col items-center text-center w-full  py-4 uppercase">
+              <ul className="w-fit">
                 <Link href="/">
                   <li
                     onClick={() => setNav(false)}
@@ -182,15 +182,15 @@ export const Navbar = () => {
                   </Link>
                 ))}
               </ul>
-              <div className="pt-10">
-                <p className="uppercase tracking-widest text-blue-200">
+              <div className="pt-10 text-center">
+                <p className="tracking-widest w-full text-blue-200">
                   Let's connect
                 </p>
 
-                <div className="flex items-center justify-between my-4 w-full sm:w[80%]">
+                <div className="flex items-center justify-between m-4 ">
                   {MyLinks.map((links) => (
                     <Link key={links.href} href={links.href} target="_blank">
-                      <div className="rounded-full text-blue-500 shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300  hover:text-orange-400 hover:shadow-orange-400">
+                      <div className="rounded-full mx-2 text-blue-500 shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300  hover:text-orange-400 hover:shadow-orange-400">
                         {links.icon}
                       </div>
                     </Link>

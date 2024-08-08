@@ -76,13 +76,6 @@ html {
   background-repeat: no-repeat;
 }
 
-/* .create-solutions {
-  background: linear-gradient(to right, white, #312fb9, #ff6b08);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-} */
-
 .developer {
   text-shadow: 1px 1px #312fb9, 0 0 0.5em white;
 }
@@ -104,10 +97,6 @@ input[type="tel"] {
   font-weight: 300;
 }
 
-/* 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus, */
 input:focus,
 textarea:focus {
   border-bottom: 2px solid blueviolet;
@@ -165,22 +154,22 @@ input[type="text"]::selection {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   animation: neon 5s linear infinite;
-  text-align: center; 
-  display: inline-block; 
+  text-align: center;
+  display: inline-block;
 }
 
 .stylish-borders {
   position: relative;
-  padding: 5px; 
+  padding: 5px;
 }
 
 .stylish-borders::before,
 .stylish-borders::after {
   content: "";
   position: absolute;
-  width: 50px; 
-  height: 5px; 
-  background: #3844f9; 
+  width: 50px;
+  height: 5px;
+  background: #3844f9;
 }
 
 .stylish-borders::before {
@@ -198,8 +187,6 @@ input[type="text"]::selection {
   border-bottom: 5px solid #3844f9;
   border-right: 5px solid #3844f9;
 }
-
-
 
 @media (min-height: 1365px) {
   #home {
