@@ -11,12 +11,18 @@ export const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("");
+  const [activeSection, setActiveSection] = useState("");
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   useEffect(() => {
+    // Function to handle navbar shadow on scroll
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
@@ -24,7 +30,38 @@ export const Navbar = () => {
         setShadow(false);
       }
     };
+
+    // IntersectionObserver options and callback
+    const sections = document.querySelectorAll("section");
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, options);
+
+    // Attaching event listener for scroll
     window.addEventListener("scroll", handleShadow);
+
+    // Observing each section
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener("scroll", handleShadow);
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
   }, []);
 
   return (
@@ -32,7 +69,7 @@ export const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-[3rem] shadow-xl z-[100] bg-opacity-0  "
+          ? "fixed w-full h-[3rem] shadow-xl z-[100] bg-opacity-30  "
           : "fixed w-full h-[3rem] z-[100] bg-opacity-0  "
       }
     >
@@ -67,38 +104,23 @@ export const Navbar = () => {
           viewport={{ once: true }}
           transition={{ delay: 4 }}
         >
-          <ul className="hidden md:flex">
-            <Link
-              href="/"
-              onClick={(e) => {
-                e.preventDefault();
-                document
-                  .getElementById("home")
-                  .scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              <li className="ml-10 text-sm font-bold text-white capitalize hover:border-b hover:text-orange-400">
-                Home
-              </li>
-            </Link>
-
-            {MyNavbarLinks.map((navlink, index) => (
-              <Link
-                href={`/${"#" + navlink.title}`}
+          <ul className="navlinks hidden md:flex">
+            {MyNavbarLinks.map(({ title }, index) => (
+              <li
                 key={index}
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById(navlink.title)
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
+                // className="ml-10 text-sm font-bold text-white capitalize hover:border-b hover:text-orange-400"
+                className={`ml-10 text-sm font-bold text-white capitalize hover:border-b ${
+                  activeSection === title
+                    ? "active border-b-[1px] border-white text-orange-400 transition-all duration-300 ease-in-out"
+                    : ""
+                }`}
+                onClick={() => scrollToSection(title)}
               >
-                <li className="ml-10 text-sm font-bold text-white capitalize hover:border-b hover:text-orange-400">
-                  {navlink.title}
-                </li>
-              </Link>
+                {title}
+              </li>
             ))}
           </ul>
+
           <div onClick={handleNav} className="md:hidden text-white">
             <AiOutlineMenu size={25} />
           </div>
@@ -155,42 +177,31 @@ export const Navbar = () => {
             </div>
 
             <div className="flex flex-col items-center text-center w-full  py-4 uppercase">
-              <ul className="w-fit">
-                <Link href="/">
+              <ul className="navlinks w-fit">
+                {MyNavbarLinks.map(({ title }, index) => (
                   <li
-                    onClick={() => setNav(false)}
-                    className="py-4 capitalize text-sm text-white font-semibold  hover:border-b hover:text-orange-400"
+                    key={index}
+                    className={`py-4 capitalize text-sm text-white font-semibold hover:border-b  ${
+                      activeSection === title
+                        ? "active text-orange-400 transition-all duration-300 ease-in-out"
+                        : ""
+                    }`}
+                    onClick={() => scrollToSection(title)}
                   >
-                    Home
+                    {title}
                   </li>
-                </Link>
-
-                {MyNavbarLinks.map((navlink) => (
-                  <Link
-                    href={`/${"#" + navlink.title}`}
-                    passHref
-                    legacyBehavior
-                    scroll={false}
-                    key={navlink.title}
-                  >
-                    <li
-                      onClick={() => setNav(false)}
-                      className="py-4 capitalize text-white text-sm hover:border-b hover:text-orange-400 font-semibold "
-                    >
-                      {navlink.title}
-                    </li>
-                  </Link>
                 ))}
               </ul>
+
               <div className="pt-10 text-center">
-                <p className="tracking-widest w-full text-blue-200">
+                <p className="tracking-widest uppercase w-full text-blue-200">
                   Let's connect
                 </p>
 
                 <div className="flex items-center justify-between m-4 ">
                   {MyLinks.map((links) => (
                     <Link key={links.href} href={links.href} target="_blank">
-                      <div className="rounded-full mx-2 text-blue-500 shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300  hover:text-orange-400 hover:shadow-orange-400">
+                      <div className="rounded-full mx-2 text-blue-500 shadow-lg shadow-gray-300 p-3 cursor-pointer hover:scale-105 ease-in duration-300  hover:text-orange-400 ">
                         {links.icon}
                       </div>
                     </Link>

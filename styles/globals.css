@@ -188,6 +188,7 @@ input[type="text"]::selection {
   border-right: 5px solid #3844f9;
 }
 
+
 @media (min-height: 1365px) {
   #home {
     height: 70vh;

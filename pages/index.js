@@ -22,14 +22,22 @@ export default function Home({ data }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar />
-      <Main />
+      <section id="home">
+        <Main />
+      </section>
       <section id="about">
         {" "}
         <About />
       </section>
-      <Skills />
-      <ProjectItems data={data} />
-      <Contact />
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <ProjectItems data={data} />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
       <Footer />
     </div>
   );
