@@ -5,7 +5,7 @@ import { MyLinks } from "./data/Data";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import { Tooltip } from "react-tooltip";
 import ProfilePic from "../../public/assets/profile-picture/seb1.jpg";
-import coder from "../../public/assets/background/coder.svg";
+// import coder from "../../public/assets/background/coder.svg";
 
 import Image from "next/image";
 
