@@ -111,7 +111,7 @@ export const Navbar = () => {
                 // className="ml-10 text-sm font-bold text-white capitalize hover:border-b hover:text-orange-400"
                 className={`ml-10 text-sm font-bold text-white capitalize hover:border-b ${
                   activeSection === title
-                    ? "active border-b-[1px] border-white text-orange-400 transition-all duration-300 ease-in-out"
+                    ? "active border-b-2 border-white text-orange-400 transition-all duration-300 ease-in-out"
                     : ""
                 }`}
                 onClick={() => scrollToSection(title)}
@@ -186,7 +186,12 @@ export const Navbar = () => {
                         ? "active text-orange-400 transition-all duration-300 ease-in-out"
                         : ""
                     }`}
-                    onClick={() => scrollToSection(title)}
+                
+                    onClick={() => {
+                      scrollToSection(title);
+                      handleNav();
+                    }}
+                    
                   >
                     {title}
                   </li>

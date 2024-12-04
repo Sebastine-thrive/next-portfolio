@@ -81,8 +81,8 @@ export const Main = () => {
               >
                 <span className="text-[#fff]">Javascript | </span>{" "}
                 <span className="text-[#ff6b08]"> Typescript |</span>{" "}
-                <span className="text-[#fff]">ReactJS |</span>{" "}
-                <span className="text-[#ff6b08]">NextJS </span>
+                <span className="text-[#ff6b08]">ReactJS </span>{" "}
+                <span className="text-[#fff]">| NextJS </span>
               </motion.p>
             </div>
           </div>

@@ -23,7 +23,7 @@ const Footer = () => {
               className=" text-[16x] md:text-[24px]"
             >
               {" "}
-              Sebastine Ogu{" "}
+              Mr_Seb  {" "}
             </Link>{" "}
           </b>{" "}
         </p>

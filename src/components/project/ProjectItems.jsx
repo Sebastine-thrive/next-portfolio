@@ -31,14 +31,17 @@ export const ProjectItems = ({ data }) => {
                 className="flex sm:w-full md:w-[50%] lg:w-[33%] justify-center p-4"
                 key={project.id}
               >
-                <div className="xxs:p-4 lg:p-0 xss:rounded-lg xxs:bg-[#ecf0f3] lg:bg-white lg:relative lg:flex xss:flex-col items-center justify-center my-8 h-auto w-auto max-w-[260px] xs:max-w-[350px] p-4 group rounded-lg lg:hover:bg-gradient-to-r from-gray-900 to-blue-700 hover:border-0">
+                <div
+                  className="xxs:p-4 lg:p-0 xss:rounded-lg xxs:bg-[#ecf0f3] lg:bg-white lg:relative lg:flex xss:flex-col items-center justify-center 
+                my-8 h-auto w-auto max-w-[260px] xs:max-w-[350px] p-4 group rounded-lg lg:hover:bg-gradient-to-r from-gray-900 to-blue-700 hover:border-2 hover:border-[#fb923c] "
+                >
                   <div className=" max-h-[300px] h-auto w-auto">
                     <Image
                       src={project.image}
                       alt={project.title}
                       width={200}
                       height={150}
-                      className="w-[250px] h-[150px] lg:w-[300px] lg:h-[250px] lg:group-hover:opacity-10 border-2 border-white mx-auto rounded-lg "
+                      className="w-[250px] h-[150px] lg:w-[300px] lg:h-[250px] border-2 border-white lg:group-hover:opacity-10  mx-auto rounded-lg "
                     />
                   </div>
 

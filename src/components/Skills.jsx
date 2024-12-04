@@ -7,7 +7,7 @@ export const Skills = () => {
   return (
     <div
       id="skills"
-      className="w-full max-h-screen md:h-screen px-2 py-8 overflow-y-hidden bg-[#1c2448]"
+      className="w-full min-h-screen md:h-screen px-2 py-8 overflow-y-scroll bg-[#151527]"
     >
       <div className="max-w-[1240px] mx-auto pt-8 text-center justify-center">
         <motion.h2
@@ -40,7 +40,8 @@ export const Skills = () => {
                   <Image
                     src={skill.image}
                     alt="html5 logo"
-                    className=" bg-white rounded-xl shadow-[0_3px_10px_rgba(0,158,96,1)] w-[5.5rem] h-[5.5rem] m-0 p-[5px] md:w-[7.5rem] md:h-[7.5rem]  md:p-[20px] md:m-[5px] lg:w-[11.5rem] lg:h-[9.5rem] lg:m-[8px]"
+                    className=" bg-white rounded-xl shadow-[0_3px_10px_rgba(0,158,96,1)] w-[5.5rem] h-[5.5rem] m-0 p-[5px] 
+                    md:w-[7.5rem] md:h-[7.5rem]  md:p-[20px] md:m-[5px] lg:w-[11.5rem] lg:h-[9.5rem] lg:m-[8px]  hover:shadow-orange-400"
                     loading="lazy"
                   />
                   <span className="mt-2 capitalize text-blue-200 cursor-pointer">
