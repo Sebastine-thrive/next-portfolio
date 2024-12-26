@@ -15,14 +15,16 @@ const ProjectDetail = ({ data }) => {
           src={data?.image}
           alt="ecommerce project image"
           layout="fill"
+          priority
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full p-4 text-white z-10  ">
           <h2 className="text-center"> {data?.title} </h2>
         </div>
       </div>
 
-      <div className="max-w-[1240px] mx-auto p-4 grid md:grid-cols-3 gap-8 pt-8 mb-8 ">
-        <div className="col-span-4">
+      <div className="max-w-[1240px] mx-auto p-4 flex flex-col mt-8 mb-8 ">
+        {/*Project  Overview */}
+        <div className="flex flex-col p-4">
           <h2 className="my-4">Overview</h2>
           <p className="bg-white rounded-lg font-serif p-4">
             {data?.description}
@@ -44,10 +46,14 @@ const ProjectDetail = ({ data }) => {
           </div>
         </div>
 
-        <div className="col-span-3 md:col-span-2 shadow-xl shadow-green-100 bg-black/80 rounded-xl p-4">
-          <div className="p-2">
-            <p className="text-center font-bold text-blue-200 p-2"> Technologies Used:</p>
-            <div className=" flex justify-between gap-x-4 gap-y-2 text-white ">
+        {/* tech used */}
+        <div className="tech-used w-auto max-w-[1200px] md:min-w-[64fd0px] flex mx-auto justify-center items-center shadow-xl shadow-green-100 bg-black/80 rounded-xl p-4">
+          <div className="p-2 ">
+            <p className="text-center font-bold text-blue-200 p-2">
+              {" "}
+              Technologies Used:
+            </p>
+            <div className=" flex flex-col sm:flex-row w-full flex-wrap sm:justify-between gap-x-4 gap-y-2 text-white ">
               {data?.tech?.map((text) => (
                 <p className="text-white py-2 flex items-center" key={text}>
                   <RiRadioButtonFill className="pr-1" />

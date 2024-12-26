@@ -43,8 +43,7 @@ export const Contact = () => {
               <div>
                 <p className="py-4 text-gray-500">
                   {" "}
-                  I am available for freelance projects, contract or full-time
-                  positions. <br />{" "}
+                  I am available for freelance or contract roles <br />{" "}
                   <span className="font-bold text-orange-400">
                     Get in touch!{" "}
                   </span>
@@ -52,7 +51,9 @@ export const Contact = () => {
               </div>
 
               <div>
-                <p className="uppercase pt-8 font-semibold text-gray-500">Connect With Me </p>
+                <p className="uppercase pt-8 font-semibold text-gray-500">
+                  Connect With Me{" "}
+                </p>
                 <div className="flex items-center justify-between py-4">
                   {MyLinks.map((link) => (
                     <Link href={link.href} target="_blank" key={link.href}>
@@ -72,9 +73,12 @@ export const Contact = () => {
           {/* Right part */}
           <div className="col-span-3 w-full h-auto shadow-md lg:p-4">
             <div className="px-4 py-8 border border-orange-400 rounded-md lg:border-none lg:hover:border">
-              
               {/* Contact Form */}
-              <form action="https://formspree.io/f/xyyobbal" method="POST" className=" contact-form">
+              <form
+                action="https://formspree.io/f/xyyobbal"
+                method="POST"
+                className=" contact-form"
+              >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2 my-4">
                   <div className="flex flex-col ">
                     <input
@@ -127,7 +131,6 @@ export const Contact = () => {
                   Send Message{" "}
                 </button>
               </form>
-
             </div>
           </div>
         </div>

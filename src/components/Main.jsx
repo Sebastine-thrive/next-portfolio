@@ -19,11 +19,12 @@ export const Main = () => {
         <div>
           <div className="flex items-center justify-center flex-col lg:flex-row  ">
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              // whileInView={{ opacity: 1 }}
               transition={{
-                type: "spring",
-                bounce: 1,
+                // type: "spring",
+                // bounce: 1,
                 delay: 1.0,
                 duration: 2,
               }}
@@ -75,7 +76,7 @@ export const Main = () => {
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ delay: 2, duration: 2 }}
+                transition={{ delay: 3, duration: 2 }}
                 viewport={{ once: true }}
                 className=" font-semibold mt-2 sm:text-[16px] md:text-[20px] lg:text[24px] "
               >
@@ -90,7 +91,7 @@ export const Main = () => {
           <motion.p
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2, duration: 2 }}
+            transition={{ delay: 5, duration: 2 }}
             viewport={{ once: true }}
             className="bio-summary stylish-borders mx-auto mt-24 py-4 hidden sm:block font-semibold text-white w-[90%] md:w-[80%] max-w-[90%] text-base"
           >
@@ -102,7 +103,7 @@ export const Main = () => {
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 4, duration: 3 }}
+            transition={{ delay: 9, duration: 3 }}
             className="create-solutions sm:mt-0 text-base font-semibold shadow-custom sm:shadow-none text-gray-900 px-4 mt-2 py-2 tracking-widest"
           >
             Let's create solutions together
@@ -112,12 +113,12 @@ export const Main = () => {
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 2, duration: 2 }}
+            transition={{ delay: 5, duration: 2 }}
             className="flex items-center justify-between mx-auto my-2 py-2 max-w-[330px]"
           >
             {MyLinks.map((links) => (
               <Link href={links.href} target="_blank" key={links.href}>
-                <div className="  text-blue-700 md:rounded-full md:shadow-md md:shadow-[#312fb9] p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:text-orange-400 hover:shadow-orange-400">
+                <div className="  text-blue-700 md:rounded-full md:shadow-md md:shadow-[#312fb9] p-6 cursor-pointer hover:scale-110 ease-in-out duration-500 hover:text-orange-400 hover:shadow-orange-400">
                   {links.icon}
                 </div>
               </Link>

@@ -10,7 +10,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("");
+  // const [navBg, setNavBg] = useState("");
   const [activeSection, setActiveSection] = useState("");
 
   const handleNav = () => {
@@ -66,7 +66,7 @@ export const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
+      // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-[3rem] shadow-xl z-[100] bg-opacity-30  "
